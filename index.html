@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE Security</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Crafting the Next Generation of Security Testers! Penetration Testing, Ethical Hacking, Bug Bounty, InfoSEC resource development, Network Security solutions, IoT/IIoT Security, ICS/SCADA Security"/>
+    <meta name="google" content="notranslate" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg" type="image/svg+xml">
+    
+    <style>
+        body {
+            background-color: #000;
+            color: #d3d3d3;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+	        background: url('nbg.jpg') center left no-repeat;
+            background-size: cover;   
+            background-attachment: fixed; 
+            position: absolute;     
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);   
+             
+        }
+        html::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(80, 255, 0, 0.02);
+        }
+        
+        p {
+            font-size: 40px;
+        }
+
+        .blink {
+            animation: blink 1.5s steps(1, end) infinite;
+            color: #00ff0d;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body onload="changetext()">
+    <p id="target">LOADING...</p>
+
+    <script>
+        var target = document.getElementById('target');
+var texts = [
+    "The <span style='color:red;'><b>villain</b></span> will always be a villain if the <span style='color:#00ff0d;'><b>hero</b></span> tells the story...<span class='blink'>&block;</span>",
+    "Every <span style='color:red;'><b>villain</b></span> is the <span style='color:#00ff0d;'><b>hero</b></span> of his own story!<span class='blink'>&block;</span>",
+    "You Either Die A <span style='color:#00ff0d;'><b>Hero</b></span>, Or You Live Long Enough To Become The <span style='color:red;'><b>Villain</b></span>!<span class='blink'>&block;</span>",
+    "I prefer a real <span style='color:red;'><b>villain</b></span> to a false <span style='color:#00ff0d;'><b>hero</b></span>.<span class='blink'>&block;</span>",
+    "If you think this has a <span style='color:#00ff0d;'><b>happy</b></span> <span style='color:red;'><b>ending</b></span>, then you haven’t been paying attention.<span class='blink'>&block;</span>",
+    "If you can't play the <span style='color:#00ff0d;'><b>hero</b></span>, play the <span style='color:red;'><b>villain</b></span>.<span class='blink'>&block;</span>",
+    "Don’t ever <span style='color:red;'><b>apologize</b></span> for being the <span style='color:#00ff0d;'><b>smartest</b></span> one in the room.<span class='blink'>&block;</span>",
+    "History will decide if I'm a <span style='color:red;'><b>villain</b></span> or a <span style='color:#00ff0d;'><b>hero</b></span>.<span class='blink'>&block;</span>",
+    "Somehow I'm <span style='color:#00ff0d;'><b>still alive</b></span>...<span class='blink'>&block;</span>",
+    "Beneath this mask there is more than <span style='color:red;'><b>flesh</b></span>! Beneath this mask there is an idea! And ideas are <span style='color:#00ff0d;'><b>bulletproof</b></span>!<span class='blink'>&block;</span>"
+];
+
+function changetext() {
+    var i = (Math.random() * texts.length) | 0;
+    target.innerHTML = texts[i];
+}
+
+    </script>
+</body>
+</html>
