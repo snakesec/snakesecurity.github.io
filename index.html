@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNAKE Security</title>
+    <title>SNAKE Security - NON-Profit Cybersecurity</title>
     <meta charset="utf-8">
-    <meta name="description" content="Crafting the Next Generation of Security Testers! Penetration Testing, Ethical Hacking, Bug Bounty, InfoSEC resource development, Network Security solutions, IoT/IIoT Security, ICS/SCADA Security"/>
+    <meta name="description" content="NON-Profit Organization Empowering the Next Generation of Cybersecurity Experts with Educational Resources, Tools, and Cutting-Edge Network & IoT/IIoT Security. Developing Tomorrow’s Security Experts, Today!"/>
     <meta name="google" content="notranslate" />
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="favicon.ico">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon.svg" type="image/svg+xml">
+    <link href="/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
     
     <style>
         body {
@@ -21,10 +23,6 @@
 	        background: url('nbg.jpg') center left no-repeat;
             background-size: cover;   
             background-attachment: fixed; 
-            position: absolute;     
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);   
              
         }
         html::before {
@@ -34,55 +32,52 @@
             right: 0;
             top: 0;
             bottom: 0;
-            background: rgba(80, 255, 0, 0.02);
+        }
+
+        .time {
+          font-size: 6em;
+          color: #00ff00;
+          font-weight: bold;
+          font-family: 'copper';
+        }
+        .label {
+          font-size: 1.5em;
+          display: block;
+	  color: #ff0000;
+          font-weight: bold;
+          font-family: 'play';
+        }
+        p {
+          font-size: 1.1em;
         }
         
-        p {
-            font-size: 40px;
-        }
-
-        .blink {
-            animation: blink 1.5s steps(1, end) infinite;
-            color: #00ff0d;
-        }
-
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
     </style>
 </head>
-<body onload="changetext()">
-    <p id="target">LOADING...</p>
-
+<body>
+    <div class="container">
+      <div class="row">
+      <div class="col">
+        <p style="margin-top:50px;"><b>NON-Profit Organization Empowering the Next Generation of Cybersecurity Experts with Educational Resources, Tools, and support for Open Source Projects. We are developing Tomorrow’s Security Experts, Today!</b><p><br>
+        <h1>Something is Coming…</h1>
+        <p><b>After 3 years of dedication and hard work, a new chapter is about to begin. What’s coming next is something unprecedented, something that will change the way we approach CyberSecurity. The wait is almost over.</b></p>
+	<p><b>Get ready for the reveal. The countdown has begun!</b></p>
+        <div id="countdown" class="row justify-content-center align-items-center"></div><br>
+      </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/countdown.jquery.js"></script>
     <script>
-        var target = document.getElementById('target');
-var texts = [
-    "The <span style='color:red;'><b>villain</b></span> will always be a villain if the <span style='color:#00ff0d;'><b>hero</b></span> tells the story...<span class='blink'>&block;</span>",
-    "Every <span style='color:red;'><b>villain</b></span> is the <span style='color:#00ff0d;'><b>hero</b></span> of his own story!<span class='blink'>&block;</span>",
-    "You Either Die A <span style='color:#00ff0d;'><b>Hero</b></span>, Or You Live Long Enough To Become The <span style='color:red;'><b>Villain</b></span>!<span class='blink'>&block;</span>",
-    "I prefer a real <span style='color:red;'><b>villain</b></span> to a false <span style='color:#00ff0d;'><b>hero</b></span>.<span class='blink'>&block;</span>",
-    "If you think this has a <span style='color:#00ff0d;'><b>happy</b></span> <span style='color:red;'><b>ending</b></span>, then you haven’t been paying attention.<span class='blink'>&block;</span>",
-    "If you can't play the <span style='color:#00ff0d;'><b>hero</b></span>, play the <span style='color:red;'><b>villain</b></span>.<span class='blink'>&block;</span>",
-    "Don’t ever <span style='color:red;'><b>apologize</b></span> for being the <span style='color:#00ff0d;'><b>smartest</b></span> one in the room.<span class='blink'>&block;</span>",
-    "History will decide if I'm a <span style='color:red;'><b>villain</b></span> or a <span style='color:#00ff0d;'><b>hero</b></span>.<span class='blink'>&block;</span>",
-    "Somehow I'm <span style='color:#00ff0d;'><b>still alive</b></span>...<span class='blink'>&block;</span>",
-    "Beneath this mask there is more than <span style='color:red;'><b>flesh</b></span>! Beneath this mask there is an idea! And ideas are <span style='color:#00ff0d;'><b>bulletproof</b></span>!<span class='blink'>&block;</span>"
-];
-
-function changetext() {
-    var i = (Math.random() * texts.length) | 0;
-    target.innerHTML = texts[i];
-}
-
+        $('#countdown').countdown({
+            year: 2025, // YYYY Format
+	    month: 4, // 1-12
+	    day: 10, // 1-31
+	    hour: 0, // 24 hour format 0-23
+	    minute: 0, // 0-59
+	    second: 0, // 0-59
+            timezone: -3,
+            labels: true,
+        });
     </script>
 </body>
 </html>
