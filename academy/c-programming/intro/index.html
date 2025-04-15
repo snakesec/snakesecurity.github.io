@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>C Programming Language Intro - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="Introduction to C The Language of Gods, History, What is C and how to program it... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="C Programming Language Intro" />
+        <meta property="og:description" content="Introduction to C The Language of Gods, History, What is C and how to program it... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/c-programming/compile-first-c-program.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="C Programming Language Intro">
+        <meta name="twitter:description" content="Introduction to C The Language of Gods, History, What is C and how to program it... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/c-programming/compile-first-c-program.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/c-programming/compile-first-c-program.png" alt="C Programming Language Intro">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">C Programming Language Intro</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">Introduction to C The Language of Gods, History, What is C and how to program it...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">C History</h1>
+
+<blockquote>
+  <p><em>Those who do not learn history are doomed to repeat it.</em> – <strong>George Santayana</strong>.</p>
+</blockquote>
+
+<p><strong>Dennis Ritchie</strong> and <strong>Ken Thompson</strong> developed the <em>C programming language</em> at Bell Telephone Laboratories in 1972.</p>
+
+<p><strong>Brian Kernighan</strong> was co-author with <strong>Dennis Ritchie</strong> of <em>The C Programming Language</em> (K&amp;R 1988).</p>
+
+<p>In 1983, the <strong>American National Standards Institute</strong> <em>(ANSI)</em> formed the <strong>X3J11</strong> committee to create a standard C specification, and in 1989 the C standard was ratified as <em>ANSI X3.159-1989</em>, “Programming Language C”. This 1989 language version is called <em>ANSI C</em> or <em>C89</em>.</p>
+
+<p>The complete history of C on <a href="https://en.wikipedia.org/wiki/C_(programming_language)">wikipedia</a></p>
+
+<p>Until now, the C language standards are:</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="text-align: center">Year</th>
+        <th style="text-align: center">Informal name</th>
+        <th style="text-align: center">Official standard</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1972</td>
+        <td>first release</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>1978</td>
+        <td>K&amp;R C</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>1989, 1990</td>
+        <td>ANSI C, C89, ISO C, C90</td>
+        <td>ANSI X3.159-1989, ISO/IEC 9899:1990</td>
+      </tr>
+      <tr>
+        <td>1999</td>
+        <td>C99, C9X</td>
+        <td>ISO/IEC 9899:1999</td>
+      </tr>
+      <tr>
+        <td>2011</td>
+        <td>C11, C1X</td>
+        <td>ISO/IEC 9899:2011</td>
+      </tr>
+      <tr>
+        <td>2018</td>
+        <td>C17, C18</td>
+        <td>ISO/IEC 9899:2018</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>C23, C2X</td>
+        <td>ISO/IEC 9899:2024</td>
+      </tr>
+      <tr>
+        <td>Future</td>
+        <td>C2Y</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>C is so well structured and developed that it does not need to be updated every week like other languages; each standard implements new features as guidelines.</p>
+
+<h2 id="what-is-c">What is C</h2>
+
+<p>Even though it was first developed in 1970, C is still a very popular programming language and is used in practically every piece of software we use today!</p>
+
+<p>While some “modern” languages may include new features, their compilers and interpreters are written in C… in the end, everything used in programming is just a C wrapper.</p>
+
+<blockquote>
+  <p><em>If you wish to make an apple pie from scratch, you must first invent the universe.</em> - <strong>Carl Sagan</strong></p>
+</blockquote>
+
+<p>C is a general-purpose programming language, meaning that anything can be implemented.</p>
+
+<p><strong>But it will make you work for it!</strong></p>
+
+<p>Nowadays, some <del>idiots</del> people say that C is a low-level language, which is not true because C was designed to be high-level, but most of those who call themselves programmers today don’t really know how to program, they just connect api with some syntax.</p>
+
+<p>Every new programming language we have today, Python, GO, Ruby, PHP… are nothing more than wrappers of C, the compilers and/or interpreters of these languages are in C so I reaffirm that what you call programming languages do not exist, they are basically APIs because in the end what is really being executed is C.</p>
+
+<p>Before you talk about C++, it’s nothing more than C with a few additions and, in my opinion, a lot of descriptive stuff… I like to think of C++ as “C made for women”.</p>
+
+<p>C is portable to all existing hardware, every platform has a C compiler, <strong>GCC</strong> <em>(GNU C Compiler)</em>, which we’ll talk about later, covers almost every architecture.</p>
+
+<p>In cybersecurity, we use C for advanced hacking, the development of exploits, the creation of tools and protocols, and much more.</p>
+
+<h2 id="how-to-program-in-c">How to program in C</h2>
+
+<p>The C programming environment should already be installed if you’re a Linux user. If not, install GCC, which is the compiler we’ll be using from now on… IDE or text editor, it’s up to you…</p>
+
+<p>Note that if you use <a href="/andrax">ANDRAX-NG</a>, everything is already ready for you to program…</p>
+
+<p>Since everything should be ready, let’s start with our first C program:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"SNAKE Security</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>We’ll compile using GCC</p>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">gcc <span class="nt">-o</span> main main.c</code></pre></figure>
+
+<p>Note that we pass the flag (-o) with the “main” parameter and then pass “main.c”…</p>
+
+<ul>
+  <li><strong>-o</strong> : <em>Specifies the name of the file that will result from the compilation, i.e. the name of the program itself…</em></li>
+  <li><strong>main</strong> : <em>The name we chose for the program</em></li>
+  <li><strong>main.c</strong> : <em>The source file or files that we are going to compile, in our case just a single <strong>.c</strong> file</em></li>
+</ul>
+
+<p>Now just run the program, the result of the compilation and execution is shown below</p>
+
+<p><img class="img-fluid" src="/images/academy/c-programming/compile-first-c-program.png" alt="Compile first C program" title="Compile first C program" /></p>
+
+<p>Okay… we’ve made a program that displays a message in the terminal, but what does each line of this program actually do?</p>
+
+<p>Hold on to your butt because I’m going to explain…</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span></code></pre></figure>
+
+<p>“<strong>#include</strong>” It tells the C preprocessor to grab the contents of some other file and insert it right there in the code.</p>
+
+<p>In our case, we’ll be inserting the <strong>stdio.h</strong> (<strong>.h</strong> is for <em>header</em>) library, which is the C “Standard Input/Output” library.</p>
+
+<p>Anything that starts with a <strong>hash</strong>/<strong>hashtag</strong> or <strong>pound</strong> sign <em>(#)</em> is something that the preprocessor works on before the compiler even starts. Common preprocessor directives, as they’re called, are <strong>#include</strong> and <strong>#define</strong>. More about this later.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{...}</span></code></pre></figure>
+
+<p>Now things are getting more interesting, but also more complex, so I’ll just explain the basics, because you’ll understand everything later on…</p>
+
+<p>In this line we declare our initial function, which is always called “<strong>main</strong>” in C, because the compiler needs to know where to start…</p>
+
+<p>The “<strong>int</strong>” is to specify what our function returns, which in our case is a value of type int, it could be of type “void” if it didn’t return anything…</p>
+
+<p>The parentheses <strong>”( )”</strong> are parameters of the function in this case we don’t use any</p>
+
+<p>Everything inside the brackets <strong>”{ }”</strong> is part of the function</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c">  <span class="n">printf</span><span class="p">(</span><span class="s">"SNAKE Security</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span></code></pre></figure>
+
+<p>This is the magic line that makes our message appear…</p>
+
+<p>Here we are invoking the <strong>“printf”</strong> function from the <strong>“stdio.h”</strong> library and passing the message <strong>“SNAKE Security\n”</strong> as a parameter, the <strong>“\n”</strong> character is the <em>“newline”</em> that tells the operating system the line ends there.</p>
+
+<p>Semicolons <strong>”;”</strong> are end statements in C. It indicates that the current statement has ended, and other statements that follow are new statements.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span></code></pre></figure>
+
+<p>This line defines the return code of the function since the “main” function is being started as an int function… as it is the only function in this program, this value will be passed to the operating system on exit… if we change the value from 0 to 1, the operating system will understand it as an error code because any return above 0 is an error… we’ll talk more about this later…</p>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>Computer Networks Structure - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="Introduction to Backbone, Three-Tiered, Traffic Flow... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="Computer Networks Structure" />
+        <meta property="og:description" content="Introduction to Backbone, Three-Tiered, Traffic Flow... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/computer-networks/structure/three-tier-vs-collapsed-core.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Computer Networks Structure">
+        <meta name="twitter:description" content="Introduction to Backbone, Three-Tiered, Traffic Flow... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/computer-networks/structure/three-tier-vs-collapsed-core.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/computer-networks/structure/three-tier-vs-collapsed-core.png" alt="Computer Networks Structure">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">Computer Networks Structure</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">Introduction to Backbone, Three-Tiered, Traffic Flow...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">Backbone</h1>
+
+<p>In today’s complex networks, there’s a need for a standard way to communicate clearly about what part of the network you are referring to. So networks are broken down into different parts called backbones and segments.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/structure/backbone.png" alt="Network Structure Backbone" title="Network Structure Backbone" /></p>
+
+<p>As you can see, the backbone of the network is actually a bit like the backbone of our own human body. It’s what gives the network its structure, and it’s what all the network segments and servers connect to. Since the backbone is such an important nerve center, it has to be built with some kind of really fast, robust technology - often Gigabit Ethernet or faster.</p>
+
+<h3 id="segments">Segments</h3>
+
+<p>A segment is any small portion of the network that may have a connection to the backbone but is not actually part of it. The network backbone, which is the common connection point for all segments, is connected to the network workstations and servers organized into segments…</p>
+
+<h2 id="three-tiered-model">Three-Tiered Model</h2>
+
+<p>The Three-tiered networking model was introduced by Cisco in 1998, and it’s become the gold standard for how networks are designed. It still holds true today for any hardware vendor, even though it was introduced so long ago.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/structure/three-tier-vs-collapsed-core.png" alt="Network Structure Three-tier vs Collapsed" title="Network Structure Three-tier vs Collapsed" /></p>
+
+<p>Today’s small-to-medium network designs have adopted the collapsed-core model to eliminate the cost of additional network switching.</p>
+
+<ul>
+  <li>
+    <p><strong>Core Layer</strong> : The core layer is considered the network backbone. This is where you will find the WAN links that connect and interconnect geographic areas. It only provides routing and switching for the entire network and should be designed for high availability. The core layer should not do anything that is a source of network latency!</p>
+  </li>
+  <li>
+    <p><strong>Distribution Layer</strong> : This layer is frequently referred to as a workload layer or an aggregated layer due to its ability to connect to multiple access layer switches. The distribution layer is where packet filtering, security policies, routing between VLANs, and broadcast domain definition takes place, and where the control plane resides. Think about it as distributing switching from the core to the access layer.</p>
+  </li>
+  <li>
+    <p><strong>Access Layer</strong> : Often referred to as the edge switching layer, the access layer connects end user hosts. Local switching and collision domain creation is done at the access layer. It is designed for simple network access and is where Quality of Service (QoS), Power over Ethernet (PoE), and security support begins.</p>
+  </li>
+</ul>
+
+<p>To reduce the cost and complexity of networks, the collapsed-core model was introduced. We can support both the core and distribution layers on the same piece of network switching equipment with today’s high-performance switching. It is just collapsed into one piece of switching equipment and still performs the same functions as the core and distribution layers.</p>
+
+<h2 id="traffic-flow">Traffic Flow</h2>
+
+<p>An understanding of the flow of traffic through your networks is important. But why? Why should you have an understanding of the type and direction of traffic flowing through your network?</p>
+
+<p>There are a lot of reasons, but the most important one, and the one we’re going to focus on here, is security.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/structure/traffic-flow.png" alt="Network Structure Traffic Flow" title="Network Structure Traffic Flow" /></p>
+
+<p>Initially, north-south traffic is going to be the most important security concern, because the data will be flowing to and from your corporate network to the outside Internet. But that doesn’t mean you shouldn’t take the security of east-west traffic seriously as well.</p>
+
+<p>Let’s analyze the 2 scenarios</p>
+
+<ul>
+  <li>
+    <p><strong>North-South</strong> : We can see the traffic we find here coming in and out of your internal network. Strong security is essential at this point. A firewall and routers allow the southbound traffic to enter. The northbound traffic is on its way from your internal network to the Internet.</p>
+  </li>
+  <li>
+    <p><strong>East-West</strong> : The east-west traffic is still important to understand that there are many types of attacks, especially from the inside, that need to be taken seriously. You need to look at the lateral traffic that is going between the server farms and the data centers. There is an enormous amount of traffic there, and some examples of east-west traffic include database replication, file transfers, and interprocess communication.</p>
+  </li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

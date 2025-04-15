@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>C Data Types - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="C Data Types and Variables... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="C Data Types" />
+        <meta property="og:description" content="C Data Types and Variables... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/c-programming/c-variables-and-datatypes.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="C Data Types">
+        <meta name="twitter:description" content="C Data Types and Variables... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/c-programming/c-variables-and-datatypes.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/c-programming/c-variables-and-datatypes.png" alt="C Data Types">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">C Data Types</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">C Data Types and Variables...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h2 style="text-align:center">Variables</h2>
+
+<p>In simple terms, a variable is a human-readable word or name that stores or points to a value in memory…</p>
+
+<p>It’s a very important part of any programming language, so let’s take some time to understand how they work in C.</p>
+
+<p>Before using a variable, you must declare it, using the following syntax:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">data_type</span> <span class="n">variable_name</span><span class="p">;</span></code></pre></figure>
+
+<ul>
+  <li>
+    <p><strong>data_type</strong> : <em>In this context “data_type” refers to the type of the variable, each variable has a type to which it belongs… this determines the type of data the variable can store…</em></p>
+  </li>
+  <li>
+    <p><strong>variable_name</strong> : <em>This is the actual name of the variable, it’s how you’ll call it in your code.</em></p>
+  </li>
+</ul>
+
+<p>To assign a value to a variable, you can simply use the following syntax:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">variable_name</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span></code></pre></figure>
+
+<ul>
+  <li><strong>value</strong> : <em>This obviously refers to the value you want to store in this variable</em></li>
+</ul>
+
+<h3 id="primitive-data-types">Primitive Data Types</h3>
+
+<p>Primitive data types are the most basic data types used to represent simple values such as integers, floats, characters, etc.</p>
+
+<h4 id="int">int</h4>
+
+<p><strong>int</strong> is used to store integer numbers (any number, including positive, negative, and zero, without a decimal part). Octal values, hexadecimal values, and decimal values can be stored in the int datatype in C.</p>
+
+<ul>
+  <li><strong>Range</strong> :  <em>-2,147,483,648 to 2,147,483,647</em></li>
+  <li><strong>Size</strong> : <em>4 bytes</em></li>
+  <li><strong>Format Specifier</strong> : <em>%d</em></li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="n">age</span><span class="p">;</span> <span class="c1">// Declares the variable "age" of type "int</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">27</span><span class="p">;</span> <span class="c1">// Assigns the value 27 to the "age" variable</span></code></pre></figure>
+
+<h4 id="char">char</h4>
+
+<p>The <strong>char</strong> data type allows only a single character to be stored in its variable. The size of the character is 1 byte in size. It is the simplest datatype of C. It stores a single character and requires a single byte of memory.</p>
+
+<ul>
+  <li><strong>Range</strong> : <em>-128 to 127 or 0 to 255</em></li>
+  <li><strong>Size</strong> : <em>1 byte</em></li>
+  <li><strong>Format Specifier</strong> : <em>%c</em></li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">char</span> <span class="n">letter_a</span><span class="p">;</span> 
+<span class="n">letter_a</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span></code></pre></figure>
+
+<h4 id="float">float</h4>
+
+<p>In C programming, the <strong>float</strong> data type is used to store floating-point values. Float stores decimal and exponential values in C. It is used for single-precision storage of decimal numbers (numbers with floating-point values).</p>
+
+<ul>
+  <li><strong>Range</strong>: <em>1.2E-38 to 3.4E+38</em></li>
+  <li><strong>Size</strong>: <em>4 bytes</em></li>
+  <li><strong>Format Specifier</strong>: <em>%f</em></li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">float</span> <span class="n">cash_in_bank</span><span class="p">;</span> 
+<span class="n">cash_in_bank</span> <span class="o">=</span> <span class="mi">12</span><span class="p">.</span><span class="mi">75</span><span class="p">;</span></code></pre></figure>
+
+<h4 id="double">double</h4>
+
+<p>A <strong>double</strong> data type in C is used to store decimal numbers (numbers with floating point values) with double precision.</p>
+
+<p>The double data type is basically a precision type that can hold 64-bit decimal numbers or floating point numbers. Since double has more precision as compared to the float then it is much more obvious that it occupies twice the memory that the floating-point type occupies. It can easily hold about 16 to 17 digits before or after a decimal point.</p>
+
+<ul>
+  <li><strong>Range</strong>: <em>1.7E-308 to 1.7E+308</em></li>
+  <li><strong>Size</strong>: <em>8 bytes</em></li>
+  <li><strong>Format Specifier</strong>: <em>%lf</em></li>
+</ul>
+
+<p>Example:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">double</span> <span class="n">big_double_number</span><span class="p">;</span> 
+<span class="n">big_double_number</span> <span class="o">=</span> <span class="mi">123456789</span><span class="p">.</span><span class="mi">123456</span><span class="p">;</span></code></pre></figure>
+
+<h4 id="void">void</h4>
+
+<p>The void data type in C is used to indicate that no value exists. It does not return a result value to its caller. It has no values and no operations. It is used to represent nothing. Void is used in a variety of ways: as the return type of functions, as void function arguments, and as pointers to void.</p>
+
+<h4 id="data-type-modifiers">Data type modifiers</h4>
+
+<p>In C, the size and/or range of a basic data type can be adjusted using <strong>datatype modifiers</strong>.</p>
+
+<ul>
+  <li>
+    <p><strong>signed</strong>: <em>This modifier allows a type to store both negative and positive numbers. By default, most types are signed (so “int” is “signed int”).</em></p>
+  </li>
+  <li>
+    <p><strong>unsigned</strong>: <em>This one restricts the type to only positive values and zero. It gives you more positive range at the cost of not being able to store negative numbers.</em></p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">signed</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span><span class="p">;</span>   <span class="c1">// can hold negative and positive values</span>
+<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>  <span class="c1">// only positive values</span></code></pre></figure>
+
+<ul>
+  <li>
+    <p><strong>short</strong>: <em>This modifier reduces the size of a type (usually half the size of the standard one). It’s typically used with “int”.</em></p>
+  </li>
+  <li>
+    <p><strong>long</strong>: <em>This one increases the size of a type (usually double the size of the standard one).</em></p>
+  </li>
+  <li>
+    <p><strong>long long</strong>: <em>This is even longer—often providing a size twice that of “long”.</em></p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">short</span> <span class="kt">int</span> <span class="n">small</span> <span class="o">=</span> <span class="mi">32767</span><span class="p">;</span>      <span class="c1">// smaller range</span>
+<span class="kt">long</span> <span class="kt">int</span> <span class="n">large</span> <span class="o">=</span> <span class="mi">123456789</span><span class="p">;</span>   <span class="c1">// larger range</span>
+<span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">very_large</span> <span class="o">=</span> <span class="mi">1234567890123456789</span><span class="p">;</span> <span class="c1">// huge range</span></code></pre></figure>
+
+<ul>
+  <li><strong>long long with unsigned</strong> : <em>You can combine “long long” with “unsigned” for some *seriously big numbers.</em></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">big_unsigned</span> <span class="o">=</span> <span class="mi">18446744073709551615</span><span class="p">;</span></code></pre></figure>
+
+<p>The following table will help you better understand the modifiers:</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Modifier</th>
+        <th style="text-align: center">Size (in bytes)</th>
+        <th style="text-align: center">Range (32-bit)</th>
+        <th style="text-align: center">Format Specifier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>signed int</td>
+        <td style="text-align: center">4</td>
+        <td style="text-align: center">-2,147,483,648 to 2,147,483,647</td>
+        <td style="text-align: center">%d</td>
+      </tr>
+      <tr>
+        <td>unsigned int</td>
+        <td style="text-align: center">4</td>
+        <td style="text-align: center">0 to 4,294,967,295</td>
+        <td style="text-align: center">%u</td>
+      </tr>
+      <tr>
+        <td>short int</td>
+        <td style="text-align: center">2</td>
+        <td style="text-align: center">-32,768 to 32,767</td>
+        <td style="text-align: center">%hd</td>
+      </tr>
+      <tr>
+        <td>unsigned short int</td>
+        <td style="text-align: center">2</td>
+        <td style="text-align: center">0 to 65,535</td>
+        <td style="text-align: center">%hu</td>
+      </tr>
+      <tr>
+        <td>long int</td>
+        <td style="text-align: center">4</td>
+        <td style="text-align: center">-2,147,483,648 to 2,147,483,647</td>
+        <td style="text-align: center">%ld</td>
+      </tr>
+      <tr>
+        <td>unsigned long int</td>
+        <td style="text-align: center">4</td>
+        <td style="text-align: center">0 to 4,294,967,295</td>
+        <td style="text-align: center">%lu</td>
+      </tr>
+      <tr>
+        <td>long long int</td>
+        <td style="text-align: center">8</td>
+        <td style="text-align: center">-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+        <td style="text-align: center">%lld</td>
+      </tr>
+      <tr>
+        <td>unsigned long long</td>
+        <td style="text-align: center">8</td>
+        <td style="text-align: center">0 to 18,446,744,073,709,551,615</td>
+        <td style="text-align: center">%llu</td>
+      </tr>
+      <tr>
+        <td>signed char</td>
+        <td style="text-align: center">1</td>
+        <td style="text-align: center">-128 to 127</td>
+        <td style="text-align: center">%c</td>
+      </tr>
+      <tr>
+        <td>unsigned char</td>
+        <td style="text-align: center">1</td>
+        <td style="text-align: center">0 to 255</td>
+        <td style="text-align: center">%hhu</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ul>
+  <li>
+    <p>Use “unsigned” when you know your values can never be negative and you want to maximize the range of positive numbers.</p>
+  </li>
+  <li>
+    <p>“short” and “long” are good for adjusting memory usage or working with very large numbers when precision is important.</p>
+  </li>
+  <li>
+    <p>Use “long long” if you need to store exceptionally large numbers, like for handling big data.</p>
+  </li>
+</ul>
+
+<p>Here is a small code example that illustrates what we’ve learned so far:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Integer Types</span>
+  <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>                <span class="c1">// Integer (int)</span>
+  <span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>              <span class="c1">// Short integer (short)</span>
+  <span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">100000L</span><span class="p">;</span>          <span class="c1">// Long integer (long)</span>
+  <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span> <span class="o">=</span> <span class="mi">1234567890LL</span><span class="p">;</span> <span class="c1">// Long long integer (long long)</span>
+
+  <span class="c1">// Floating Point Types</span>
+  <span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">14</span><span class="n">f</span><span class="p">;</span>           <span class="c1">// Float (float)</span>
+  <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">141592653589793</span><span class="p">;</span> <span class="c1">// Double (double)</span>
+
+  <span class="c1">// Character Type</span>
+  <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span>              <span class="c1">// Character (char)</span>
+  <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">uc</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>    <span class="c1">// Unsigned character (unsigned char)</span>
+
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Integer (int): %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Short integer (short): %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Long integer (long): %ld</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">l</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Long long integer (long long): %lld</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">ll</span><span class="p">);</span>
+
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Float (float): %f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">f</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Double (double): %f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
+
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Character (char): %c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Unsigned char (unsigned char): %hhu</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">uc</span><span class="p">);</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="derived-data-types">Derived Data Types</h3>
+
+<p>Derived Data Types are derived from Primitive Data Types!</p>
+
+<p>C provides three derived data types:</p>
+
+<ol>
+  <li>Function</li>
+  <li>Array</li>
+  <li>Pointer</li>
+</ol>
+
+<h3 id="user-defined-data-types">User-Defined Data Types</h3>
+
+<p>User-Defined Data Types are those defined by the user. These data types are derivatives of the existing data types.</p>
+
+<p>There are 4 types of user-defined data types in C. They are:</p>
+
+<ol>
+  <li>Structure</li>
+  <li>Union</li>
+  <li>Enum</li>
+  <li>Typedef</li>
+</ol>
+
+<blockquote>
+  <p>Now things get a bit more complicated and you need to pay close attention, so I won’t go into that in this lesson, but rather do separate lessons for better understanding.</p>
+</blockquote>
+
+<p>Don’t worry, you’re going to understand it all in the next few lessons…</p>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>AFOS-NG - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="What is AFOS-NG Package Manager? AFOS-NG vs APT, AFOS-NG Usage, How to create custom AFOS-NG repository" />
+        <meta property="og:title" content="AFOS-NG" />
+        <meta property="og:description" content="What is AFOS-NG Package Manager? AFOS-NG vs APT, AFOS-NG Usage, How to create custom AFOS-NG repository" />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/andrax-documentation/andrax-afos.svg" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="AFOS-NG">
+        <meta name="twitter:description" content="What is AFOS-NG Package Manager? AFOS-NG vs APT, AFOS-NG Usage, How to create custom AFOS-NG repository">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/andrax-documentation/andrax-afos.svg">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/andrax-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/andrax-documentation/andrax-afos.svg" alt="AFOS-NG">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">AFOS-NG</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">What is AFOS-NG Package Manager? AFOS-NG vs APT, AFOS-NG Usage, How to create custom AFOS-NG repository </p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/snake-security-front-black.png" class="rounded-circle rounded-border-green" alt="SNAKE Security - Just one bite">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/about"><b>SNAKE Security TEAM</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">What is AFOS-NG?</h1>
+
+<p>AFOS-NG is a package manager specifically designed for installing and managing Hacking tools.</p>
+
+<p>Written in C, AFOS has relatively simple code following <a href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a> (Keep It Simple, Stupid!).</p>
+
+<p>It is perfectly aligned with the HARD-BASED and SFB (Simple, Fast, Bullshitless) guidelines.</p>
+
+<h2 style="text-align:left">AFOS-NG vs APT</h2>
+
+<p>AFOS-NG should not be compared to APT in any way, the 2 tools have completely different purposes and work completely differently.</p>
+
+<p>In fact, in ANDRAX-NG we use APT to update and install packages in the “core” of the platform while AFOS-NG takes care of installing and keeping the hacking tools up to date.</p>
+
+<p>Having said that, let’s take a look at a few points…</p>
+
+<p>APT is a great package manager but for the average user… for Hacking? Not really!</p>
+
+<p>It is extremely complex to create and maintain a repository, package versions… not to mention that APT has a very poor dependency system because packages are precompiled…</p>
+
+<h3 style="text-align:left">PRE-Compiled vs Source Code</h3>
+
+<p>APT works with precompiled packages, i.e. everything you install has been compiled on someone else’s machine, which can lead to many problems such as: incompatibility, performance loss, dependency failure… Backdoors; Like the backdoor in liblzma (xz) that affected all <strong>Kali Linux</strong> users <strong><em>and probably sent several of them to jail</em></strong>!</p>
+
+<p>AFOS-NG, on the other hand, works from source (it can also work in precompiled mode in very special cases!) This means that the source code of the package is downloaded to your machine and then compiled, ensuring that everything works properly and the runtime processes are updated by compilers to promote maximum performance.</p>
+
+<h3 style="text-align:left">Repository</h3>
+
+<p>APT is not repository friendly… if you want to create an APT repository, you have to spend a lot of time, a big server with a lot of bandwidth, at least 10Gbps, and pray that everything works without problems… Just search; “how to create a repository for APT” and check how much headache you will have!</p>
+
+<p>And that’s not even considering that you’re going to have to compile hundreds of packages just to satisfy the dependencies…</p>
+
+<p>AFOS-NG uses GIT-based repositories, i.e. you can create a repository on GITHUB or any other platform!</p>
+
+<p>With AFOS-NG, you have the practicality and flexibility to create your own repository or customize an existing git repository! This is REAL freedom!</p>
+
+<h2 style="text-align:left">AFOS-NG Usage</h2>
+
+<p>AFOS-NG usage is pretty simple!</p>
+
+<p><img style="max-height: 800px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-afos/afos-ng-help.png" alt="AFOS-NG Help" title="AFOS-NG Help" /></p>
+
+<h3 style="text-align:left">AFOS-NG Packages on REPO</h3>
+
+<p>The AFOS-NG repository list file is located at: <strong>/opt/AFOS/afos.list</strong> in ANDRAX-NG container each line is treated as a different repository.</p>
+
+<p><em>If this file does not exist, AFOS-NG will use the url that is hardcoded in the source code.</em></p>
+
+<p>All packages in the repository can be easily listed by AFOS-NG. Just use the <strong>--repo</strong> (-r) flag:</p>
+
+<p><img style="max-height: 800px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-afos/afos-ng-repo-list.png" alt="AFOS-NG Repo list" title="AFOS-NG Repo list" /></p>
+
+<h3 style="text-align:left">List Installed Packages</h3>
+
+<p>You can use the <strong>--list</strong> (-l) flag to list the packages that are currently installed (by AFOS-NG).</p>
+
+<p><img style="max-height: 800px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-afos/afos-ng-list-packages.png" alt="AFOS-NG list installed packages" title="AFOS-NG list installed packages" /></p>
+
+<h3 style="text-align:left">Install packages</h3>
+
+<p>To install packages using AFOS-NG you can use <strong>--install</strong> or simply -i only the first argument will be treated, the others will be ignored.</p>
+
+<h3 style="text-align:left">Update packages</h3>
+
+<p>AFOS-NG update system is a little different from other package managers, <strong>--update</strong> is used only to list the packages that are available for update in the repository.</p>
+
+<p>You can use <strong>--install</strong> to install the update (AFOS-NG doesn’t care if it’s already installed) or use <strong>--update-all</strong> to update all packages automatically.</p>
+
+<h2 style="text-align:left">Custom Repository</h2>
+
+<p>AFOS-NG is based on the GIT protocol, so the first step in creating an AFOS-NG repository is to create a GIT repository, which will be the database and the Online Source Control.</p>
+
+<p>This may sound a bit complex at first glance, but you’ll find that it’s actually quite simple.</p>
+
+<p>Check the official AFOS Repository on <a href="https://github.com/snakesec/afos-ng">GITHUB</a>.</p>
+
+<p><strong>repository/afos.yaml</strong> is the file that stores the data of all packages available in the repository. It’s a <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>-based structure.</p>
+
+<p>Here’s an example of how the NMAP package is structured in this file:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">nmap</span>
+    <span class="na">version</span><span class="pi">:</span> <span class="s">7.95.0</span>
+    <span class="na">description</span><span class="pi">:</span> <span class="s">Advanced Network Mapper</span>
+    <span class="na">categories</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">Information Gathering</span>
+    <span class="pi">-</span> <span class="s">Scanning</span>
+    <span class="na">repo_url</span><span class="pi">:</span> <span class="s">github.com/snakesec/nmap</span>
+    <span class="na">original_repo_url</span><span class="pi">:</span> <span class="s">nmap.org/download.html</span></code></pre></figure>
+
+<h3 style="text-align:left">AFOSBUILD.sh</h3>
+
+<p>Every AFOS repository needs to have an “AFOSBUILD.sh” file in its root, this file is responsible for storing all the instructions for compiling, installing… the package.</p>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

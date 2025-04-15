@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>Computer Networks Wiring - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="Introduction to Networking Connectors and Wiring Standards... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="Computer Networks Wiring" />
+        <meta property="og:description" content="Introduction to Networking Connectors and Wiring Standards... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/computer-networks/wiring/t568b.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Computer Networks Wiring">
+        <meta name="twitter:description" content="Introduction to Networking Connectors and Wiring Standards... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/computer-networks/wiring/t568b.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/computer-networks/wiring/t568b.png" alt="Computer Networks Wiring">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">Computer Networks Wiring</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">Introduction to Networking Connectors and Wiring Standards...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">Physical Media</h1>
+
+<p>Even though most of what we use in our homes and even on the street today are wireless networks, these networks still rely on physical connections somewhere, be it in the backbone, tower connection, and/or data centers.</p>
+
+<p>The most common types of physical connections in today’s networks are:</p>
+
+<ul>
+  <li><strong>Twisted-pair</strong></li>
+  <li><strong>Fiber optic</strong></li>
+</ul>
+
+<h3 id="twisted-pair-cable">Twisted-Pair Cable</h3>
+
+<p>A twisted-pair cable is made up of a number of individually insulated wires that are twisted together in pairs. It is sometimes called shielded twisted-pair (STP) because a metallic shield is placed around it. Cable without an outer shield is used in twisted-pair Ethernet networks (10BaseT, 100BaseTX, 1000BaseTX, 10GBaseT, and 40GBaseT) and is called unshielded twisted-pair (UTP).</p>
+
+<h3 id="twinaxial-cable">Twinaxial Cable</h3>
+
+<p>For short distance, high speed connections such as 10 and 40G Ethernet connections in a data center, Twinaxial cabling is used. Twinaxial cabling is also known as Twinax cabling. The advantage of using twinaxial cabling is that there is a significant cost savings compared to fiber optic cabling, as twinaxial cabling is based on copper. Using these cables can be a significant cost savings if your distance is 10 meters or less.</p>
+
+<h2 id="ethernet-cables">Ethernet Cables</h2>
+
+<p>A code that follows this format is used to describe Ethernet cable types: <strong>N</strong> <em>&lt;Signaling&gt;</em> <strong>X</strong>.</p>
+
+<ul>
+  <li><strong>N</strong> : <em>refers to the signaling rate in megabits per second.</em></li>
+  <li><strong>&lt;Signaling&gt;</strong> : <em>represents the type of signaling either baseband or broadband</em></li>
+  <li><strong>X</strong> : <em>is a unique identifier for a particular Ethernet cabling scheme</em></li>
+</ul>
+
+<p>Example: 100BaseX. The 100 tells us that the transmission speed is 100 Mb, or 100 megabits. The value of the X can mean a number of different things; for example, a T is short for twisted pair. This is the standard for running 100 megabit Ethernet over two pairs (four wires) of Category 5, 5e, 6, 6a, 7, and 8 UTP.</p>
+
+<p>So why are the wires twisted in this type of cable? Because interference, called crosstalk, occurs when electromagnetic signals are conducted on copper wires in close proximity, such as inside a cable. By twisting two wires together as a pair, the interference is minimized and even protected against interference from outside sources. This type of cable is the most common today. The reasons are as follows:</p>
+
+<ul>
+  <li>It’s less expensive than other types of cabling.</li>
+  <li>It is easy to do the work.</li>
+  <li>It allows you to transmit at speeds that were impossible to achieve even 10 years ago.</li>
+</ul>
+
+<p>These are the categories for UTP cable:</p>
+
+<ul>
+  <li>
+    <p><strong>Cat 1</strong> : <em>Two twisted pairs (four wires). This is the oldest type and is only voice grade - it’s not designed for data communications. It is referred to as plain old telephone service (POTS). Prior to 1983, this was the standard cable used throughout the North American telephone system. POTS cable still exists in parts of the Public Switched Telephone Network (PSTN) and supports signals limited to the 1 MHz frequency range.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 2</strong> : <em>Four twisted pairs (eight wires). It can handle up to 4 Mbps with a frequency limit of 10 MHz. It is now obsolete.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 3</strong> : <em>Four twisted pairs (eight wires) with three twists per foot. Transmissions up to 16 MHz can be handled with this type. It was popular in the mid-1980s for up to 10 Mbps Ethernet. It’s now limited to telecommunications equipment and is obsolete for networking.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 4</strong> : <em>Four pairs of twisted wires (eight wires), rated for 20 MHz; also obsolete.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 5</strong> : <em>Four twisted pairs (eight wires) used for 100BaseTX (two-pair wiring) and rated at 100 MHz.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 5e</strong> (Enhanced) : <em>Four twisted pairs (eight wires), recommended for 1000BaseT (four-pair wiring) and rated at 100 MHz, but capable of handling the interference on each pair caused by transmitting on all four pairs simultaneously a feature required for Gigabit Ethernet.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 6</strong> : <em>Four twisted pairs (eight wires) used for 1000BaseTX (two-pair wiring) and rated at 250 MHz. Cat 6 became a standard in June 2002.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 6A</strong> (Augmented) : <em>Designed to operate at 500 MHz with improved crosstalk properties, allowing 10GBaseT to run up to 100 meters (standard Cat 6 cable has a reduced maximum length when used for 10GBaseT). The most important point is a performance difference between the component specifications of the Electronic Industries Alliance and the Telecommunications Industry Association (EIA/TIA) for the transmission parameter NEXT (Near End Crosstalk). At a frequency of 500 MHz, an ISO/IEC Cat 6A connector provides twice the performance (3 dB) of a Cat 6A connector that meets the EIA/TIA specification. Note that 3 dB is equivalent to a 100 percent increase in the reduction of crosstalk noise at the near end.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 7</strong> : <em>Enables 10 Gigabit Ethernet over 100 meters of copper cabling. The cable contains four twisted pairs of copper wires, as in previous standards.</em></p>
+  </li>
+  <li>
+    <p><strong>Cat 8</strong> : <em>Designed to meet the ever-increasing speed of Ethernet, it now supports 25G and 40G transmission over 30 meters, making it ideal for data center deployments.</em></p>
+  </li>
+</ul>
+
+<p>Today, any cable installed should be at least Cat 5e, as some cables are now certified to carry signals with a bandwidth of 350 MHz or more. This allows unshielded twisted-pair cable to exceed speeds of 1 Gbps-fast enough to transmit broadcast-quality video over a network.</p>
+
+<h2 id="connecting-utp">Connecting UTP</h2>
+
+<p>UTP uses <strong>RJ</strong> <em>(registered jack)</em> connectors, which are crimped. We don’t use RJ-11 for LANs, but we do use them for our home Digital Subscriber Line (DSL) connections.</p>
+
+<p>RJ-11 uses two pairs of wires and RJ-45 uses four pairs of wires.</p>
+
+<p>There is another type of copper connector called RJ-48c, which looks exactly like an RJ-45 connector. This connector is similar to the RJ-45 in that it has four pairs of wires, but they are wired differently and used for different circumstances.</p>
+
+<p>RJ-45 connector with T568B specification:</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/rj45-wiring.png" alt="RJ45 Wiring" title="RJ45 Wiring" /></p>
+
+<p>RJ-45 is primarily used in short-haul LANs (typically up to 100 meters). The RJ-48c wiring type would be used with a T1 connection, which is a long-haul wide area network (WAN). In addition, RJ-48c wiring is typically shielded to protect the signal. RJ-45 wiring is unshielded.</p>
+
+<h2 id="fiber-optic-cable">Fiber-Optic Cable</h2>
+
+<p>Fiber-optic cable doesn’t use electricity to transmit digital signals. Instead, it uses light pulses, making it immune to EMI and RFI.</p>
+
+<p>Fiber-optic cable allows light pulses to be carried on either a core of glass or a core of plastic. Plastic costs less than glass, but glass can carry the signal farther. Regardless of the type of core, it’s surrounded by a cladding of either glass or plastic with a different index of refraction, which reflects the light back into the core. This is surrounded by a layer of flexible plastic buffer, which can be wrapped in armor, usually Kevlar, which is then wrapped in PVC or plenum.</p>
+
+<p>The cable itself comes in either single-mode or multimode fiber; the difference between them is the number of light beams (the number of signals) they can carry. Multimode fiber is most commonly used for shorter distance applications and single mode fiber is used for longer distances.</p>
+
+<p>Fiber-optic cable may sound like the solution to many problems. However, just like any other type of cable, it has its pros and cons.</p>
+
+<p>Here are some of the advantages of fiber-optic cable:</p>
+
+<ul>
+  <li>It’s completely immune to EMI and RFI.</li>
+  <li>It can transmit up to 40 kilometers (about 25 miles).</li>
+</ul>
+
+<p>And here are the disadvantages of using fiber-optic cable:</p>
+
+<ul>
+  <li>It’s difficult to install.</li>
+  <li>It’s more expensive than twisted-pair.</li>
+  <li>The cost of troubleshooting equipment is higher than that of twisted-pair test equipment.</li>
+  <li>It’s harder to troubleshoot.</li>
+</ul>
+
+<h3 id="single-mode-fiber">Single-Mode Fiber</h3>
+
+<p>A <strong>Single-mode fiber-optic</strong> <em>(SMF)</em> cable is a very high-speed, long-distance medium that consists of a single strand - sometimes two strands - of glass fiber that carries the signals. The light sources used in SMF are light-emitting diodes (LEDs) and lasers. To create communication, the light source is transmitted and pulsed from end to end. Because it can transmit data up to 90 times farther than multimode fiber at a faster rate, this type of fiber is used to cover very long distances. Depending on the transceiver used, that’s 40 to 80 kilometers!</p>
+
+<h3 id="multimode-fiber">Multimode Fiber</h3>
+
+<p><strong>Multimode fiber-optic</strong> <em>(MMF)</em> cable also uses light to transmit a signal, but in this case the light is scattered over a number of paths as it travels through the core and is reflected back. To line the core and focus the light back onto it, a special material called cladding is used. MMF provides a high bandwidth at high speeds over medium distances (up to about 3,000 feet), but it can be very inconsistent over longer distances. For this reason, MMF is most commonly used within a smaller area of a building. SMF can be used between buildings.</p>
+
+<h3 id="fiber-connectors">Fiber Connectors</h3>
+
+<p>In a fiber optic installation, there are several different fiber connectors that can be used. In a fiber optic installation, each fiber connector has an advantage or purpose. The visual differences between fiber connectors and their names are important to know.</p>
+
+<h4 id="straight-tip">Straight Tip</h4>
+
+<p>The <strong>Straight Tip</strong> <em>(ST)</em> connector was originally designed by AT&amp;T for fiber optic cable. It is commonly used with the single mode fiber discussed earlier.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/st-connector.png" alt="ST Connector" title="ST Connector" /></p>
+
+<p>It is one of the most popular connectors used with fiber for WAN connectivity on SMF. The cable connector can be found in both SMF and MMF cable installations. The cable operates much like a BNC connector; it is a bayonet-style mechanism that you twist and lock into place. The advantage of this cable is that it will not come loose over time due to the positive locking mechanism.</p>
+
+<h4 id="ferrule">Ferrule</h4>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/fc-connector.png" alt="FC Connector" title="FC Connector" /></p>
+
+<p>The <strong>Ferrule Connector</strong> <em>(FC)</em> is a fiber-optic connector with a threaded body, which was designed for use in high-vibration environments. It is commonly used with both single-mode optical fiber and polarization-maintaining optical fiber. FC connectors are used in datacom, telecommunications, measurement equipment, and single-mode lasers. They are becoming less common, displaced by SC and LC connectors.</p>
+
+<p>It looks the same as the ST connector, but it has a screw mechanism in place of the BNC connector.</p>
+
+<h4 id="subscriber">Subscriber</h4>
+
+<p>The <strong>Subscriber Connector</strong> <em>(SC)</em> is a square connector with a floating ferrule that holds the fiber optic cable. The cable is supplied with a plastic clip that holds the transmit cable and the receive cable securely in place for insertion. In general, these clips allow the ends of the cable to be disassembled so that the transmit and receive cables can be interchanged.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/subscriber-connector.png" alt="Subscriber Connector" title="Subscriber Connector" /></p>
+
+<p>It is found on both SMF and MMF systems, but is most commonly found on MMF systems.</p>
+
+<p>The SC connector is starting to be replaced in new installations because it is larger than most modern connectors.</p>
+
+<h4 id="small-form-factor">Small Form Factor</h4>
+
+<p>Another type of fiber-optic connector is the <strong>Small Form Factor</strong> <em>(SFF)</em> connector. This connector allows more fiber optic terminations in the same amount of space than its standard-sized counterparts.</p>
+
+<p>The three most popular versions are AMP’s <strong>Mechanical Transfer Registered Jacks</strong> <em>(MT-RJ/MTRJ)</em>, Lucent’s <strong>Local Connection</strong> <em>(LC)</em>, and NTT Group’s developed and licensed <strong>Multifiber Push-On</strong> <em>(MPO)</em>.</p>
+
+<h5 id="mt-rj">MT-RJ</h5>
+
+<p>The MT-RJ fiber-optic connector was the first small form factor fiber optic connector to be widely adopted, and it’s only one-third the size of the SC and ST connectors it most commonly replaces.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/mtrj-connector.png" alt="MT-RJ Connector" title="MT-RJ Connector" /></p>
+
+<p>It offers these advantages:</p>
+
+<ul>
+  <li>Small size</li>
+  <li>TX and RX strands in one connector</li>
+  <li>Keyed for single polarity</li>
+  <li>Pre-terminated ends that require no polishing or epoxy</li>
+  <li>Easy to use</li>
+</ul>
+
+<h5 id="lc">LC</h5>
+
+<p>The <strong>Local Connector</strong> <em>(LC)</em> resembles an RJ-style connector; it has a spring-loaded latch similar to the RJ that holds it in place. The LC connector is a popular cable connector that is small enough to allow higher port densities on a switch. Commonly found on MMF and SMF optical cables. It is not possible to disassemble the cable as with the SC connector.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/lc-connector.png" alt="LC Connector" title="LC Connector" /></p>
+
+<h5 id="mpo">MPO</h5>
+
+<p>The <strong>Multifiber Push-On</strong> <em>(MPO)</em> Connector is another high density SFF fiber connector. It provides 2, 8, 12 or 24 fiber connections in a single connector.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/mpo-connector.png" alt="MPO Connector" title="MPO Connector" /></p>
+
+<h4 id="apc-vs-upc">APC vs UPC</h4>
+
+<p><strong>Angled Physical Contact</strong> <em>(APC)</em> and <strong>Ultra Physical Contact</strong> <em>(UPC)</em> is not a connector; it is a termination on the connector end to curb optical decibel loss. Choosing between APC and UPC can make a big difference in your network performance.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/apc-vs-upc.png" alt="APC vs UPC" title="APC vs UPC" /></p>
+
+<p>The ultra-polished connector looks just like what you’d expect to find on the end of a fiber-optic cable. It has a perfectly straight cut.</p>
+
+<p>The angle-polished Connector has a perfect angle cut to it. There’s an obvious reason why.</p>
+
+<p>While the UPC connector reflects the light back to the fiber core causing a loss effect called “return loss”, the APC connector does not suffer from this problem because the angled cut reflects the light on the sides of the glass cladding instead of the core.</p>
+
+<h2 id="fiber-distribution-panel">Fiber Distribution Panel</h2>
+
+<p>Fiber Distribution Panels (FDPs) are designed to terminate and distribute fiber-optic cable installations. The FDP consists of a cable management tray and a splice tray. Designed for central offices, remote offices, and LANs using fiber.</p>
+
+<h2 id="fiber-optic-transceivers">Fiber-Optic Transceivers</h2>
+
+<p>Fiber-optic transceivers can be either uni-directional (simplex) or bi-directional (duplex).</p>
+
+<ul>
+  <li><strong>uni-directional</strong> : <em>A fiber-optic cable is uni-directional when it can only transmit data in one direction, either from the source to the destination or vice versa.</em></li>
+  <li><strong>bi-directional</strong> : <em>A bi-directional fiber optic cable is capable of transmitting data in both directions at the same time.</em></li>
+</ul>
+
+<p>By separating the transmission wavelengths of the two devices, communication over a single strand of fiber is achieved, as shown in the following figure.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/fiber-bidirectional.png" alt="Bi-directional communication" title="Bi-directional communication" /></p>
+
+<h2 id="transceivers">Transceivers</h2>
+
+<p>A transceiver is a device that consists of both a transmitter and a receiver, which are combined together and share a common circuit or a single housing. This term refers to wireless communication devices such as cell phones, cordless phones, portable and mobile radio devices. It is sometimes used to refer to cable or fiber optic transmission and reception equipment.</p>
+
+<h3 id="sfp">SFP</h3>
+
+<p>The <strong>Small Form Factor Pluggable</strong> <em>(SFP)</em> is a compact pluggable optical module transceiver for telecom and data applications. The <strong>Enhanced Small Form Factor Pluggable</strong> <em>(SFP+)</em> transceiver is an enhanced version of the SFP that supports data rates up to 16 Gbps.</p>
+
+<h3 id="qsfp">QSFP</h3>
+
+<p>The <strong>Quad Small Form Pluggable</strong> <em>(QSFP)</em> is another compact, hot-pluggable transceiver used in data communications applications. It provides an interface between a fiber optic cable or active or passive copper electrical connection and network hardware (such as servers and switches). It enables data rates ranging from 4x1 Gbps for QSFP and 4x10 Gbps for QSFP+ to the highest rate of 4x28 Gbps, known as QSFP28. This is used for 100 Gbps links.</p>
+
+<h2 id="media-converters">Media Converters</h2>
+
+<p>Sometimes it’s necessary to change between different types of media. You may need to go from one type of fiber to another type of fiber, or in an even more extreme case, you may need to go from fiber to Ethernet. If you find yourself in this position, it’s important to understand some of the more common media conversion devices:</p>
+
+<h3 id="single-mode-fiber-to-ethernet">Single-Mode Fiber to Ethernet</h3>
+
+<p>These devices convert the signal from Ethernet and single-mode fiber by accepting one fiber connector and one Ethernet connector.</p>
+
+<h3 id="multimode-fiber-to-ethernet">Multimode Fiber to Ethernet</h3>
+
+<p>These devices convert the signal from Ethernet and multimode fiber by accepting one fiber connector and one Ethernet connector.</p>
+
+<h3 id="single-mode-to-multimode-fiber">Single-Mode to Multimode Fiber</h3>
+
+<p>These devices take one singlemode fiber connector and one multimode fiber connector and convert the signals between them.</p>
+
+<h2 id="wiring-standards">Wiring Standards</h2>
+
+<p>Ethernet cabling, especially if you’re planning to work on a LAN, is an important thing to understand. There are several different types of cabling standards that are available:</p>
+
+<ul>
+  <li><strong>T568A</strong></li>
+  <li><strong>T568B</strong></li>
+  <li><strong>Straight-through</strong></li>
+  <li><strong>Crossover</strong></li>
+  <li><strong>Rolled/rollover</strong></li>
+</ul>
+
+<h3 id="t568a-vs-t568b">T568A vs. T568B</h3>
+
+<p>Look inside a network cable and you’ll find four pairs of wires twisted to prevent crosstalk; they’re also twisted to prevent EMI and eavesdropping. The same colors of pins must be used throughout a network for reception and transmission, but how do you decide which color wire goes to which pin? Good news, you don’t have to decide.</p>
+
+<p>Although there is not 100% agreement, there are two cabling standards that have been agreed upon by more than 60 vendors, including AT&amp;T, 3Com (acquired by HP), and Cisco. This means that over the years, some network jacks have used the T568A standard and some have used the T568B standard, which can cause a bit of confusion if you don’t know what you’re dealing with on your network.</p>
+
+<p>If you look at the illustration below, you will see that the green pair is used for pins 1 and 2, but the orange pair is split to pins 3 and 6, separated by the blue pair. This is the specification: T568A</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/t568a.png" alt="T568A" title="T568A" /></p>
+
+<p>Now take a look at the T568B standard in the illustration below. The orange pairs are pins 1 and 2 and the green pairs are pins 3 and 6, separated by the blue pairs.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/t568b.png" alt="T568B" title="T568B" /></p>
+
+<p>Remember, we are using the T568A standard and creating the kind of straight-through cable that is regularly implemented as a regular patch cable for most networks if we connect the green-white, green, orange-white, and orange wires to pins 1, 2, 3, and 6, respectively, on both sides of the cable. On the other hand, we’ve created a crossover cable for most networks by switching from pin 1 to pin 3 and pin 2 to pin 6 on one side only. Let’s see how that works out.</p>
+
+<h4 id="straight-through-cable">Straight-Through Cable</h4>
+
+<p>To connect a host to a switch or hub, or a router to a switch or hub, use the straight-through cable.</p>
+
+<p>To connect 10/100 Ethernet devices, four wires are used in a straight-through cable. It’s actually quite easy to do this; the figure below shows the four wires that are used in a straight-through Ethernet cable.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/straight-through-cable.png" alt="Straight-Through Cable" title="Straight-Through Cable" /></p>
+
+<p>Note that only pins 1, 2, 3 and 6 are used. Connect 1 to 1, 2 to 2, 3 to 3, and 6 to 6 and you’re up and networking in no time. Keep in mind that this is a 10/100 Ethernet-only cable, so it won’t work with 1000 Mbps or higher Ethernet.</p>
+
+<h4 id="crossover-cable">Crossover Cable</h4>
+
+<p>This cable uses the same four wires, and just like the straight-through cable, you simply connect the different pins together. Crossover cables can be used to connect these devices:</p>
+
+<ul>
+  <li><strong>Switch to switch</strong></li>
+  <li><strong>Hub to hub</strong></li>
+  <li><strong>Host to host</strong></li>
+  <li><strong>Hub to switch</strong></li>
+  <li><strong>Router direct to host</strong></li>
+</ul>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/crossover-cable.png" alt="Crossover Cable" title="Crossover Cable" /></p>
+
+<p>OK, did you notice that we did not connect pins 1 with 1, 2 with 2, and so forth, but rather pins 1 with 3 and 2 with 6? Crossover cables are commonly used for connecting two switches, or for directly testing communication between two workstations.</p>
+
+<p>Only Ethernet UTP installations use a crossover cable. You can use it to directly connect two workstation NICs or to directly connect a workstation and a server NIC.</p>
+
+<p>This is what it would look like if you tried to match the straight-through and crossover cables to the T568A and T568B standards:</p>
+
+<ul>
+  <li><strong>T568A+T568A</strong> : <em>straight-through</em></li>
+  <li><strong>T568B+T568B</strong> : <em>straight-through</em></li>
+  <li><strong>T568A+T568B</strong> : <em>crossover</em></li>
+</ul>
+
+<h4 id="utp-gigabit-wiring-1000baset">UTP Gigabit Wiring (1000BaseT)</h4>
+
+<p>The previous examples of 10BaseT and 100BaseT UTP wiring used only two pairs of wires, but that’s not enough for Gigabit UTP transmission.</p>
+
+<p>The 1000BaseT UTP wiring requires four pairs of wires and uses more advanced electronics so that each pair in the cable can transmit at the same time. However, except for using the other two pairs in the cable, Gigabit wiring is almost identical to the 10/100 example.</p>
+
+<p>Crossover 1000BaseT UTP Cable:</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/wiring/crossover-1000baset.png" alt="Crossover 1000BaseT" title="Crossover 1000BaseT" /></p>
+
+<p><em>NOTE:</em></p>
+
+<p>It is still 1 to 1, 2 to 2, and so on up to pin 8 for make a straight-through Gigabit cable.</p>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

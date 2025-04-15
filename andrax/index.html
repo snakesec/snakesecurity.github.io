@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>ANDRAX-NG - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="Advanced Ethical Hacking and Penetration Testing platform for Desktop, Laptop, Android devices, Raspberry Pi..." />
+        <meta property="og:title" content="ANDRAX-NG" />
+        <meta property="og:description" content="Advanced Ethical Hacking and Penetration Testing platform for Desktop, Laptop, Android devices, Raspberry Pi..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/logos/andrax-multiplatform-white-green.svg" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ANDRAX-NG">
+        <meta name="twitter:description" content="Advanced Ethical Hacking and Penetration Testing platform for Desktop, Laptop, Android devices, Raspberry Pi...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/logos/andrax-multiplatform-white-green.svg">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+  
+  
+
+
+
+
+<div class="px-2 text-center" style="padding-top: 80px;padding-bottom: 80px;background-image: url('/images/background/andraxhackingtheholeworld.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-xl-5 ">
+      
+      
+      <img class="mx-lg-auto img-fluid" style="max-height: 500px;" src="/images/logos/andraxng-logo.svg" alt="ANDRAX-NG Choose your destiny">
+      
+    </div>
+    <div class="col-xl-7 my-5">
+      <h1 class="display-4 fw-bold text-body-emphasis"><b><span style='color:#FFF;text-shadow: 0 0 1px #08ff00, 0 0 1px #08ff00, 0 0 3px #08ff00, 0 0 5px #49ff18, 0 0 1px #49FF18, 0 0 3px #49FF18, 0 0 1px #49FF18, 0 0 1px #49ff18;'>Choose your destiny</span></b></h1>
+      
+      <h5 class="fw-bold text-body-emphasis"><b><span style='color:#f00;text-shadow: 1px 1px 1px #f00;'>Don't be evil</span> use <span style='color:#08ff00;text-shadow: 1px 1px 1px #08ff00;'>ANDRAX-NG</span></b></h5>
+      
+      
+        <div class="col-sm-10 col-md-10 mx-auto text_copy_content my-4">
+          <p><strong>Android</strong>, <strong>Desktop</strong>, <strong>Laptop</strong>, <strong>Raspberry Pi</strong>…<br /> Ethical Hacking and Penetration Testing <strong>everywhere</strong> for <strong>everyone</strong>!</p>
+
+      
+      </div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg-5 mx-auto">
+        <div class="gap-3 d-flex d-sm-flex justify-content-center col-md-auto mx-auto">
+          
+          <a href="/andrax-documentation" type="button" class="btn btn-danger btn-lg gap-3 my-1 w-100">Docs</a>
+          
+          <a href="/andrax/download" type="button" class="btn btn-success btn-lg gap-3 my-1 w-100">Download</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="text-center" style="padding-top: 50px;padding-bottom: 30px;background-image: url(''); background-size: cover; background-repeat: no-repeat; background-position: ">
+    <div class="container" style="text-align: center;">
+        <div class="row justify-content-center align-items-center">
+            <h4 class="fw-bold text-body-emphasis section__title">Top ANDRAX-NG Tools</h4>
+            <div class="col-12">
+                <div class="tools-slider">
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="0trace" src="/images/andrax/andrax-ng-tools/0trace.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="adalanche" src="/images/andrax/andrax-ng-tools/adalanche.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="afl" src="/images/andrax/andrax-ng-tools/afl.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="aircrack-ng" src="/images/andrax/andrax-ng-tools/aircrackng.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="amass" src="/images/andrax/andrax-ng-tools/amass.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="amber" src="/images/andrax/andrax-ng-tools/amber.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="apkhunt" src="/images/andrax/andrax-ng-tools/apkhunt.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="apktool" src="/images/andrax/andrax-ng-tools/apktool.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="apple-bleee" src="/images/andrax/andrax-ng-tools/apple-bleee.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="arjun" src="/images/andrax/andrax-ng-tools/arjun.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="arping" src="/images/andrax/andrax-ng-tools/arping.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="barq" src="/images/andrax/andrax-ng-tools/barq.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="bettercap" src="/images/andrax/andrax-ng-tools/bettercap.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="bgpleak" src="/images/andrax/andrax-ng-tools/bgpleak.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="binwalk" src="/images/andrax/andrax-ng-tools/binwalk.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="bitb" src="/images/andrax/andrax-ng-tools/bitb.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="bittwist" src="/images/andrax/andrax-ng-tools/bittwist.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="bopscrk" src="/images/andrax/andrax-ng-tools/bopscrk.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="braa" src="/images/andrax/andrax-ng-tools/braa.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="brakeman" src="/images/andrax/andrax-ng-tools/brakeman.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="bully" src="/images/andrax/andrax-ng-tools/bully.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cadaver" src="/images/andrax/andrax-ng-tools/cadaver.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cameradar" src="/images/andrax/andrax-ng-tools/cameradar.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cansina" src="/images/andrax/andrax-ng-tools/cansina.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cantoolz" src="/images/andrax/andrax-ng-tools/cantoolz.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="capstone" src="/images/andrax/andrax-ng-tools/capstone.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cdpsnarf" src="/images/andrax/andrax-ng-tools/cdpsnarf.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cewl" src="/images/andrax/andrax-ng-tools/cewl.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="chameleon" src="/images/andrax/andrax-ng-tools/chameleon.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="chimera" src="/images/andrax/andrax-ng-tools/chimera.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="chisel" src="/images/andrax/andrax-ng-tools/chisel.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ciscopwdecrypt" src="/images/andrax/andrax-ng-tools/ciscopwdecrypt.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cminer" src="/images/andrax/andrax-ng-tools/cminer.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cmseek" src="/images/andrax/andrax-ng-tools/cmseek.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="commix" src="/images/andrax/andrax-ng-tools/commix.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cowpatty" src="/images/andrax/andrax-ng-tools/cowpatty.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="crackle" src="/images/andrax/andrax-ng-tools/crackle.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="crlfsuite" src="/images/andrax/andrax-ng-tools/crlfsuite.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="crlfuzz" src="/images/andrax/andrax-ng-tools/crlfuzz.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="crunch" src="/images/andrax/andrax-ng-tools/crunch.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="cryptomobile" src="/images/andrax/andrax-ng-tools/cryptomobile.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="delorean" src="/images/andrax/andrax-ng-tools/delorean.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dex2jar" src="/images/andrax/andrax-ng-tools/dex2jar.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dhcpig" src="/images/andrax/andrax-ng-tools/dhcpig.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dirsearch" src="/images/andrax/andrax-ng-tools/dirsearch.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dns2proxy" src="/images/andrax/andrax-ng-tools/dns2proxy.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dns2tcp" src="/images/andrax/andrax-ng-tools/dns2tcp.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dnschef" src="/images/andrax/andrax-ng-tools/dnschef.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dnsrecon" src="/images/andrax/andrax-ng-tools/dnsrecon.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dnsteal" src="/images/andrax/andrax-ng-tools/dnsteal.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dnstwist" src="/images/andrax/andrax-ng-tools/dnstwist.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dnsx" src="/images/andrax/andrax-ng-tools/dnsx.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="docem" src="/images/andrax/andrax-ng-tools/docem.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dotdotpwn" src="/images/andrax/andrax-ng-tools/dotdotpwn.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="dumpsterdiver" src="/images/andrax/andrax-ng-tools/dumpsterdiver.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="espoofer" src="/images/andrax/andrax-ng-tools/espoofer.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="evilginx2" src="/images/andrax/andrax-ng-tools/evilginx2.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="evilssdp" src="/images/andrax/andrax-ng-tools/evilssdp.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="evilwinrm" src="/images/andrax/andrax-ng-tools/evilwinrm.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="exe2hex" src="/images/andrax/andrax-ng-tools/exe2hex.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ffuf" src="/images/andrax/andrax-ng-tools/ffuf.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="findalllinks" src="/images/andrax/andrax-ng-tools/findalllinks.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="firewalk" src="/images/andrax/andrax-ng-tools/firewalk.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="flasm" src="/images/andrax/andrax-ng-tools/flasm.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="forbidden" src="/images/andrax/andrax-ng-tools/forbidden.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="frida-ios-hook" src="/images/andrax/andrax-ng-tools/frida-ios-hook.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="frida" src="/images/andrax/andrax-ng-tools/frida.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="godoh" src="/images/andrax/andrax-ng-tools/godoh.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="gophish" src="/images/andrax/andrax-ng-tools/gophish.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="graphw00lf" src="/images/andrax/andrax-ng-tools/graphw00lf.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="gtp-scan" src="/images/andrax/andrax-ng-tools/gtp-scan.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="h8mail" src="/images/andrax/andrax-ng-tools/h8mail.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="hashboy" src="/images/andrax/andrax-ng-tools/hashboy.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="hashcat" src="/images/andrax/andrax-ng-tools/hashcat.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="hexinject" src="/images/andrax/andrax-ng-tools/hexinject.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="hikpwn" src="/images/andrax/andrax-ng-tools/hikpwn.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="homepwn" src="/images/andrax/andrax-ng-tools/homepwn.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="hping3" src="/images/andrax/andrax-ng-tools/hping3.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="httpx" src="/images/andrax/andrax-ng-tools/httpx.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="hydra" src="/images/andrax/andrax-ng-tools/hydra.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ike-scan" src="/images/andrax/andrax-ng-tools/ike-scan.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ilo_toolbox" src="/images/andrax/andrax-ng-tools/ilo.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="impacket" src="/images/andrax/andrax-ng-tools/impacket.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="interactsh" src="/images/andrax/andrax-ng-tools/interactsh.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ipcalc" src="/images/andrax/andrax-ng-tools/ipcalc.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="isaf" src="/images/andrax/andrax-ng-tools/isaf.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ismtp" src="/images/andrax/andrax-ng-tools/ismtp.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="jadx" src="/images/andrax/andrax-ng-tools/jadx.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="jaeles" src="/images/andrax/andrax-ng-tools/jaeles.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="john" src="/images/andrax/andrax-ng-tools/john.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="katana" src="/images/andrax/andrax-ng-tools/katana.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="krbrelayx" src="/images/andrax/andrax-ng-tools/krbrelayx.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ligolo-ng" src="/images/andrax/andrax-ng-tools/ligolong.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="maskprocessor" src="/images/andrax/andrax-ng-tools/maskprocessor.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="masscan" src="/images/andrax/andrax-ng-tools/masscan.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="mdk4" src="/images/andrax/andrax-ng-tools/mdk4.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="medusa" src="/images/andrax/andrax-ng-tools/medusa.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="merlin" src="/images/andrax/andrax-ng-tools/merlin.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="metasploit" src="/images/andrax/andrax-ng-tools/metasploit.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="mfoc" src="/images/andrax/andrax-ng-tools/mfoc.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="mfterm" src="/images/andrax/andrax-ng-tools/mfterm.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="micro" src="/images/andrax/andrax-ng-tools/micro.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="mifare" src="/images/andrax/andrax-ng-tools/mifare.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="mirage" src="/images/andrax/andrax-ng-tools/mirage.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="miranda" src="/images/andrax/andrax-ng-tools/miranda.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="mitm6" src="/images/andrax/andrax-ng-tools/mitm6.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="mitmproxy" src="/images/andrax/andrax-ng-tools/mitmproxy.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="modbus" src="/images/andrax/andrax-ng-tools/modbus.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="monsoon" src="/images/andrax/andrax-ng-tools/monsoon.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="naabu" src="/images/andrax/andrax-ng-tools/naabu.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="narthex" src="/images/andrax/andrax-ng-tools/narthex.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="nbtscan" src="/images/andrax/andrax-ng-tools/nbtscan.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ncrack" src="/images/andrax/andrax-ng-tools/ncrack.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="nemesis" src="/images/andrax/andrax-ng-tools/nemesis.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="netdiscover" src="/images/andrax/andrax-ng-tools/netdiscover.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="netexec" src="/images/andrax/andrax-ng-tools/netexec.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="netmask" src="/images/andrax/andrax-ng-tools/netmask.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="nimcrypt" src="/images/andrax/andrax-ng-tools/nimcrypt.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="nmap" src="/images/andrax/andrax-ng-tools/nmap.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="nodexp" src="/images/andrax/andrax-ng-tools/nodexp.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="nomore403" src="/images/andrax/andrax-ng-tools/nomore403.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="nuclei" src="/images/andrax/andrax-ng-tools/nuclei.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="objection" src="/images/andrax/andrax-ng-tools/objection.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="od1n" src="/images/andrax/andrax-ng-tools/od1n.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="offensivenim" src="/images/andrax/andrax-ng-tools/offensivenim.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="on-the-fly" src="/images/andrax/andrax-ng-tools/on-the-fly.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="onelin3r" src="/images/andrax/andrax-ng-tools/onelin3r.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="onesixtyone" src="/images/andrax/andrax-ng-tools/onesixtyone.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="owl" src="/images/andrax/andrax-ng-tools/owl.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="patator" src="/images/andrax/andrax-ng-tools/patator.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="payloadmask" src="/images/andrax/andrax-ng-tools/payloadmask.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="pe-bear" src="/images/andrax/andrax-ng-tools/pe-bear.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="photon" src="/images/andrax/andrax-ng-tools/photon.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="pipal" src="/images/andrax/andrax-ng-tools/pipal.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="pixiewps" src="/images/andrax/andrax-ng-tools/pixiewps.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="pret" src="/images/andrax/andrax-ng-tools/pret.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="proxify" src="/images/andrax/andrax-ng-tools/proxify.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="pwndrop" src="/images/andrax/andrax-ng-tools/pwndrop.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="qrgen" src="/images/andrax/andrax-ng-tools/qrgen.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="qrljacker" src="/images/andrax/andrax-ng-tools/qrljacker.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="rbcd" src="/images/andrax/andrax-ng-tools/rbcd.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="reaver" src="/images/andrax/andrax-ng-tools/reaver.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="responder" src="/images/andrax/andrax-ng-tools/responder.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="rizin" src="/images/andrax/andrax-ng-tools/rizin.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="ropper" src="/images/andrax/andrax-ng-tools/ropper.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="s3scanner" src="/images/andrax/andrax-ng-tools/s3scanner.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="scada-tools" src="/images/andrax/andrax-ng-tools/scada-tools.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sctpscan" src="/images/andrax/andrax-ng-tools/sctpscan.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sdnpwn" src="/images/andrax/andrax-ng-tools/sdnpwn.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sgn" src="/images/andrax/andrax-ng-tools/sgn.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sherlock" src="/images/andrax/andrax-ng-tools/sherlock.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="shuffledns" src="/images/andrax/andrax-ng-tools/shuffledns.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sippts" src="/images/andrax/andrax-ng-tools/sippts.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sipvicious" src="/images/andrax/andrax-ng-tools/sipvicious.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="smbmap" src="/images/andrax/andrax-ng-tools/smbmap.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="smtpuserenum" src="/images/andrax/andrax-ng-tools/smtpuserenum.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="smuggler" src="/images/andrax/andrax-ng-tools/smuggler.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="spiderfoot" src="/images/andrax/andrax-ng-tools/spiderfoot.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="spooftooph" src="/images/andrax/andrax-ng-tools/spooftooph.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="spraykatz" src="/images/andrax/andrax-ng-tools/spraykatz.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sqlcipher" src="/images/andrax/andrax-ng-tools/sqlcipher.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sqlmap" src="/images/andrax/andrax-ng-tools/sqlmap.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="sshauditor" src="/images/andrax/andrax-ng-tools/sshauditor.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="subfinder" src="/images/andrax/andrax-ng-tools/subfinder.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="swaks" src="/images/andrax/andrax-ng-tools/swaks.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="termineter" src="/images/andrax/andrax-ng-tools/termineter.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="tmux" src="/images/andrax/andrax-ng-tools/tmux.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="urlcrazy" src="/images/andrax/andrax-ng-tools/urlcrazy.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="voiphopper" src="/images/andrax/andrax-ng-tools/voiphopper.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="wacker" src="/images/andrax/andrax-ng-tools/wacker.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="wafw00f" src="/images/andrax/andrax-ng-tools/wafw00f.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="wapiti" src="/images/andrax/andrax-ng-tools/wapiti.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="wbk" src="/images/andrax/andrax-ng-tools/waybackmachine.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="webdav" src="/images/andrax/andrax-ng-tools/webdav.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="wfuzz" src="/images/andrax/andrax-ng-tools/wfuzz.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="whatweb" src="/images/andrax/andrax-ng-tools/whatweb.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="wireshark" src="/images/andrax/andrax-ng-tools/wireshark.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="wpscan" src="/images/andrax/andrax-ng-tools/wpscan.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="xspear" src="/images/andrax/andrax-ng-tools/xspear.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="xsser" src="/images/andrax/andrax-ng-tools/xsser.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="xsstrike" src="/images/andrax/andrax-ng-tools/xsstrike.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="yersinia" src="/images/andrax/andrax-ng-tools/yersinia.svg"></div>
+                    
+                    <div style="padding: 40px;"><img style="display:block;margin-left:auto;margin-right: auto;transition: transform .2s;max-height: 80px;" title="zap" src="/images/andrax/andrax-ng-tools/zap.svg"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
+
+<div class="container-xl" style="padding-top: 30px;padding-bottom: 10px;background-image: url('/images/background/andrax-world-blur.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center center">
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-multiplatform.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG is Multi-platform" alt="ANDRAX-NG is Multi-platform">
+                <h4 class="card-title" style="text-align: center;"><b>Multi-platform</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>In the right place</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-all-in-one.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG is All-in-one" alt="ANDRAX-NG is All-in-one">
+                <h4 class="card-title" style="text-align: center;"><b>All-in-one</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>We have the things that you need</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-self-contained.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG is self contained" alt="ANDRAX-NG is self contained">
+                <h4 class="card-title" style="text-align: center;"><b>Self-CONTAINED</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>We have a place for ourselves</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-bug-bounty.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG is the way to money" alt="ANDRAX-NG is the way to money">
+                <h4 class="card-title" style="text-align: center;"><b>Bug Bounty compliant</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>Wanna make money? use ANDRAX-NG</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-modern-phreaking.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG is for Phreaking" alt="ANDRAX-NG is for Phreaking">
+                <h4 class="card-title" style="text-align: center;"><b>Modern Phreaking</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>Break the Talking Codes</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-ics-hacking.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG Can hack ICS/SCADA" alt="ANDRAX-NG Can hack ICS/SCADA">
+                <h4 class="card-title" style="text-align: center;"><b>ICS/SCADA</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>Hack the machines that run the world</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-iot-hacking.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG we hack things" alt="ANDRAX-NG we hack things">
+                <h4 class="card-title" style="text-align: center;"><b>IoT/IIoT</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>Internet of things? We hack things!</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-command-and-control.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG Command and Control" alt="ANDRAX-NG Command and Control">
+                <h4 class="card-title" style="text-align: center;"><b>Control everything</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>Do you like to control? We too!</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-network-hacking.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="Travel through the wire with ANDRAX-NG" alt="Travel through the wire with ANDRAX-NG">
+                <h4 class="card-title" style="text-align: center;"><b>Networking</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>Have you ever seen a ghost on the Net?</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-windows.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG breaks windows" alt="ANDRAX-NG breaks windows">
+                <h4 class="card-title" style="text-align: center;"><b>Windows</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>Are your windows locked?</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-android-hacking.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG reprograms your robot" alt="ANDRAX-NG reprograms your robot">
+                <h4 class="card-title" style="text-align: center;"><b>Android</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>We reprogram your robot</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+            
+            <div class="col mx-auto">
+                <img style="max-height: 130px;" src="/images/features/andrax-apple.svg" class="rounded mt-4 mb-3 d-block mx-auto" title="ANDRAX-NG breakes fanboys' hearts" alt="ANDRAX-NG breakes fanboys' hearts">
+                <h4 class="card-title" style="text-align: center;"><b>Apple devices</b></h4>
+                <small class="text-body-secondary" style="text-align: center;">
+                    <span class="text_green_now"><b><p>We break fanboys’ hearts</p>
+</b></span>
+                </small>
+                <span class="text_green_now"><hr></span>
+                <small style="text-align: ;">
+                    <b>
+</b>
+                </small>
+                
+            </div>
+        
+    </div>
+</div>
+
+  
+  
+
+
+
+
+
+
+
+<div class="container-xl" style="padding-top: 0px;padding-bottom: 50px;background-image: url('/images/background/andrax-world-blur.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center">
+    <div class="row text-center justify-content-center align-items-center mb-5">
+        
+
+        
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col">
+	<div class="card shadow-sm card-show-hover" style="height: 100%;">
+		<img style="max-height: 180px;" src="/images/posts/andrax-ng-v1-banner.jpg" class="img-fluid rounded mt-4 mx-3" alt="ANDRAX-NG v1001 UNSTABLE">
+		<div class="card-body">
+			<h5 class="card-title"><b>ANDRAX-NG v1001 UNSTABLE</b></h5>
+			<small class="text-body-secondary">
+				<span class="text_green_now"><b>April 14, 2025</b></span><br>
+				
+					
+					
+					
+						<span class="text_red_now">
+						<b>General</b>
+						
+						,
+						
+						</span>
+					
+				
+					
+					
+					
+						<span class="text_red_now">
+						<b>News</b>
+						
+						,
+						
+						</span>
+					
+				
+					
+					
+					
+						<span class="text_red_now">
+						<b>ANDRAX-NG</b>
+						
+						
+						</span>
+					
+				
+		    </small>
+			<a href="/blog/andrax-ng-v1-earthquake/" class="btn btn-dark stretched-link w-100" style="height: 1px !important;"></a>
+		</div>
+		<div class="card-footer d-sm-flex align-items-center">
+			<img style="max-height: 50px;padding: 1px;" src="/images/team/snake-security-front-black.png" class="rounded-circle rounded-border-green" alt="SNAKE Security - Just one bite">
+			<span class="badge text-bg-success mx-2"><b>SNAKE Security TEAM</b></span>
+		</div>
+	</div>
+</div>
+
+
+
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+            
+            
+            
+        
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-4">
+        <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto">
+            <div class="gap-3 d-flex d-sm-flex justify-content-center col-md-auto mx-auto">
+                
+                    <a href="/blog" type="button" class="btn btn-success btn-lg gap-3 my-1 w-50">Read All</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

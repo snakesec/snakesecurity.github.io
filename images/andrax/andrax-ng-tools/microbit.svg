@@ -1,0 +1,1977 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.0"
+   viewBox="0 0 512 512"
+   class="sim"
+   x="0px"
+   y="0px"
+   width="512"
+   height="512"
+   fill="rgba(0,0,0,0)"
+   id="svg2078"
+   sodipodi:docname="microbit.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2080"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.77469787"
+     inkscape:cx="249.77479"
+     inkscape:cy="253.64727"
+     inkscape:window-width="1366"
+     inkscape:window-height="695"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2078" />
+  <style
+     id="style1469">
+        svg.sim {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        svg.sim.grayscale {
+            -moz-filter: grayscale(1);
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+        .sim-button-group {
+            cursor: pointer;
+        }
+        .sim-button {
+            pointer-events: none;
+        }
+        .sim-head .sim-button {
+            pointer-events: unset;
+        }
+        .sim-board, .sim-display, sim-button {
+            fill: #111;
+        }
+        .sim-button-outer:hover {
+            stroke:grey;
+            stroke-width: 3px;
+        }
+        .sim-button-nut {
+            fill:#704A4A;
+            pointer-events:none;
+        }
+        .sim-button-nut:hover {
+            stroke:1px solid #704A4A;
+        }
+        .sim-pin:hover {
+            stroke:#D4AF37;
+            stroke-width:2px;
+        }
+
+        .sim-pin-touch.touched:hover {
+            stroke:darkorange;
+        }
+
+        .sim-led-back:hover {
+            stroke:#a0a0a0;
+            stroke-width:3px;
+        }
+        .sim-led:hover {
+            stroke:#ff7f7f;
+            stroke-width:3px;
+        }
+
+        .sim-systemled {
+            fill:#333;
+            stroke:#555;
+            stroke-width: 1px;
+        }
+
+        .sim-light-level-button {
+            stroke:#fff;
+            stroke-width: 3px;
+        }
+
+        .sim-antenna {
+            stroke:#555;
+            stroke-width: 2px;
+        }
+
+        .sim-text {
+        font-family:&quot;Lucida Console&quot;, Monaco, monospace;
+        font-size:25px;
+        fill:#fff;
+        pointer-events: none;
+        }
+
+        .sim-text-small,
+        .sim-text-pin {
+        font-family:&quot;Lucida Console&quot;, Monaco, monospace;
+        font-size:20px;
+        fill:#fff;
+        pointer-events: none;
+        }
+
+        .sim-thermometer {
+            stroke:#aaa;
+            stroke-width: 3px;
+            cursor: pointer;
+        }
+
+        /* animations */
+        .sim-flash {
+            animation-name: sim-flash-animation;
+            animation-duration: 0.1s;
+        }
+
+        @keyframes sim-flash-animation {
+            from { fill: yellow; }
+            to   { fill: default; }
+        }
+
+        .sim-flash-stroke {
+            animation-name: sim-flash-stroke-animation;
+            animation-duration: 0.4s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes sim-flash-stroke-animation {
+            from { stroke: yellow; }
+            to   { stroke: default; }
+        }
+
+        /* wireframe */
+        .sim-wireframe * {
+            fill: none;
+            stroke: black;
+        }
+        .sim-wireframe .sim-display,
+        .sim-wireframe .sim-led,
+        .sim-wireframe .sim-led-back,
+        .sim-wireframe .sim-head,
+        .sim-wireframe .sim-theme,
+        .sim-wireframe .sim-button-group,
+        .sim-wireframe .sim-button-label,
+        .sim-wireframe .sim-button,
+        .sim-wireframe .sim-text-pin
+        {
+            visibility: hidden;
+        }
+        .sim-wireframe .sim-label
+        {
+            stroke: none;
+            fill: #777;
+        }
+        .sim-label, .sim-button-label {
+            fill: #000;
+        }
+        .sim-wireframe .sim-board {
+            stroke-width: 2px;
+        }
+        *:focus {
+            outline: none;
+        }
+        *:focus .sim-button-outer,
+        .sim-pin:focus,
+        .sim-thermometer:focus,
+        .sim-shake:focus,
+        .sim-light-level-button:focus {
+            stroke: #4D90FE;
+            stroke-width: 5px !important;
+        }
+        .sim-button-outer.sim-button-group:focus &gt; .sim-button {
+            stroke: #4D90FE;
+            stroke-width: 10px !important;
+        }
+        .no-drag, .sim-text, .sim-text-small,
+        .sim-text-pin {
+            user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+  <defs
+     id="defs1722">
+    <filter
+       id="ledglow"
+       x="-0.85714286"
+       y="-0.5"
+       width="2.7142857"
+       height="2">
+      <feMorphology
+         operator="dilate"
+         radius="4"
+         in="SourceAlpha"
+         result="thicken"
+         id="feMorphology1471" />
+      <feGaussianBlur
+         stdDeviation="5"
+         in="thicken"
+         result="blurred"
+         id="feGaussianBlur1473" />
+      <feFlood
+         flood-color="rgb(255, 17, 77)"
+         result="glowColor"
+         id="feFlood1475" />
+      <feComposite
+         in="glowColor"
+         in2="blurred"
+         operator="in"
+         result="ledglow_colored"
+         id="feComposite1477" />
+      <feMerge
+         id="feMerge1483">
+        <feMergeNode
+           in="ledglow_colored"
+           id="feMergeNode1479" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode1481" />
+      </feMerge>
+    </filter>
+    <filter
+       id="filterglow"
+       x="-0.050000001"
+       y="-0.050000001"
+       width="1.2"
+       height="1.2">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="glow"
+         id="feGaussianBlur1486" />
+      <feMerge
+         id="feMerge1494">
+        <feMergeNode
+           in="glow"
+           id="feMergeNode1488" />
+        <feMergeNode
+           in="glow"
+           id="feMergeNode1490" />
+        <feMergeNode
+           in="glow"
+           id="feMergeNode1492" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       id="gradient-pin-0"
+       x1="22.420197"
+       y1="232.24596"
+       x2="22.420197"
+       y2="296.90909"
+       gradientTransform="matrix(0.73148334,0,0,1.3670851,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1497" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1499" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1501" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1503" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-1"
+       x1="160.73068"
+       y1="228.9967"
+       x2="160.73068"
+       y2="293.01187"
+       gradientTransform="matrix(0.72170411,0,0,1.3856094,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1506" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1508" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1510" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1512" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-2"
+       x1="313.00916"
+       y1="228.9967"
+       x2="313.00916"
+       y2="293.01187"
+       gradientTransform="matrix(0.72170411,0,0,1.3856094,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1515" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1517" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1519" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1521" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-3"
+       x1="0"
+       y1="203.70828"
+       x2="0"
+       y2="228.99387"
+       gradientTransform="matrix(0.5694948,0,0,1.7559423,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1524" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1526" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1528" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1530" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-4"
+       x1="149.14574"
+       y1="159.52109"
+       x2="149.14574"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1533" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1535" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1537" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1539" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-5"
+       x1="176.87297"
+       y1="159.52109"
+       x2="176.87297"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1542" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1544" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1546" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1548" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-6"
+       x1="204.37662"
+       y1="159.52109"
+       x2="204.37662"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1551" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1553" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1555" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1557" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-7"
+       x1="231.88023"
+       y1="159.52109"
+       x2="231.88023"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1560" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1562" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1564" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1566" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-8"
+       x1="367.38599"
+       y1="159.52109"
+       x2="367.38599"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1569" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1571" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1573" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1575" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-9"
+       x1="394.88962"
+       y1="159.52109"
+       x2="394.88962"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1578" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1580" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1582" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1584" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-10"
+       x1="422.39322"
+       y1="159.52109"
+       x2="422.39322"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1587" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1589" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1591" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1593" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-11"
+       x1="450.12048"
+       y1="159.52109"
+       x2="450.12048"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1596" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1598" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1600" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1602" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-12"
+       x1="477.62411"
+       y1="159.52109"
+       x2="477.62411"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1605" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1607" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1609" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1611" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-13"
+       x1="615.36591"
+       y1="159.52109"
+       x2="615.36591"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1614" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1616" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1618" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1620" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-14"
+       x1="642.86957"
+       y1="159.52109"
+       x2="642.86957"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1623" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1625" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1627" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1629" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-15"
+       x1="670.37317"
+       y1="159.52109"
+       x2="670.37317"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1632" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1634" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1636" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1638" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-16"
+       x1="697.87683"
+       y1="159.52109"
+       x2="697.87683"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1641" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1643" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1645" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1647" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-17"
+       x1="725.60406"
+       y1="159.52109"
+       x2="725.60406"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1650" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1652" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1654" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1656" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-18"
+       x1="861.1098"
+       y1="159.52109"
+       x2="861.1098"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1659" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1661" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1663" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1665" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-19"
+       x1="888.6134"
+       y1="159.52109"
+       x2="888.6134"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1668" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1670" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1672" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1674" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-20"
+       x1="916.11707"
+       y1="159.52109"
+       x2="916.11707"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1677" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1679" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1681" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1683" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-21"
+       x1="943.62067"
+       y1="159.52109"
+       x2="943.62067"
+       y2="181.88177"
+       gradientTransform="matrix(0.4472136,0,0,2.236068,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1686" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1688" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1690" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1692" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-22"
+       x1="848.21686"
+       y1="203.93808"
+       x2="848.21686"
+       y2="229.19516"
+       gradientTransform="matrix(0.57013721,0,0,1.7539638,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1695" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1697" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1699" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1701" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-23"
+       x1="466.67325"
+       y1="228.9967"
+       x2="466.67325"
+       y2="293.01187"
+       gradientTransform="matrix(0.72170411,0,0,1.3856094,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1704" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1706" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1708" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1710" />
+    </linearGradient>
+    <linearGradient
+       id="gradient-pin-24"
+       x1="594.49054"
+       y1="232.07339"
+       x2="594.49054"
+       y2="296.66812"
+       gradientTransform="matrix(0.73070969,0,0,1.3685326,7,52.649994)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1713" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(212, 175, 55);"
+         id="stop1715" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1717" />
+      <stop
+         offset="100%"
+         style="stop-color: rgb(255, 85, 0);"
+         id="stop1719" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g7372">
+    <path
+       class="sim-board"
+       d="m 505,84.549994 c 0,-17.6 -14.3,-31.9 -31.9,-31.9 H 38.9 c -17.6,0 -31.9,14.3 -31.9,31.9 V 426.74999 c 0,17.6 14.3,31.9 31.9,31.9 h 434.2 c 17.6,0 31.9,-14.3 31.9,-31.9 V 84.549994 Z M 21.3,259.34999 c -2.7,0 -4.8,-2.2 -4.8,-4.8 0,-2.7 2.2,-4.8 4.8,-4.8 2.7,0 4.8,2.2 4.8,4.8 0.1,2.7 -2.1,4.8 -4.8,4.8 z m 471.9,0 c -2.7,0 -4.8,-2.2 -4.8,-4.8 0,-2.72 0.2,-4.8 4.8,-4.8 2.7,0 4.8,2.2 4.8,4.8 0,2.7 -2.2,4.8 -4.8,4.8 z"
+       fill="#111"
+       id="path1724" />
+    <path
+       class="sim-display"
+       d="M 340.8,362.94999 H 172.9 c -8.3,0 -15,-6.7 -15,-15 v -167.8 c 0,-8.3 6.7,-15 15,-15 h 167.8 c 8.3,0 15,6.7 15,15 v 167.8 c 0.1,8.3 -6.6,15 -14.9,15 z"
+       fill="#111"
+       style="fill:#111111"
+       id="path1726" />
+    <polygon
+       class="sim-theme"
+       points="173.1,0 115,0 115,56.7 "
+       style="fill:#ff165e;fill-opacity:1"
+       id="polygon1728"
+       transform="translate(7,52.649994)" />
+    <path
+       class="sim-theme"
+       d="M 121.2,52.649994 H 32.9 c -13.8,2.1 -25.9,13.3 -25.9,27.7 v 83.899996 z"
+       style="fill:#ff165e;fill-opacity:1"
+       id="path1730" />
+    <polygon
+       class="sim-theme"
+       points="202.5,0 173,0 173,27.9 "
+       style="fill:#ff165e;fill-opacity:1"
+       id="polygon1732"
+       transform="translate(7,52.649994)" />
+    <polygon
+       class="sim-theme"
+       points="54.1,274.1 22.4,274.1 54.1,242.4 "
+       style="fill:#ff165e;fill-opacity:1"
+       id="polygon1734"
+       transform="translate(7,52.649994)" />
+    <polygon
+       class="sim-theme"
+       points="446.2,132.8 477.9,132.8 446.2,164.6 "
+       style="fill:#ff165e;fill-opacity:1"
+       id="polygon1736"
+       transform="translate(7,52.649994)" />
+    <rect
+       class="sim-led-back"
+       x="161"
+       y="165.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1738" />
+    <rect
+       class="sim-led"
+       x="159"
+       y="163.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1742">
+      <title
+         id="title1740">(0,0)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="207"
+       y="165.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1744" />
+    <rect
+       class="sim-led"
+       x="205"
+       y="163.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1748">
+      <title
+         id="title1746">(1,0)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="253"
+       y="165.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1750" />
+    <rect
+       class="sim-led"
+       x="251"
+       y="163.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1754">
+      <title
+         id="title1752">(2,0)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="299"
+       y="165.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1756" />
+    <rect
+       class="sim-led"
+       x="297"
+       y="163.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1760">
+      <title
+         id="title1758">(3,0)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="345"
+       y="165.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1762" />
+    <rect
+       class="sim-led"
+       x="343"
+       y="163.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1766">
+      <title
+         id="title1764">(4,0)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="161"
+       y="209.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1768" />
+    <rect
+       class="sim-led"
+       x="159"
+       y="207.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1772">
+      <title
+         id="title1770">(0,1)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="207"
+       y="209.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1774" />
+    <rect
+       class="sim-led"
+       x="205"
+       y="207.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1778">
+      <title
+         id="title1776">(1,1)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="253"
+       y="209.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1780" />
+    <rect
+       class="sim-led"
+       x="251"
+       y="207.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1784">
+      <title
+         id="title1782">(2,1)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="299"
+       y="209.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1786" />
+    <rect
+       class="sim-led"
+       x="297"
+       y="207.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1790">
+      <title
+         id="title1788">(3,1)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="345"
+       y="209.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1792" />
+    <rect
+       class="sim-led"
+       x="343"
+       y="207.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1796">
+      <title
+         id="title1794">(4,1)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="161"
+       y="253.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1798" />
+    <rect
+       class="sim-led"
+       x="159"
+       y="251.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1802">
+      <title
+         id="title1800">(0,2)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="207"
+       y="253.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1804" />
+    <rect
+       class="sim-led"
+       x="205"
+       y="251.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1808">
+      <title
+         id="title1806">(1,2)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="253"
+       y="253.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1810" />
+    <rect
+       class="sim-led"
+       x="251"
+       y="251.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1814">
+      <title
+         id="title1812">(2,2)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="299"
+       y="253.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1816" />
+    <rect
+       class="sim-led"
+       x="297"
+       y="251.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1820">
+      <title
+         id="title1818">(3,2)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="345"
+       y="253.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1822" />
+    <rect
+       class="sim-led"
+       x="343"
+       y="251.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1826">
+      <title
+         id="title1824">(4,2)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="161"
+       y="297.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1828" />
+    <rect
+       class="sim-led"
+       x="159"
+       y="295.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1832">
+      <title
+         id="title1830">(0,3)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="207"
+       y="297.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1834" />
+    <rect
+       class="sim-led"
+       x="205"
+       y="295.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1838">
+      <title
+         id="title1836">(1,3)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="253"
+       y="297.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1840" />
+    <rect
+       class="sim-led"
+       x="251"
+       y="295.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1844">
+      <title
+         id="title1842">(2,3)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="299"
+       y="297.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1846" />
+    <rect
+       class="sim-led"
+       x="297"
+       y="295.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1850">
+      <title
+         id="title1848">(3,3)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="345"
+       y="297.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1852" />
+    <rect
+       class="sim-led"
+       x="343"
+       y="295.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1856">
+      <title
+         id="title1854">(4,3)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="161"
+       y="341.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000;fill-opacity:1"
+       id="rect1858" />
+    <rect
+       class="sim-led"
+       x="159"
+       y="339.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1862">
+      <title
+         id="title1860">(0,4)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="207"
+       y="341.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1864" />
+    <rect
+       class="sim-led"
+       x="205"
+       y="339.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1868">
+      <title
+         id="title1866">(1,4)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="253"
+       y="341.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1870" />
+    <rect
+       class="sim-led"
+       x="251"
+       y="339.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1874">
+      <title
+         id="title1872">(2,4)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="299"
+       y="341.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#202020"
+       id="rect1876" />
+    <rect
+       class="sim-led"
+       x="297"
+       y="339.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1880">
+      <title
+         id="title1878">(3,4)</title>
+    </rect>
+    <rect
+       class="sim-led-back"
+       x="345"
+       y="341.64999"
+       width="10"
+       height="20"
+       rx="2"
+       ry="2"
+       style="fill:#ff0000"
+       id="rect1882" />
+    <rect
+       class="sim-led"
+       x="343"
+       y="339.64999"
+       width="14"
+       height="24"
+       rx="3"
+       ry="3"
+       style="opacity:0;fill:#ff7f7f;filter:url(#ledglow)"
+       id="rect1886">
+      <title
+         id="title1884">(4,4)</title>
+    </rect>
+    <path
+       class="sim-button"
+       d="m 276.45,107.90899 v 0 h -39.5 v 0 c -14.1,0.1 -24.6,10.7 -24.6,24.8 0,13.9 10.4,24.4 24.3,24.7 v 0 h 39.6 c 14.2,0 24.8,-10.6 24.8,-24.7 0,-14 -10.5,-24.7 -24.6,-24.8 m -0.2,39"
+       id="path1890" />
+    <g
+       id="g7167">
+      <path
+         class="sim-theme"
+         d="m 276.45,107.90899 v 0 h -39.5 v 0 c -14.1,0.1 -24.6,10.7 -24.6,24.8 0,13.9 10.4,24.4 24.3,24.7 v 0 h 39.6 c 14.2,0 24.8,-10.6 24.8,-24.7 0,-14 -10.5,-24.7 -24.6,-24.8 m -0.2,39 v 0 h -39.3 c -7.7,-0.1 -14,-6.4 -14,-14.2 0,-7.8 6.4,-14.2 14.2,-14.2 h 39.1 c 7.8,0 14.2,6.4 14.2,14.2 0,7.9 -6.4,14.2 -14.2,14.2"
+         style="fill:#ff165e;fill-opacity:1"
+         id="path1892" />
+      <path
+         class="sim-theme"
+         d="m 237.15,127.40899 c -2.9,0 -5.3,2.4 -5.3,5.3 0,2.9 2.4,5.3 5.3,5.3 2.9,0 5.3,-2.4 5.3,-5.3 0,-2.9 -2.4,-5.3 -5.3,-5.3"
+         style="fill:#ff165e;fill-opacity:1"
+         id="path1894" />
+      <path
+         class="sim-theme"
+         d="m 276.25,138.00899 c 2.9,0 5.3,-2.4 5.3,-5.3 0,-2.9 -2.4,-5.3 -5.3,-5.3 -2.9,0 -5.3,2.4 -5.3,5.3 0,2.9 2.4,5.3 5.3,5.3"
+         style="fill:#ff165e;fill-opacity:1"
+         id="path1896" />
+    </g>
+    <text
+       x="167"
+       y="112.64999"
+       class="sim-text"
+       id="text1902"
+       style="-moz-user-select:none;-ms-user-select:none;-webkit-user-drag:none;-webkit-user-select:none" />
+    <path
+       class="sim-pin sim-pin-touch"
+       d="m 23.5,393.84999 c 0,0.4 -0.1,0.9 -0.1,1.3 v 60.7 c 4.1,1.7 8.6,2.7 12.9,2.7 h 34.4 v -64.7 c 0,0 0,-0.1 0,-0.1 0,-13 -10.6,-23.6 -23.7,-23.6 -12.8,0.1 -23.5,10.6 -23.5,23.7 z m 4.7,0.4 c 0,-10.7 8.7,-19.3 19.3,-19.3 10.7,0 19.3,8.7 19.3,19.3 0,10.7 -8.6,19.3 -19.3,19.3 -10.6,0 -19.3,-8.7 -19.3,-19.3 z"
+       fill="url(#gradient-pin-0)"
+       id="path1906"
+       style="fill:url(#gradient-pin-0)">
+      <title
+         id="title1904">P0, ANALOG IN</title>
+    </path>
+    <path
+       class="sim-pin sim-pin-touch"
+       d="m 146.1,369.94999 c -12.8,0 -22.1,10.3 -23.1,23.1 v 65.6 h 46.2 v -65.6 c 0,-12.7 -10.3,-23.1 -23.1,-23.1 z m 0.2,42.8 c -10.7,0 -19.3,-8.6 -19.3,-19.3 0,-10.7 8.6,-19.3 19.3,-19.3 10.7,0 19.3,8.7 19.3,19.3 0,10.7 -8.6,19.3 -19.3,19.3 z"
+       fill="url(#gradient-pin-1)"
+       id="path1910"
+       style="fill:url(#gradient-pin-1)">
+      <title
+         id="title1908">P1, ANALOG IN</title>
+    </path>
+    <path
+       class="sim-pin sim-pin-touch"
+       d="m 256,369.94999 c -12.8,0 -22.1,10.3 -23.1,23.1 v 65.6 h 46.2 v -65.6 c 0,-12.7 -10.3,-23.1 -23.1,-23.1 z m 0.4,42.8 c -10.7,0 -19.3,-8.6 -19.3,-19.3 0,-10.7 8.6,-19.3 19.3,-19.3 10.7,0 19.3,8.7 19.3,19.3 0,10.7 -8.6,19.3 -19.3,19.3 z"
+       fill="url(#gradient-pin-2)"
+       id="path1914"
+       style="fill:url(#gradient-pin-2)">
+      <title
+         id="title1912">P2, ANALOG IN</title>
+    </path>
+    <path
+       class="sim-pin"
+       d="m 7,410.34999 v 19.2 c 0,10.8 6.2,20.2 14.4,25.2 v -44.4 z"
+       fill="url(#gradient-pin-3)"
+       id="path1918"
+       style="fill:url(#gradient-pin-3)">
+      <title
+         id="title1916">P3, ANALOG IN, LED Col 1</title>
+    </path>
+    <rect
+       x="73.699997"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-4)"
+       id="rect1922"
+       style="fill:url(#gradient-pin-4)">
+      <title
+         id="title1920">P4, ANALOG IN, LED Col 2</title>
+    </rect>
+    <rect
+       x="86.099998"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-5)"
+       id="rect1926"
+       style="fill:url(#gradient-pin-5)">
+      <title
+         id="title1924">P5, BUTTON A</title>
+    </rect>
+    <rect
+       x="98.400002"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-6)"
+       id="rect1930"
+       style="fill:url(#gradient-pin-6)">
+      <title
+         id="title1928">P6, LED Col 9</title>
+    </rect>
+    <rect
+       x="110.7"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-7)"
+       id="rect1934"
+       style="fill:url(#gradient-pin-7)">
+      <title
+         id="title1932">P7, LED Col 8</title>
+    </rect>
+    <rect
+       x="171.3"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-8)"
+       id="rect1938"
+       style="fill:url(#gradient-pin-8)">
+      <title
+         id="title1936">P8</title>
+    </rect>
+    <rect
+       x="183.60001"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-9)"
+       id="rect1942"
+       style="fill:url(#gradient-pin-9)">
+      <title
+         id="title1940">P9, LED Col 7</title>
+    </rect>
+    <rect
+       x="195.89999"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-10)"
+       id="rect1946"
+       style="fill:url(#gradient-pin-10)">
+      <title
+         id="title1944">P10, ANALOG IN, LED Col 3</title>
+    </rect>
+    <rect
+       x="208.3"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-11)"
+       id="rect1950"
+       style="fill:url(#gradient-pin-11)">
+      <title
+         id="title1948">P11, BUTTON B</title>
+    </rect>
+    <rect
+       x="220.60001"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-12)"
+       id="rect1954"
+       style="fill:url(#gradient-pin-12)">
+      <title
+         id="title1952">P12, RESERVED ACCESSIBILITY</title>
+    </rect>
+    <rect
+       x="282.20001"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-13)"
+       id="rect1958"
+       style="fill:url(#gradient-pin-13)">
+      <title
+         id="title1956">P13, SPI - SCK</title>
+    </rect>
+    <rect
+       x="294.5"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-14)"
+       id="rect1962"
+       style="fill:url(#gradient-pin-14)">
+      <title
+         id="title1960">P14, SPI - MISO</title>
+    </rect>
+    <rect
+       x="306.79999"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-15)"
+       id="rect1966"
+       style="fill:url(#gradient-pin-15)">
+      <title
+         id="title1964">P15, SPI - MOSI</title>
+    </rect>
+    <rect
+       x="319.10001"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-16)"
+       id="rect1970"
+       style="fill:url(#gradient-pin-16)">
+      <title
+         id="title1968">P16, SPI - Chip Select</title>
+    </rect>
+    <rect
+       x="331.5"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-17)"
+       id="rect1974"
+       style="fill:url(#gradient-pin-17)">
+      <title
+         id="title1972">P17, +3v3</title>
+    </rect>
+    <rect
+       x="392.10001"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-18)"
+       id="rect1978"
+       style="fill:url(#gradient-pin-18)">
+      <title
+         id="title1976">P18, +3v3</title>
+    </rect>
+    <rect
+       x="404.39999"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-19)"
+       id="rect1982"
+       style="fill:url(#gradient-pin-19)">
+      <title
+         id="title1980">P19, I2C - SCL</title>
+    </rect>
+    <rect
+       x="416.70001"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-20)"
+       id="rect1986"
+       style="fill:url(#gradient-pin-20)">
+      <title
+         id="title1984">P20, I2C - SDA</title>
+    </rect>
+    <rect
+       x="429"
+       y="409.35001"
+       width="10"
+       height="50"
+       class="sim-pin"
+       fill="url(#gradient-pin-21)"
+       id="rect1990"
+       style="fill:url(#gradient-pin-21)">
+      <title
+         id="title1988">GND</title>
+    </rect>
+    <path
+       class="sim-pin"
+       d="m 490.6,454.64999 c 8.2,-5 14.4,-14.4 14.4,-25.1 v -19.2 h -14.4 z"
+       fill="url(#gradient-pin-22)"
+       id="path1994"
+       style="fill:url(#gradient-pin-22)">
+      <title
+         id="title1992">GND</title>
+    </path>
+    <path
+       class="sim-pin"
+       d="m 366.9,369.94999 c -12.8,0 -22.1,10.3 -23.1,23.1 v 65.6 H 390 v -65.6 c 0,-12.7 -10.3,-23.1 -23.1,-23.1 z m 0.1,42.8 c -10.7,0 -19.3,-8.6 -19.3,-19.3 0,-10.7 8.6,-19.3 19.3,-19.3 10.7,0 19.3,8.7 19.3,19.3 0,10.7 -8.6,19.3 -19.3,19.3 z"
+       fill="url(#gradient-pin-23)"
+       id="path1998"
+       style="fill:url(#gradient-pin-23)">
+      <title
+         id="title1996">+3v3</title>
+    </path>
+    <path
+       class="sim-pin"
+       d="m 465,370.24999 c -13,0 -23.6,10.6 -23.6,23.6 0,0 0,0.1 0,0.1 v 0 64.7 H 476 c 4.3,0 8.4,-1 12.6,-2.7 v -60.7 c 0,-0.4 0,-0.9 0,-1.3 0,-13.2 -10.6,-23.7 -23.6,-23.7 z m -0.2,43.3 c -10.7,0 -19.3,-8.6 -19.3,-19.3 0,-10.7 8.6,-19.3 19.3,-19.3 10.7,0 19.3,8.7 19.3,19.3 0,10.6 -8.7,19.3 -19.3,19.3 z"
+       fill="url(#gradient-pin-24)"
+       id="path2002"
+       style="fill:url(#gradient-pin-24)">
+      <title
+         id="title2000">GND</title>
+    </path>
+    <text
+       class="sim-text-pin"
+       x="74"
+       y="397.64999"
+       id="text2004"
+       style="-moz-user-select:none;-ms-user-select:none;-webkit-user-drag:none;-webkit-user-select:none" />
+    <text
+       class="sim-text-pin"
+       x="172"
+       y="397.64999"
+       id="text2006"
+       style="-moz-user-select:none;-ms-user-select:none;-webkit-user-drag:none;-webkit-user-select:none" />
+    <text
+       class="sim-text-pin"
+       x="282"
+       y="397.64999"
+       id="text2008"
+       style="-moz-user-select:none;-ms-user-select:none;-webkit-user-drag:none;-webkit-user-select:none" />
+    <g
+       class="sim-button-group"
+       focusable="true"
+       tabindex="0"
+       role="button"
+       aria-label="A"
+       style="fill:#979797"
+       id="g2020"
+       transform="translate(7,52.649994)">
+      <rect
+         class="sim-button-outer"
+         x="25.9"
+         y="176.39999"
+         rx="4"
+         ry="4"
+         width="56.200001"
+         height="56.200001"
+         id="rect2010" />
+      <circle
+         class="sim-button-nut"
+         cx="35.900002"
+         cy="186.39999"
+         r="6"
+         id="circle2012" />
+      <circle
+         class="sim-button-nut"
+         cx="35.900002"
+         cy="222.60001"
+         r="6"
+         id="circle2014" />
+      <circle
+         class="sim-button-nut"
+         cx="72.099998"
+         cy="222.60001"
+         r="6"
+         id="circle2016" />
+      <circle
+         class="sim-button-nut"
+         cx="72.099998"
+         cy="186.39999"
+         r="6"
+         id="circle2018" />
+    </g>
+    <path
+       class="sim-button"
+       d="m 76.7,256.14999 c 0,8.7 -7,15.7 -15.7,15.7 -8.7,0 -15.7,-7 -15.7,-15.7 0,-8.7 7,-15.7 15.7,-15.7 8.7,0 15.7,7.1 15.7,15.7"
+       fill="#111"
+       style="fill:#111111"
+       id="path2022" />
+    <g
+       class="sim-button-group"
+       focusable="true"
+       tabindex="0"
+       role="button"
+       aria-label="B"
+       style="fill:#979797"
+       id="g2034"
+       transform="translate(7,52.649994)">
+      <rect
+         class="sim-button-outer"
+         x="418.10001"
+         y="176.39999"
+         rx="4"
+         ry="4"
+         width="56.200001"
+         height="56.200001"
+         id="rect2024" />
+      <circle
+         class="sim-button-nut"
+         cx="428.10001"
+         cy="186.39999"
+         r="6"
+         id="circle2026" />
+      <circle
+         class="sim-button-nut"
+         cx="428.10001"
+         cy="222.60001"
+         r="6"
+         id="circle2028" />
+      <circle
+         class="sim-button-nut"
+         cx="464.29999"
+         cy="222.60001"
+         r="6"
+         id="circle2030" />
+      <circle
+         class="sim-button-nut"
+         cx="464.29999"
+         cy="186.39999"
+         r="6"
+         id="circle2032" />
+    </g>
+    <path
+       class="sim-button"
+       d="m 468.9,256.14999 c 0,8.7 -7,15.7 -15.7,15.7 -8.7,0 -15.7,-7 -15.7,-15.7 0,-8.7 7,-15.7 15.7,-15.7 8.7,0 15.7,7.1 15.7,15.7"
+       fill="#111"
+       style="fill:#111111"
+       id="path2036" />
+    <path
+       class="sim-label"
+       d="m 42.7,429.04999 c 0,-2.8 2.1,-5.1 5.5,-5.1 3.3,0 5.5,2.4 5.5,5.1 v 4.7 c 0,2.8 -2.2,5.1 -5.5,5.1 -3.3,0 -5.5,-2.4 -5.5,-5.1 z m 7.6,0 c 0,-1.3 -0.8,-2.3 -2.2,-2.3 -1.3,0 -2.1,1.1 -2.1,2.3 v 4.7 c 0,1.2 0.8,2.3 2.1,2.3 1.3,0 2.2,-1.1 2.2,-2.3 z"
+       id="path2052" />
+    <path
+       class="sim-label"
+       d="m 143.2,426.74999 c 2.8,0 3.4,-0.8 3.4,-2.5 h 2.9 v 14.3 h -3.4 v -9.5 h -3 v -2.3 z"
+       id="path2054" />
+    <path
+       class="sim-label"
+       d="m 255.6,431.14999 c 1.7,-1 3,-1.7 3,-3.1 0,-1.1 -0.7,-1.6 -1.6,-1.6 -1,0 -1.8,0.6 -1.8,2.1 h -3.3 c 0,-2.6 1.8,-4.6 5.1,-4.6 2.6,0 4.9,1.3 4.9,4.3 0,2.4 -2.3,3.9 -3.8,4.7 -2,1.3 -2.5,1.8 -2.5,2.9 h 6.1 v 2.7 h -10 c 0.1,-4.7 1.7,-6 3.9,-7.4 z"
+       id="path2056" />
+    <path
+       class="sim-button-label"
+       d="m 55.1,323.54999 -0.6,-1.7 h -5.1 l -0.6,1.7 h -3.5 l 5.1,-14.3 h 3.1 l 5.2,14.3 z m -3.1,-10.2 -1.8,5.9 h 3.5 z"
+       id="path2058" />
+    <path
+       class="sim-button-label"
+       d="m 456.1,188.44999 h 5.9 c 3.9,0 4.7,2.4 4.7,3.9 0,1.8 -1.4,2.9 -2.5,3.2 0.9,0 2.6,1.1 2.6,3.3 0,1.5 -0.8,4 -4.7,4 h -6 z m 5.3,5.9 c 1.6,0 2,-1 2,-1.7 0,-0.6 -0.3,-1.7 -2,-1.7 h -2 v 3.4 z m -2,2.4 v 3.5 h 2.1 c 1.6,0 2,-1 2,-1.8 0,-0.7 -0.4,-1.8 -2,-1.8 h -2.1 z"
+       id="path2060" />
+    <path
+       class="sim-label"
+       d="m 359.1,433.74999 c 0,1.6 0.9,2.5 2.2,2.5 1.2,0 1.9,-0.9 1.9,-1.9 0,-1.2 -0.6,-2 -2.1,-2 h -1.3 v -2.6 h 1.3 c 1.5,0 1.9,-0.7 1.9,-1.8 0,-1.1 -0.7,-1.6 -1.6,-1.6 -1.4,0 -1.8,0.8 -1.8,2.1 h -3.3 c 0,-2.4 1.5,-4.6 5.1,-4.6 2.6,0 5,1.3 5,4 0,1.6 -1,2.8 -2.1,3.2 1.3,0.5 2.3,1.6 2.3,3.5 0,2.7 -2.4,4.3 -5.2,4.3 -3.5,0 -5.5,-2.1 -5.5,-5.1 z"
+       id="path2062" />
+    <path
+       class="sim-label"
+       d="m 375.5,438.54999 h -3.1 l -5.1,-14.3 h 3.5 l 3.1,10.1 3.1,-10.1 h 3.6 z"
+       id="path2064" />
+    <path
+       class="sim-label"
+       d="m 451.4,430.94999 h 7.4 v 2.5 h -1.5 c -0.6,3.3 -3,5.5 -7.1,5.5 -4.8,0 -7.5,-3.5 -7.5,-7.5 0,-3.9 2.8,-7.5 7.5,-7.5 3.8,0 6.4,2.3 6.6,5 h -3.5 c -0.2,-1.1 -1.4,-2.2 -3.1,-2.2 -2.7,0 -4.1,2.3 -4.1,4.7 0,2.5 1.4,4.7 4.4,4.7 2,0 3.2,-1.2 3.4,-2.7 h -2.5 z"
+       id="path2066" />
+    <path
+       class="sim-label"
+       d="m 468.4,433.54999 v -9.3 h 3.3 v 14.3 h -3.5 l -5.2,-9.2 v 9.2 h -3.3 v -14.3 h 3.5 z"
+       id="path2068" />
+    <path
+       class="sim-label"
+       d="m 479.7,424.24999 c 4.8,0 7.5,3.5 7.5,7.2 0,3.7 -2.7,7.2 -7.5,7.2 h -5.3 v -14.3 h 5.3 z m -1.9,2.8 v 8.6 h 1.8 c 2.7,0 4.2,-2.1 4.2,-4.3 0,-2.2 -1.6,-4.3 -4.2,-4.3 z"
+       id="path2070" />
+    <g
+       id="g2074"
+       transform="translate(7,52.649994)" />
+    <g
+       id="g2076"
+       transform="translate(7,52.649994)" />
+  </g>
+</svg>

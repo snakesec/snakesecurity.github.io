@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>Computer Networks OSI Model - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="Introduction to OSI model applications and its necessity... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="Computer Networks OSI Model" />
+        <meta property="og:description" content="Introduction to OSI model applications and its necessity... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/computer-networks/osi-model/routing-table.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Computer Networks OSI Model">
+        <meta name="twitter:description" content="Introduction to OSI model applications and its necessity... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/computer-networks/osi-model/routing-table.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/computer-networks/osi-model/routing-table.png" alt="Computer Networks OSI Model">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">Computer Networks OSI Model</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">Introduction to OSI Model applications and its necessity...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">OSI Model</h1>
+
+<p>The <strong>Open Systems Interconnection</strong> <em>(OSI)</em> is a reference model for building layered networks. Designed to enable different networks to communicate reliably between disparate systems, the OSI model has seven hierarchical layers.</p>
+
+<ul>
+  <li><strong>The Layered Approach</strong> : <em>Essentially, a reference model is a conceptual blueprint of how communication will occur. It takes into account all of the processes that need to be in place in order for communication to be effective, and organizes these processes into logical groupings called layers. These are called layered architectures.</em></li>
+</ul>
+
+<p>It’s worth pointing out that these same advantages are true for any layer model, including TCP/IP. You should understand that the central purpose of the OSI model, and of all network models, is to allow networks from different vendors to work together smoothly.</p>
+
+<p><em>We’ll talk about TCP/IP later on</em></p>
+
+<p>Remember, the OSI is not a physical model it’s a conceptual, comprehensive, but fluid guideline that application developers use to design and implement applications that run on a network. This includes the creation and implementation of network standards, equipment, and internetwork systems.</p>
+
+<p>The OSI model layers are:</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/osi-model/osi-model-layers.png" alt="OSI Model layers" title="OSI Model layers" /></p>
+
+<p>The first three layers define the rules for how host applications communicate with each other and with end users.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/osi-model/top-layers.png" alt="OSI Model top layers" title="OSI Model top layers" /></p>
+
+<p>The bottom four layers define how the actual data will be transferred from end-to-end.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/osi-model/lower-layers.png" alt="OSI Model lower layers" title="OSI Model lower layers" /></p>
+
+<h2 id="layer-1-physical-layer">Layer 1: Physical layer</h2>
+
+<p>The physical layer handles sending and receiving unstructured raw data between a device like a NIC, Ethernet Hub, or Network Switch, and a physical data media.</p>
+
+<p>It converts the digital bits into electrical, radio, or optical signals.</p>
+
+<p>The Bluetooth, Ethernet, and USB standards are examples of the physical layer. The CAN standard is an example of a lesser known physical layer specification.</p>
+
+<p>The physical layer also specifies how to encode a physical signal, such as an electrical voltage or a pulse of light. For example, a 1 bit can be represented on a copper wire by the transition from a 0 volt to a 5 volt signal, while a 0 bit can be represented by the transition from a 5 volt to a 0 volt signal. As a result, common physical layer problems are often related to improper media termination, EMI or noise scrambling, and misconfigured or malfunctioning NICs and hubs.</p>
+
+<h2 id="layer-2-data-link-layer">Layer 2: Data link layer</h2>
+
+<p>The data link layer provides the physical transmission of data and handles error reporting, network topology, and flow control. This means that the data link layer ensures that messages are delivered to the correct device on a LAN using hardware (MAC) addresses, and translates messages from the network layer into bits for the physical layer to transmit.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/osi-model/data-link-layer.png" alt="OSI Model Data link layer" title="OSI Model Data link layer" /></p>
+
+<p>The data link layer formats the message into pieces, each of which is called a data frame, and adds a custom header that contains the hardware addresses of the destination and the source.</p>
+
+<p>The data link layer uses hardware addressing, specifically MAC addresses, to allow a host to send packets to individual hosts on a local network and to send packets between routers.</p>
+
+<p>At the data link layer, each time a packet is sent between routers, it is framed with control information. At the receiving router, this information will be removed, leaving only the original packet in its entirety.</p>
+
+<p>The packet continues to be framed for each hop until the packet is finally delivered to the correct recipient host. What’s important to understand is that the packet is never modified along the way, but is simply wrapped with the type of control information needed to correctly deliver the packet to the different types of media.</p>
+
+<p>If you look at it, you will see that the IEEE <em>802.2</em> standard is not only used in conjunction with the other IEEE standards, but it also adds functionality to those standards.</p>
+
+<p>The data link layer of the IEEE Ethernet consists of two sub-layers:</p>
+
+<ul>
+  <li>
+    <p><strong>Media Access Control</strong> <em>(MAC)</em> : <em>This determines how the packets will be placed on the media. Contended media access is “First Come, First Served” access where everyone shares the same bandwidth. Like logical topologies, physical addressing is defined here. So, what’s a logical topology? It’s the path of signalling through a physical topology. At this sublayer, you can also use line discipline, error reporting (not correction), ordered delivery of frames, and optional flow control.</em></p>
+  </li>
+  <li>
+    <p><strong>Logical Link Control</strong> <em>(LLC)</em> : <em>An LLC header is responsible for identifying and then encapsulating network layer protocols. It tells the data link layer what to do with a packet when it receives a frame. Here is how it works: A host receives a frame and looks at the LLC header to determine the packet’s destination, such as the network layer IP protocol. Flow control and control bit ordering can also be provided by the LLC.</em></p>
+  </li>
+</ul>
+
+<p>The result of the IEEE 802 subcommittees and their work on standards for local and metropolitan area networks (LANs/MANs) is one of the major components of the data link layer. The committee met in February 1980, and the name Project 802 was created using the 80 from 1980 and the 2 from the second month. The name of any 802 standard always includes a dot (.) followed by either a single or double number. The numbers indicate specific categories within 802 standard.</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="text-align: center">Standard</th>
+        <th style="text-align: center">Topic</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center"><strong>802.1</strong></td>
+        <td style="text-align: left"><em>LAN/MAN Management (and Media Access Control Bridges)</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.2</strong></td>
+        <td style="text-align: left"><em>Logical Link Control</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.3</strong></td>
+        <td style="text-align: left"><em>CSMA/CD (Ethernet)</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.4</strong></td>
+        <td style="text-align: left"><em>Token Passing Bus</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.5</strong></td>
+        <td style="text-align: left"><em>Token Passing Ring</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.6</strong></td>
+        <td style="text-align: left"><em>Distributed Queue Dual Bus (DQDB) Metropolitan Area Network (MAN)</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.7</strong></td>
+        <td style="text-align: left"><em>Broadband Local Area Networks</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.8</strong></td>
+        <td style="text-align: left"><em>Fiber-Optic LANs and MANs</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.9</strong></td>
+        <td style="text-align: left"><em>Isochronous LANs</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.10</strong></td>
+        <td style="text-align: left"><em>LAN/MAN Security</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.11</strong></td>
+        <td style="text-align: left"><em>Wireless LAN</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.12</strong></td>
+        <td style="text-align: left"><em>Demand Priority Access Method</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.15</strong></td>
+        <td style="text-align: left"><em>Wireless Personal Area Network</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.16</strong></td>
+        <td style="text-align: left"><em>Wireless Metropolitan Area Network (also called WiMAX)</em></td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>802.17</strong></td>
+        <td style="text-align: left"><em>Resilient Packet Ring</em></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p><br />
+Please note that 802.1, 802.3, 802.11, and 802.15 are the only 802 standards that are active. The other standards are either inactive or in hibernation.</p>
+
+<h2 id="layer-3-network-layer">Layer 3: Network Layer</h2>
+
+<p>The network layer manages the logical addressing of devices, tracks the location of devices on the network, and determines the best method for moving data. Traffic between devices that are not locally connected must be transported at the network layer. Routers are Layer 3 devices defined at the network layer that provide routing services within a network.</p>
+
+<p>Whenever packets arrive at the router interface, the router checks the destination IP address. The router looks up the destination network address in the routing table if the packet is not destined for that particular router. Once the router has selected an exit interface, the packet is sent to that interface for framing and transmission to the local network. The router drops the packet if it can’t find an entry in the routing table for the packet’s destination network.</p>
+
+<p>At the network layer, two types of packets are used:</p>
+
+<ul>
+  <li>
+    <p><strong>Data Packets</strong> : <em>They transport user data across the Internetwork. Protocols that are in place to support data traffic are called router protocols. Two examples of routed protocols are the Internet Protocol (IP) and the Internet Protocol version 6 (IPv6)</em></p>
+  </li>
+  <li>
+    <p><strong>Route-Update Packets</strong> : <em>used to update nearby routers about the networks connected to all routers within the Internetwork. The protocols that send route update packets are called routing protocols, and some of the more common ones are the <strong>Routing Information Protocol</strong> (RIP), RIPv2, the <strong>Enhanced Interior Gateway Routing Protocol</strong> (EIGRP), and the <strong>Open Shortest Path First</strong> (OSPF). Route update packets are used to assist in the creation and maintenance of routing tables on each router.</em></p>
+  </li>
+</ul>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/osi-model/routing-table.png" alt="OSI Model Routing table" title="OSI Model Routing table" /></p>
+
+<ul>
+  <li>
+    <p><strong>Network Addresses</strong> : <em>This is a protocol-dependent network address. Because each routing protocol tracks a network that includes different addressing schemes, such as IP and IPv6, a router must maintain a routing table for each routing protocol.</em></p>
+  </li>
+  <li>
+    <p><strong>Interface</strong> : <em>This is the exit interface a packet takes if it is intended for a specific network.</em></p>
+  </li>
+  <li>
+    <p><strong>Metric</strong> : <em>This value represents the distance to the remote network. This distance is calculated differently for different routing protocols. Some routing protocols, most notably RIP, use a hop count - the number of routers that a packet will pass through on its way to a remote network. Other routing protocols alternatively use bandwidth, line delay, and even something called a tick count, which is 1/18 of a second, to make routing decisions.</em></p>
+  </li>
+</ul>
+
+<p>Routers break up broadcast domains, which means that by default, broadcasts don’t pass through a router. This is a good thing because it reduces network traffic. Routers also break up collision domains. However, this can also be done with Layer 2 (data link layer) switches.</p>
+
+<p>Here are a few things to keep in mind about routers:</p>
+
+<ul>
+  <li>By default, routers don’t forward broadcast or multicast packets.</li>
+  <li>Routers determine the next-hop router to forward the packet to by the logical address in a network layer header.</li>
+  <li>Routers can use administrator-created access lists to control security for the types of packets allowed to enter or leave an interface.</li>
+  <li>Routers can provide Layer 2 bridging if needed. They can also route through the same interface simultaneously.</li>
+  <li>Connections between virtual LANs (VLANs) are provided by Layer 3 devices (in this case, routers).</li>
+  <li>Routers can provide Quality of Service (QoS) for certain types of network traffic.</li>
+</ul>
+
+<h2 id="layer-4-transport-layer">Layer 4: Transport Layer</h2>
+
+<p>The transport layer is responsible for segmenting data, then reassembling it to form a data flow. The services that reside in the transport layer take the data from the applications in the upper layer and reassemble it into the same data stream. It provides end-to-end data transport services and is capable of establishing a logical connection between sending and receiving hosts on the network.</p>
+
+<p>The transport layer provides the mechanisms for the multiplexing of upper layer applications, the establishment of virtual connections, and the termination of virtual circuits. It also hides the many and varied details of all network-related information from the higher layers, making data easier to transmit.</p>
+
+<p><em>We will talk about TCP and UDP later</em></p>
+
+<h2 id="layer-5-session-layer">Layer 5: Session Layer</h2>
+
+<p>The Session layer handles the establishment, management, and termination of sessions between entities in the Presenter layer. Dialog control between devices or nodes is also provided by this layer. It coordinates communication between systems and serves to organize their communication by offering three different modes: one direction (simplex); both directions, but only one direction at a time (half duplex); and bi-directional (full duplex). To summarize: The session layer basically keeps the data of one application separate from the data of other applications. The ability to have multiple Web browser sessions on your desktop at the same time is a good example of the Session Layer.</p>
+
+<h2 id="layer-6-presentation-layer">Layer 6: Presentation Layer</h2>
+
+<p>The presentation layer gets its name from its purpose: it presents data to the application layer and is responsible for data translation and code formatting.</p>
+
+<p>Conversion of data to a standard format before transmission is a successful data transfer technique. Computers are configured to receive this generically formatted data and then convert it to its native format for reading for example, from EBCDIC to ASCII, or from Unicode to ASCII, to name a few. By providing translation services, the presentation layer ensures that the data transmitted by the application layer of one system can be read and understood by the application layer of another system.</p>
+
+<p>Tasks like compressing, decompressing, encrypting, and decrypting are all associated with this layer. Even multimedia operations involve some presentation layer standards.</p>
+
+<h2 id="layer-7-application-layer">Layer 7: Application Layer</h2>
+
+<p>The point at which users actually communicate or interact with the computer is the application layer of the OSI model. Technically, users communicate with the network stack through application processes, interfaces, or application programming interfaces (APIs). These interfaces connect the application being used to the computer’s operating system.</p>
+
+<h2 id="encapsulation">Encapsulation</h2>
+
+<p>Data goes through encapsulation when a host sends data over a network to another device: At each layer of the OSI model, it’s wrapped in protocol information. Each layer only communicates with its peer layer on the receiving equipment.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/osi-model/encapsulation.png" alt="OSI Model Encapsulation" title="OSI Model Encapsulation" /></p>
+
+<p>Each layer uses Protocol Data Units (PDUs) to communicate and exchange information. PDUs are the storage location for the control information associated with the data in each layer of the model. They are usually attached to the header at the beginning of the data field, but they can also be attached to the trailer, or the end of the data field.</p>
+
+<p>This is how the data encapsulation method works:</p>
+
+<ol>
+  <li>The user’s information is converted into data for transmission over the network.</li>
+  <li>A reliable connection between the sending and receiving hosts is established by converting the data into segments.</li>
+  <li>The segments are converted into packets, or datagrams, and a logical address is placed in the header so that each packet can be routed through an Internet network. A packet carries one segment of data on it.</li>
+  <li>For transmission on the local network, packets or datagrams are converted into frames. To uniquely identify hosts on a local network segment, hardware (Ethernet) addresses are used. Frames are used to carry packets.</li>
+  <li>A digital encoding and clocking scheme is used to convert frames to bits.</li>
+</ol>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

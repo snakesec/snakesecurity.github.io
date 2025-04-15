@@ -139,6 +139,10 @@ src: url("/fonts/play.ttf");
   transform: translateY(-5px);
 }
 
+blockquote {
+  text-align: center;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -4588,7 +4592,6 @@ textarea.form-control-lg {
 }
 
 .card-title {
-  margin-bottom: var(--bs-card-title-spacer-y);
   color: #fff;
   font-family: 'play';
 }

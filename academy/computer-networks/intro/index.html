@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>Computer Networks Intro - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="Introduction to computer networks, History, network types, topologies... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="Computer Networks Intro" />
+        <meta property="og:description" content="Introduction to computer networks, History, network types, topologies... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/computer-networks/intro/hybrid.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Computer Networks Intro">
+        <meta name="twitter:description" content="Introduction to computer networks, History, network types, topologies... Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/computer-networks/intro/hybrid.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/computer-networks/intro/hybrid.png" alt="Computer Networks Intro">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">Computer Networks Intro</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">Introduction to computer networks, History, network types, topologies...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">History</h1>
+
+<blockquote>
+  <p><em>Those who do not learn history are doomed to repeat it.</em> – <strong>George Santayana</strong>.</p>
+</blockquote>
+
+<p>It all starts with ARPANET…</p>
+
+<p>The <strong>Advanced Research Projects Agency Network</strong> <em>(ARPANET)</em> was the first wide-area packet-switched network with distributed control and one of the first computer networks to implement the TCP/IP protocol suite. Both technologies became the technical foundation of the Internet.</p>
+
+<p>The first computers were connected in 1969 and the <a href="https://en.wikipedia.org/wiki/Network_Control_Protocol_(ARPANET)">Network Control Protocol</a> was implemented in 1970, development of which was led by Steve Crocker at UCLA and other graduate students, including Jon Postel and others. The network was declared operational in 1971. Further software development enabled remote login and file transfer, which was used to provide an early form of email.</p>
+
+<p>The first four nodes were designated as a testbed for developing and debugging the <a href="https://en.wikipedia.org/wiki/Interface_Message_Processor#BBN_Report_1822">1822 protocol</a>, which was a major undertaking. While they were connected electronically in 1969, network applications were not possible until the Network Control Protocol was implemented in 1970…</p>
+
+<h2 id="the-4-hosts-network">The 4 hosts network</h2>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/arpanet.png" alt="First four nodes ARPANET" title="First four nodes ARPANET" /></p>
+
+<ul>
+  <li>
+    <p>The first node was created at <strong>University of California, Los Angeles</strong> <em>(UCLA)</em>, where <a href="https://en.wikipedia.org/wiki/Leonard_Kleinrock">Leonard Kleinrock</a> could evaluate network performance and examine his theories on <a href="https://en.wikipedia.org/wiki/Message_delay">message delay</a>. Kleinrock has established a Network Measurement Center (NMC), with an <a href="https://en.wikipedia.org/wiki/SDS_Sigma_series">SDS Sigma 7</a> being the first computer attached to it;</p>
+  </li>
+  <li>
+    <p>The Augmentation Research Center at <strong>Stanford Research Institute</strong> <em>(SRI)</em>, where <a href="https://en.wikipedia.org/wiki/Douglas_Engelbart">Douglas Engelbart</a> had created the new <a href="https://en.wikipedia.org/wiki/NLS_(computer_system)">NLS</a> system, an early <a href="https://en.wikipedia.org/wiki/Hypertext">hypertext</a> system, and would run the <a href="https://en.wikipedia.org/wiki/Network_Information_Center">Network Information Center</a> (NIC), with the <a href="https://en.wikipedia.org/wiki/SDS_940">SDS 940</a> that ran NLS, named “Genie”, being the first host attached;</p>
+  </li>
+  <li>
+    <p><strong>University of California, Santa Barbara</strong> <em>(UCSB)</em>, with the <a href="https://en.wikipedia.org/wiki/Glen_Culler">Culler</a>-Fried Interactive Mathematics Center’s <a href="https://en.wikipedia.org/wiki/System_360">IBM 360/75</a>, running <a href="https://en.wikipedia.org/wiki/OS/MVT">OS/MVT</a> being the machine attached;</p>
+  </li>
+  <li>
+    <p>The <strong>Utah Computing Science Department</strong> <em>(UCSD)</em>, where <a href="https://en.wikipedia.org/wiki/Ivan_Sutherland">Ivan Sutherland</a> had moved, running a <a href="https://en.wikipedia.org/wiki/PDP-10">DEC PDP-10</a> operating on <a href="https://en.wikipedia.org/wiki/TENEX_(operating_system)">TENEX</a>.</p>
+  </li>
+</ul>
+
+<p>The first characters transmitted on the ARPANET were “<strong>lo</strong>” from the word “<strong>login</strong>”, <em>Charley Kline</em> typed the first 2 characters from the <strong>SDS Sigma 7</strong> machine at <em>UCLA</em>, but the <strong>SDS 940</strong> at <em>SRI</em> crashed.</p>
+
+<p>The first permanent ARPANET link was established on 21 November 1969, between the IMP at <em>UCLA</em> and the IMP at the <em>SRI</em>. By 5 December 1969, the initial four-node network was established.</p>
+
+<h2 id="network-components">Network components</h2>
+
+<ul>
+  <li><strong>Hardware</strong> : <em>Includes physical devices such as routers, switches, firewalls, servers, and network interface cards.</em></li>
+  <li><strong>Software</strong> : <em>Network Management tools, Security solutions, and applications.</em></li>
+  <li><strong>Connectivity</strong> : <em>It’s about how data is sent, like wired (Ethernet cables) or wireless (Wi-Fi, Bluetooth). It also includes the different ways data can be sent and received.</em></li>
+  <li><strong>Topology</strong> : <em>The way network elements are arranged. It could be linear, star-shaped, or a mesh.</em></li>
+  <li><strong>Services</strong> : <em>This includes network features like file sharing, internet access, email, etc.</em></li>
+</ul>
+
+<h2 id="network-types">Network types</h2>
+
+<p>Although there are hundreds of types of networks, I’m only going to focus on the most common types used today without wasting time talking about abandoned types…</p>
+
+<p>The types of networks differ in many ways, from the topology to the range of the technology used for transmission.</p>
+
+<h3 id="lan">LAN</h3>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/lan.png" alt="Computer Networks LAN" title="Computer Networks LAN" /></p>
+
+<p>A <strong>Local Area Network</strong> <em>(LAN)</em> is typically limited to a specific geographic location, such as an office building, a single department within a corporate office…</p>
+
+<p>It’s the standard type of network we use in our homes.</p>
+
+<h3 id="man">MAN</h3>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/man.png" alt="Computer Networks MAN" title="Computer Networks MAN" /></p>
+
+<p>A simple example of a <strong>Metropolitan Area Network</strong> <em>(MAN)</em> is an ISP (Internet Service Provider). The ISP serves a city and provides Internet access to homes and/or businesses.</p>
+
+<h3 id="wan">WAN</h3>
+
+<p><strong>Wide Area Network</strong> <em>(WAN)</em> networks can be interpreted as a link between a set of MAN networks. The best example of a WAN network is the Internet, which can connect even continents.</p>
+
+<h3 id="pan">PAN</h3>
+
+<p>A <strong>Personal Area Network</strong> <em>(PAN)</em> can be seen with smartphones and laptops in a conference room where local connections are used for collaboration and data transfer between devices. PANs can involve wired connections like Ethernet or USB, but more often involve short-range wireless connections like <strong>Bluetooth</strong>, <strong>infrared</strong>, or <strong>ZigBee</strong>.</p>
+
+<h3 id="sdwan">SDWAN</h3>
+
+<p><strong>Software-Defined Wide Area Network</strong> <em>(SDWAN)</em> is a virtual WAN architecture that uses software to control connections, equipment, and services and to modify the network based on what is happening.</p>
+
+<p>SDWAN can incorporate all types of transport, including MPLS, LTE, and broadband Internet services, to securely connect users to applications. To add or remove bandwidth or reroute around failed links, the SDWAN controller can make changes in real time. By decoupling the network hardware from its control mechanism, SDWANs can simplify the management and operation of wide area networks.</p>
+
+<p><em>There are many other types of networks, but these account for more than 70% and are by far the most widely used…</em></p>
+
+<h2 id="physical-network-topologies">Physical Network Topologies</h2>
+
+<p>Keep in mind that networks can have a physical topology that is different from their virtual topology. While the physical topology is used to locate the nodes of the network, the virtual topology is how packets flow within the network.</p>
+
+<p>Here are the topologies that you’re most likely to come across these days:</p>
+
+<ul>
+  <li><em>Bus</em></li>
+  <li><em>Star</em>/<em>hub-and-spoke</em></li>
+  <li><em>Ring</em></li>
+  <li><em>Mesh</em></li>
+  <li><em>Point-to-point</em></li>
+  <li><em>Point-to-multipoint</em></li>
+  <li><em>Hybrid</em></li>
+</ul>
+
+<h3 id="bus-topology">Bus Topology</h3>
+
+<p>A bus network is a network topology in which nodes are directly connected to a common half-duplex link called a bus.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/bus.png" alt="Computer Networks BUS Topology" title="Computer Networks BUS Topology" /></p>
+
+<p>A host on a bus network is called a station. In a bus network, every station will receive all network traffic, and the traffic generated by each station has equal transmission priority. A bus network forms a single network segment and collision domain. In order for nodes to share the bus, they use a medium access control technology such as carrier-sense multiple access (CSMA) or a bus master. – <a href="https://en.wikipedia.org/wiki/Bus_network"><em>Wikipedia</em></a></p>
+
+<p>It’s hard to troubleshoot, hard to change, hard to move, and it really doesn’t offer much in the way of fault tolerance because everything is connected to that single cable. In other words, if the cable fails, the whole network will fail.</p>
+
+<h3 id="star">Star</h3>
+
+<p>The computers in a Star (hub-and-spoke) topology are connected to a central point by their own individual wired or wireless connections. You’ll often find this central point is occupied by a device such as a hub, switch, or access point.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/star.png" alt="Computer Networks STAR Topology" title="Computer Networks STAR Topology" /></p>
+
+<p>Star topology has many advantages over bus topology, which is why it is more widely used, even though it obviously requires more physical media. One of its best features is that because each computer or network segment is individually connected to the central device, if a cable fails, it will only bring down the computer or network segment associated with the point of failure. This makes the network much more fault tolerant and much easier to troubleshoot. Another great thing about a star topology is that it’s much more scalable-all you have to do to add to it is run a new cable and connect it to the machine at the core of the star.</p>
+
+<h3 id="ring">Ring</h3>
+
+<p>Each computer is connected directly to other computers on the same network in this type of topology. The network’s primary cable forms a ring as data flows from computer to computer and back to the source.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/ring.png" alt="Computer Networks RING Topology" title="Computer Networks RING Topology" /></p>
+
+<p>The problem is that if you want to add to the network, you have no choice but to break the cable ring, which is likely to bring down the entire network, so the ring topology has a lot in common with the bus topology!</p>
+
+<h3 id="mesh">Mesh</h3>
+
+<p>You will notice that there is a path from each machine to every other machine on the network in this type of topology.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/mesh.png" alt="Computer Networks Mesh Topology" title="Computer Networks Mesh Topology" /></p>
+
+<p>You won’t see it used much, if at all, on LANs these days, but you will see a modified version of it, known as hybrid mesh, used in a limited way on WANs, including the Internet.</p>
+
+<h3 id="point-to-point">Point-to-Point</h3>
+
+<p>In a point-to-point topology, you have a direct connection between two routers or switches, giving you a single communications path. They may be connected by a serial cable, which is a physical network, or they may be widely separated and connected only by a circuit within a FrameRelay or MPLS network, which is a logical network.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/point-to-point.png" alt="Computer Networks Point-to-Point Topology" title="Computer Networks Point-to-Point Topology" /></p>
+
+<p>In many of today’s WANs, you’ll typically find point-to-point networks. A connection from a computer to a hub or switch is also a valid point-to-point connection. A common version of this setup is a direct wireless connection between two wireless bridges used to connect computers in two different buildings.</p>
+
+<h3 id="point-to-multipoint">Point-to-Multipoint</h3>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/point-to-multipoint.png" alt="Computer Networks Point-to-MultiPoint Topology" title="Computer Networks Point-to-MultiPoint Topology" /></p>
+
+<p>A point-to-multipoint topology consists of a series of connections between an interface on one router and multiple destination routers, one connection point to multiple connection points. Each of the routers and each of their interfaces involved in the point-to-multipoint connection are part of the same network.</p>
+
+<h3 id="hybrid">Hybrid</h3>
+
+<p>A hybrid is any combination of two or more types of network topologies, either physical or logical, that co-exist on a single network.</p>
+
+<p><img class="img-fluid" src="/images/academy/computer-networks/intro/hybrid.png" alt="Computer Networks Hybrid Topology" title="Computer Networks Hybrid Topology" /></p>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

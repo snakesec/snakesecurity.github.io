@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>C Code Structure - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="C Code Structure, style and best practices... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="C Code Structure" />
+        <meta property="og:description" content="C Code Structure, style and best practices... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/c-programming/k&r-geometry-c-style.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="C Code Structure">
+        <meta name="twitter:description" content="C Code Structure, style and best practices... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/c-programming/k&r-geometry-c-style.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/c-programming/k&r-geometry-c-style.png" alt="C Code Structure">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">C Code Structure</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">C Code Structure, style and best practices...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h2 style="text-align:center">Basic Structure</h2>
+
+<p>The C code structure can be a bit intimidating for some at the first try, but it’s very simple and becomes intuitive over time!</p>
+
+<p>In C, programs are made up of statements. Statements end with a semicolon and are organized into sections called functions.</p>
+
+<p>Let’s go back to the code example we used earlier:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"SNAKE Security</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>You could write this code like this:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span><span class="n">printf</span><span class="p">(</span><span class="s">"SNAKE Security</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><span class="k">return</span> <span class="mi">0</span><span class="p">;}</span></code></pre></figure>
+
+<p>As long as the statements conform to the standards, the compiler doesn’t care how they are written.</p>
+
+<p>Although this code works, it’s ugly and chaotic… That’s why we have the proper structure and style of code to use.</p>
+
+<h3 id="kr">K&amp;R</h3>
+
+<p>There is a lot of debate about this, but although some “programmers” code in other ways, there is only one official style standard and that is K&amp;R, which was documented in the book <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language"><strong>The C Programming Language</strong></a> written by <strong>Brian Kernighan</strong> and <strong>Dennis Ritchie</strong> <em>(the creator of C)</em>.</p>
+
+<p><img class="img-fluid" src="/images/academy/c-programming/k&amp;r-geometry-c-style.png" alt="K&amp;R Geometry" title="K&amp;R Geometry" /></p>
+
+<p>The table below is a list of the styles in use…</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Example</th>
+        <th style="text-align: left">Open/close<br />equal height</th>
+        <th style="text-align: left">Open/close<br />equal indent</th>
+        <th style="text-align: left">Open/close<br />don’t share<br />lines with<br />content</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>K&amp;R</td>
+        <td><img src="/images/academy/c-programming/k&amp;r-c-style.png" alt="K&amp;R" /></td>
+        <td style="text-align: center">✓</td>
+        <td style="text-align: center">✓</td>
+        <td style="text-align: center">✓</td>
+      </tr>
+      <tr>
+        <td>Allman</td>
+        <td><img src="/images/academy/c-programming/allman-c-style.png" alt="Allman" /></td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">✓</td>
+        <td style="text-align: center">✓</td>
+      </tr>
+      <tr>
+        <td>GNU</td>
+        <td><img src="/images/academy/c-programming/gnu-c-style.png" alt="GNU" /></td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">✓</td>
+      </tr>
+      <tr>
+        <td>Whitesmiths</td>
+        <td><img src="/images/academy/c-programming/whitesmiths-c-style.png" alt="Whitesmits" /></td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">✓</td>
+      </tr>
+      <tr>
+        <td>Horstmann</td>
+        <td><img src="/images/academy/c-programming/horstmann-c-style.png" alt="Horstmann" /></td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">✓</td>
+        <td style="text-align: center">𐄂</td>
+      </tr>
+      <tr>
+        <td>Pico</td>
+        <td><img src="/images/academy/c-programming/pico-c-style.png" alt="Pico" /></td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">𐄂</td>
+      </tr>
+      <tr>
+        <td>Ratliff</td>
+        <td><img src="/images/academy/c-programming/ratliff-c-style.png" alt="Ratliff" /></td>
+        <td style="text-align: center">✓</td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">✓</td>
+      </tr>
+      <tr>
+        <td>Lisp</td>
+        <td><img src="/images/academy/c-programming/lisp-c-style.png" alt="Lisp" /></td>
+        <td style="text-align: center">✓</td>
+        <td style="text-align: center">𐄂</td>
+        <td style="text-align: center">𐄂</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>For me, anything other than K&amp;R is nothing but disgusting…</p>
+
+<p>In K&amp;R, to reflect their equal importance in terms of impact on the meaning of the code above and below them, the space that the opener and closer of a control structure occupy on the screen is equal (one line).</p>
+
+<p>K&amp;R style code does not have any artificial, meaningless lines as a result of style enforcement. Each line tells the reader something they wouldn’t otherwise know, and they can therefore move from line to line, picking up new information at each one.</p>
+
+<p>Blank lines are not bad, since they are useful for grouping related lines together and separating unrelated lines, and so hitting a blank line is a sign, like a paragraph or section break in a book, that the old topic ends and a new topic begins, but whether a blank line is appropriate in a given context is entirely up to that context, and so cannot be decided by the coding style.</p>
+
+<p>In K&amp;R, each empty line has a purpose, determined by the programmer based on the context, to communicate some information about the relationship of each line.</p>
+
+<h3 id="indentation">Indentation</h3>
+
+<p>Look, C is not a dumb language like Python, so there is no convention or requirement to indent code.</p>
+
+<p>Although it is good practice to follow the indentation style of the K&amp;R specification…</p>
+
+<h3 id="comments">Comments</h3>
+
+<p>The ability to comment code is extremely useful in complex programs… it’s good practice to make comments either for yourself in the future or for other programmers…</p>
+
+<p>For simple “side notes” that explain what certain parts of the code do, single-line comments are particularly useful. The best locations for these comments are after variable declarations, and after parts of the code that might need explaining.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="c1">// Example of a single-line comment</span></code></pre></figure>
+
+<p>For long explanations of code, multi-line comments are most useful. They can be used for copyright/license notices, and they can also be used for explanations of the purpose of a block of code or functions.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/* Example of multi-line comment
+function : int main()
+return : 0 at end
+procedure : prints "SNAKE Security" with a new line 
+ */</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/**********************************************
+ * This is also a multi-line comment          *
+ * But done with a cool, eye-catching style   *
+ *                                            *
+ * This is how we do!                         *
+ **********************************************/</span></code></pre></figure>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

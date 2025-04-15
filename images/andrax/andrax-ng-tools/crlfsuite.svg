@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512mm"
+   height="512mm"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="crlfsuite.svg"
+   inkscape:export-filename="../GIT Icons/crlfsuite.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.20935045"
+     inkscape:cx="735.60864"
+     inkscape:cy="1007.8794"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="115.42398"
+       y="647.12812"
+       width="1817.6572"
+       height="899.84432"
+       id="rect950" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke-width:1.32449;stroke-linecap:round;stroke-linejoin:bevel"
+       id="path234"
+       cx="256"
+       cy="256"
+       r="250" />
+    <g
+       aria-label="\r\n"
+       transform="matrix(1.0929547,0,0,1.531283,-90.559536,-921.33752)"
+       id="text948"
+       style="font-size:192px;line-height:1.25;letter-spacing:-22.6153px;word-spacing:-1.65055px;white-space:pre;shape-inside:url(#rect950);fill:#00a7ff">
+      <path
+         d="m 150.75183,699.73691 61.632,130.176 q 2.304,4.608 2.304,7.296 0,3.648 -2.88,6.336 -2.88,2.88 -6.72,2.88 -3.456,0 -5.568,-1.92 -2.112,-1.728 -4.416,-6.528 l -61.44,-130.368 q -2.304,-4.608 -2.304,-7.104 0,-3.648 2.88,-6.336 2.88,-2.88 6.72,-2.88 3.264,0 5.376,1.92 2.112,1.728 4.416,6.528 z"
+         style="font-weight:bold;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+         id="path1064" />
+      <path
+         d="m 293.44861,738.52091 q 8.064,0 16.128,4.992 8.064,4.992 8.064,11.328 0,4.032 -2.88,6.912 -2.88,2.88 -6.72,2.88 -3.264,0 -7.488,-3.456 -4.224,-3.456 -7.488,-3.456 -4.608,0 -11.328,4.224 -6.528,4.032 -20.352,15.36 v 28.224 h 26.688 q 12.864,0 12.864,9.6 0,9.6 -12.864,9.6 h -57.024 q -12.672,0 -12.672,-9.6 0,-5.568 3.264,-7.488 3.264,-2.112 9.408,-2.112 h 11.136 v -45.504 h -6.72 q -12.672,0 -12.672,-9.6 0,-9.6 12.672,-9.6 h 25.92 v 12.48 q 11.52,-8.64 18.24,-11.712 6.72,-3.072 13.824,-3.072 z"
+         style="font-weight:bold;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+         id="path1066" />
+      <path
+         d="m 335.92138,699.73691 61.632,130.176 q 2.304,4.608 2.304,7.296 0,3.648 -2.88,6.336 -2.88,2.88 -6.72,2.88 -3.456,0 -5.568,-1.92 -2.112,-1.728 -4.416,-6.528 l -61.44,-130.368 q -2.304,-4.608 -2.304,-7.104 0,-3.648 2.88,-6.336 2.88,-2.88 6.72,-2.88 3.264,0 5.376,1.92 2.112,1.728 4.416,6.528 z"
+         style="font-weight:bold;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+         id="path1068" />
+      <path
+         d="m 410.26616,824.72891 q -12.672,0 -12.672,-9.6 0,-9.6 12.672,-9.6 h 1.152 v -45.504 q -11.712,-0.384 -11.712,-9.6 0,-9.6 12.864,-9.6 h 18.048 v 9.216 q 6.912,-6.528 12.672,-9.024 5.76,-2.688 13.632,-2.688 14.976,0 24.576,8.448 9.6,8.448 9.6,23.808 v 34.944 q 11.712,0 11.712,9.6 0,9.6 -12.672,9.6 h -17.088 q -12.864,0 -12.864,-9.6 0,-9.6 11.712,-9.6 v -34.176 q 0,-13.824 -17.28,-13.824 -6.72,0 -12.096,2.88 -5.184,2.88 -11.904,10.176 v 34.944 h 1.152 q 12.672,0 12.672,9.6 0,9.6 -12.672,9.6 z"
+         style="font-weight:bold;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+         id="path1070" />
+    </g>
+  </g>
+</svg>

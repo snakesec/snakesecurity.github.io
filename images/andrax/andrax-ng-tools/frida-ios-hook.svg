@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512mm"
+   height="512mm"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="frida-ios-hook.svg"
+   inkscape:export-filename="../GIT Icons/frida-ios-hook.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.20935045"
+     inkscape:cx="874.13235"
+     inkscape:cy="1017.4327"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="-833.19471"
+       y="52.506157"
+       width="2747.5983"
+       height="2055.5022"
+       id="rect533" />
+    <rect
+       x="-1722.9819"
+       y="177.59545"
+       width="1757.7248"
+       height="1757.7434"
+       id="rect468" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect358-3"
+       style="fill:#ef6456;fill-opacity:1;fill-rule:evenodd;stroke-width:1.26607;stroke-linecap:round;stroke-linejoin:bevel"
+       d="M 229.13317,6.0248051 C 187.49229,6.0543118 145.85061,6.0553375 104.21027,6.1521756 75.45458,7.6140243 47.471681,21.617364 29.401977,44.091748 13.910058,62.993192 5.5074997,87.517148 6.022336,111.9406 5.981251,205.47101 6.041909,299.00144 6.10282,392.53183 c 0.023265,5.25163 -0.026008,10.50596 0.073659,15.75582 1.6193861,29.1239 16.114985,57.3962 39.193357,75.32053 18.7479,14.89967 42.798543,22.88668 66.725334,22.36806 93.52687,0.0295 187.05375,-0.0235 280.5806,-0.0844 5.2037,-0.0247 10.41012,0.0282 15.61203,-0.0735 29.09389,-1.62056 57.33779,-16.08501 75.26758,-39.12053 14.92371,-18.75596 22.9467,-42.82333 22.42026,-66.77469 0.0371,-94.51416 -0.0215,-189.02833 -0.0806,-283.54248 -0.0265,-4.22283 0.0269,-8.44847 -0.0735,-12.66945 C 504.21255,74.915805 490.03595,46.951773 467.40277,28.999019 448.63775,13.819288 424.4366,5.5702397 400.31277,6.0172644 343.25293,5.982121 286.19302,6.024188 229.13317,6.0248051 Z" />
+    <path
+       id="rect358"
+       style="fill:#e0e0ee;fill-rule:evenodd;stroke-width:1.26607;stroke-linecap:round;stroke-linejoin:bevel;fill-opacity:1"
+       d="m 109.7799,18.562688 c -50.535675,0 -91.219495,40.68337 -91.219495,91.218492 V 402.2159 c 0,50.53511 40.68382,91.21897 91.219495,91.21897 h 292.43795 c 50.53567,0 91.21998,-40.68386 91.21998,-91.21897 V 109.78118 c 0,-50.535122 -40.68431,-91.218492 -91.21998,-91.218492 z M 243.18901,82.004197 H 394.69929 V 429.99337 h -77.91932 v -98.15096 h -73.59096 -6.92567 l -54.54402,98.15096 H 94.276527 L 167.00123,314.88891 c -41.55703,-20.52233 -64.067,-57.99812 -64.067,-112.42717 0,-77.62807 51.08061,-120.457543 140.25478,-120.457543 z m 0,62.459433 c -42.42253,0 -66.66431,17.84548 -66.66431,57.10584 0,40.15237 24.24178,58.89087 66.66431,58.89087 h 73.59096 V 144.46363 Z" />
+  </g>
+</svg>

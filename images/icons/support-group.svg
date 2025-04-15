@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="40"
+   viewBox="0 -960 960 800"
+   width="48"
+   fill="#0000f5"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="support-group.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="20.440678"
+     inkscape:cy="24"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 40,-240 v -160 q 0,-29 20.5,-49.5 Q 81,-470 110,-470 h 141 q 17,0 32.5,8.5 15.5,8.5 26.5,23.5 29,42 74,65 45,23 96,23 51,0 96,-23 45,-23 75,-65 11,-15 26,-23.5 15,-8.5 32,-8.5 h 141 q 29,0 49.5,20.5 20.5,20.5 20.5,49.5 v 160 H 660 v -119 q -36,33 -82.5,51 -46.5,18 -97.5,18 -51,0 -97,-18 -46,-18 -83,-51 v 119 z m 440,-170 q -35,0 -67.5,-16.5 Q 380,-443 360,-472 q -16,-23 -38.5,-37 -22.5,-14 -48.5,-19 29,-30 91,-46 62,-16 116,-16 54,0 116.5,16 62.5,16 91.5,46 -26,5 -48.5,19 -22.5,14 -38.5,37 -20,29 -52.5,45.5 Q 516,-410 480,-410 Z M 160,-540 q -45,0 -77.5,-32.5 Q 50,-605 50,-650 q 0,-46 32.5,-78 32.5,-32 77.5,-32 46,0 78,32 32,32 32,78 0,45 -32,77.5 -32,32.5 -78,32.5 z m 640,0 q -45,0 -77.5,-32.5 Q 690,-605 690,-650 q 0,-46 32.5,-78 32.5,-32 77.5,-32 46,0 78,32 32,32 32,78 0,45 -32,77.5 -32,32.5 -78,32.5 z M 480,-660 q -45,0 -77.5,-32.5 Q 370,-725 370,-770 q 0,-46 32.5,-78 32.5,-32 77.5,-32 46,0 78,32 32,32 32,78 0,45 -32,77.5 -32,32.5 -78,32.5 z"
+     id="path2" />
+</svg>

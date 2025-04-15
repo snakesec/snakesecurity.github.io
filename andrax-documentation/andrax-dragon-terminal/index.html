@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>ANDRAX-NG Dragon Terminal - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="How to use ANDRAX-NG's Dragon Terminal, Dragon Notification, Special Keys, Multi-window system, Custom Fonts, Custom Themes, Mount Storage..." />
+        <meta property="og:title" content="ANDRAX-NG Dragon Terminal" />
+        <meta property="og:description" content="How to use ANDRAX-NG's Dragon Terminal, Dragon Notification, Special Keys, Multi-window system, Custom Fonts, Custom Themes, Mount Storage..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/andrax-documentation/andrax-ng-dragon-terminal.svg" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ANDRAX-NG Dragon Terminal">
+        <meta name="twitter:description" content="How to use ANDRAX-NG's Dragon Terminal, Dragon Notification, Special Keys, Multi-window system, Custom Fonts, Custom Themes, Mount Storage...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/andrax-documentation/andrax-ng-dragon-terminal.svg">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/andrax-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/andrax-documentation/andrax-ng-dragon-terminal.svg" alt="ANDRAX-NG Dragon Terminal">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-14 00:00">April 14, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">ANDRAX-NG Dragon Terminal</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">How to use ANDRAX-NG's Dragon Terminal, by far the most advanced Terminal Emulator for Android</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/snake-security-front-black.png" class="rounded-circle rounded-border-green" alt="SNAKE Security - Just one bite">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/about"><b>SNAKE Security TEAM</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">Dragon Terminal</h1>
+
+<p>Dragon Terminal is a terminal emulator developed for ANDRAX-NG based on NeoTerm, and we are very proud to say that it is the most advanced and complete terminal emulator available for Android devices.</p>
+
+<h2 style="text-align:left">Notification</h2>
+
+<p>Let’s start with the Dragon Terminal notification. The main purpose of this notification is to create a “<strong>service</strong>” on Android and to prevent the “<strong>task killer</strong>” from destroying the task running in the terminal window if the user leaves the “<em>activity</em>” for too long.</p>
+
+<p><img style="max-height: 200px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-notification.png" alt="ANDRAX-NG Dragon Terminal notification" title="ANDRAX-NG Dragon Terminal notification" /></p>
+
+<p>Some features have been added to the notification to make it more functional, such as: an active window <em>(session)</em> counter, an <strong>Exit</strong> button to kill all processes running in the terminal at once, and an <strong>ACQUIRE LOCK</strong> button that can be used to get Android’s <em>Wake Lock</em> and keep the CPU active even when the device is idle, something very useful for a high performance terminal emulator like Dragon Terminal.</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-notification-full.png" alt="ANDRAX-NG Dragon Terminal notification Expanded" title="ANDRAX-NG Dragon Terminal notification Expanded" /></p>
+
+<h2 style="text-align:left">Special Keys</h2>
+
+<p>Dragon Terminal is equipped with a number of special keys that make it easier for you to type commands and use some function keys as quickly as possible.</p>
+
+<p><img style="max-height: 200px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-special-keys.png" alt="ANDRAX-NG Dragon Terminal special keys" title="ANDRAX-NG Dragon Terminal  special keys" /></p>
+
+<p>The special keys can be “<strong>extended</strong>” to add symbols and/or more keys:</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-special-keys-extended.png" alt="ANDRAX-NG Dragon Terminal special keys extended" title="ANDRAX-NG Dragon Terminal special keys extended" /></p>
+
+<p>Dragon Terminal also has the ability to dynamically use special keys with the powerful EKS (Extended Keys Scripting) engine. When you run vi or vim, here’s how EKS configures the default keys:</p>
+
+<p><img style="max-height: 350px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-special-keys-eks-vim.png" alt="ANDRAX-NG Dragon Terminal special keys EKS" title="ANDRAX-NG Dragon Terminal special keys EKS" /></p>
+
+<p>A typical script for the EKS engine will look something like this:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">extra-key:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">version:</span><span class="w"> </span><span class="mi">20</span><span class="w">
+    </span><span class="err">with-default:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="err">program:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="err">vim</span><span class="p">,</span><span class="w"> </span><span class="err">vi</span><span class="p">,</span><span class="w"> </span><span class="err">nvim</span><span class="w"> </span><span class="p">]</span><span class="w">
+
+    </span><span class="err">key:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="err">code:</span><span class="w"> </span><span class="s2">"&lt;Esc&gt; dd"</span><span class="w">
+            </span><span class="err">display:</span><span class="w"> </span><span class="s2">"dd"</span><span class="w">
+            </span><span class="err">with-enter:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="err">code:</span><span class="w"> </span><span class="s2">"&lt;Esc&gt; :x"</span><span class="w">
+            </span><span class="err">display:</span><span class="w"> </span><span class="s2">":x"</span><span class="w">
+            </span><span class="err">with-enter:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="err">code:</span><span class="w"> </span><span class="s2">"&lt;Esc&gt; :w"</span><span class="w">
+            </span><span class="err">display:</span><span class="w"> </span><span class="s2">":w"</span><span class="w">
+            </span><span class="err">with-enter:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="err">code:</span><span class="w"> </span><span class="s2">"&lt;Esc&gt; :q"</span><span class="w">
+            </span><span class="err">display:</span><span class="w"> </span><span class="s2">":q"</span><span class="w">
+            </span><span class="err">with-enter:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>As you can see, EKS is based on JSON and has its own syntax, which is called NeoLang.</p>
+
+<ul>
+  <li><strong>version</strong> : Script version</li>
+  <li><strong>with-default</strong> : If true keep defaults Special Keys active</li>
+  <li><strong>program</strong> : Program name(s) where the script should be active</li>
+  <li><strong>code</strong> : Code to be passed to the terminal when pressed, the available command keys are: <em>&lt;Esc&gt;</em>, <em>&lt;Ctrl&gt;</em>, <em>&lt;Alt&gt;</em>, <em>&lt;Delete&gt;</em>, <em>&lt;Enter&gt;</em></li>
+  <li><strong>display</strong> : Characters displayed to the user</li>
+  <li><strong>with-enter</strong> : If true will add the <em>&lt;Enter&gt;</em> event as soon as pressed.</li>
+</ul>
+
+<h3 style="text-align:left">How to install EKS scripts?</h3>
+
+<p>Dragon Terminal comes with a couple of EKS scripts by default. However, you can easily create and install your own EKS scripts.</p>
+
+<p><img style="max-height: 200px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-special-keys-eks-install.png" alt="ANDRAX-NG Dragon Terminal special keys EKS install" title="ANDRAX-NG Dragon Terminal special keys EKS install" /></p>
+
+<p>To install custom scripts is very simple, just navigate to: <strong>Settings</strong> <strong>-&gt;</strong> <strong>Customization</strong> and press the install icon in “<strong>Add EKS Script</strong>”. Select the script in the file manager and you are done!</p>
+
+<h2 style="text-align:left">High-performance multi-window</h2>
+
+<p>Dragon Terminal gives ANDRAX-NG the ability to run hundreds, if not thousands, of tools, programs, and frameworks at the same time without any performance loss, even on low end devices.</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-advanced-window-system.png" alt="ANDRAX-NG Dragon Terminal Advanced Window System" title="ANDRAX-NG Dragon Terminal Advanced Window System" /></p>
+
+<p>All this is possible due to our advanced multi-window system.</p>
+
+<h2 style="text-align:left">Recovery Shell</h2>
+
+<p>Dragon Terminal is equipped with a recovery shell that allows the user to execute commands directly in the Android shell using the context of the ANDRAX-NG interface.</p>
+
+<p>Normally you do not need to use the recovery shell, only if you are developing something special or working on a debug, be careful, because all commands executed here are running outside the controlled ANDRAX-NG environment and could damage your device and/or files…</p>
+
+<p>You can enter the recovery shell by pressing the Dragon Terminal launcher icon and selecting “<strong>Recovery Mode</strong>”:</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-recovery-launcher.png" alt="ANDRAX-NG Dragon Terminal recovery launcher" title="ANDRAX-NG Dragon Terminal recovery launcher" /></p>
+
+<p>You can also launch the Recovery Shell from the Dragon Terminal drop-down menu:</p>
+
+<p><img style="max-height: 150px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-recovery-menu.png" alt="ANDRAX-NG Dragon Terminal recovery menu" title="ANDRAX-NG Dragon Terminal recovery menu" /></p>
+
+<h2 style="text-align:left">User login</h2>
+
+<p>Dragon Terminal is also able to let you change the default login user, by default ANDRAX-NG is managed by the “andrax” user, but if you’re a low IQ kid who got into hacking through deprecated systems like Kali Linux and got used to having the root user for everything, Dragon Terminal allows you to do this, although it’s more of a shot in the foot than an useful feature…</p>
+
+<p><img style="max-height: 250px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-user-menu.png" alt="ANDRAX-NG Dragon Terminal user menu" title="ANDRAX-NG Dragon Terminal user menu" /></p>
+
+<p>Now every time that you open a new window or the terminal the selected user will be used:</p>
+
+<p><img style="max-height: 200px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-root-shell.png" alt="ANDRAX-NG Dragon Terminal root shell" title="ANDRAX-NG Dragon Terminal root shell" /></p>
+
+<h2 style="text-align:left">Mount Storage</h2>
+
+<p>ANDRAX-NG runs in a chroot-style container that prevents things from getting out into the Android space. Of course, nothing is 100% secure, the chroot container is not impenetrable, but it provides a very good layer of security.</p>
+
+<p>However, on Android there will be cases where we need to access a file we’ve just downloaded, or we need to store a large file outside the ANDRAX-NG container (e.g. for Penetration Testing logs).</p>
+
+<p>That’s why Dragon Terminal has an option that allows you to mount the internal memory of the Android device inside the ANDRAX-NG container by creating a bi-directional bridge.</p>
+
+<p><img style="max-height: 250px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-mount-storage.png" alt="ANDRAX-NG Dragon Terminal mount storage" title="ANDRAX-NG Dragon Terminal mount storage" /></p>
+
+<p>“<strong>/sdcard</strong>” refers to Android’s internal storage.</p>
+
+<p>Now just use the path “<strong>/sdcard</strong>” inside the ANDRAX-NG container, but remember that it is only accessible to the root user (for security reasons).</p>
+
+<p><img style="max-height: 200px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-mount-storage-list.png" alt="ANDRAX-NG Dragon Terminal mount storage list" title="ANDRAX-NG Dragon Terminal mount storage list" /></p>
+
+<p>Every time you finish using your Android’s internal memory, remember to unmount it!</p>
+
+<h2 style="text-align:left">Initial Command</h2>
+
+<p>You can set an initial command in Dragon Terminal. This command will be executed whenever you start a new session in the Terminal.</p>
+
+<p>To set an initial command, go to <strong>Settings -&gt; General Settings -&gt; Initial Command</strong></p>
+
+<h2 style="text-align:left">Bell</h2>
+
+<p>Bell is a well-known feature of terminals that can draw the user’s attention to something important. Dragon Terminal could not fail to have this option, which should be present in any respectable terminal.</p>
+
+<p>This feature is enabled by default, but can be disabled by going to <strong>Settings -&gt; General Settings -&gt; Bell</strong></p>
+
+<h2 style="text-align:left">Vibrate</h2>
+
+<p>Vibrate exists to complement the bell function, this option is enabled by default, you can disable it going to <strong>Settings -&gt; General Settings -&gt; Vibrate</strong></p>
+
+<h2 style="text-align:left">Full Screen</h2>
+
+<p>By default, Dragon Terminal starts in full screen to provide more space for drawing lines and to allow the user to use the tools in the largest possible area; this feature can be turned off by going to <strong>Settings -&gt; UI Settings -&gt; Full Screen</strong></p>
+
+<p>If disabled, you will see the <em>Status bar</em> at the top of Dragon Terminal. It contains notifications and other types of junk.</p>
+
+<h2 style="text-align:left">Hide Toolbar</h2>
+
+<p>To ensure that you have the largest possible window, this option tells Dragon Terminal to hide the toolbar whenever the soft keyboard is on the screen!</p>
+
+<p>Can be disabled at: <strong>Settings -&gt; UI Settings -&gt; Hide Toolbar</strong></p>
+
+<p>Even if Hide Toolbar is disabled, <em>the Toolbar will be hidden in full screen mode</em>!</p>
+
+<h2 style="text-align:left">Next Tab Animation</h2>
+
+<p>Change the animation position when a tab is closed, the default is to switch to the previous tab, but you can enable this option to switch to the next tab (if there is one). Can be enabled in: <strong>Settings -&gt; UI Settings -&gt; Next Tab Animation</strong></p>
+
+<h2 style="text-align:left">Show Extra Keys</h2>
+
+<p>This option allows Dragon Terminal to draw the special keys that help in using tools that need some keys like; Arrows, Ctrl, Alt, Tab, Esc, PageUp, PageDown, Home, End…</p>
+
+<p>This is an extremely useful feature (that is missing in other “platforms”), but if you don’t want to use it, it can be disabled in <strong>Settings -&gt; UI Settings -&gt; Show Extra Keys</strong></p>
+
+<p>If disabled, each new window tab will be opened without the special keys, the previous windows will remain with it enabled until they are closed.</p>
+
+<h2 style="text-align:left">Custom Font Types</h2>
+
+<p>Dragon Terminal allows you to change the terminal font; you can use one of the predefined fonts or a custom .ttf file.</p>
+
+<p><img style="max-height: 400px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-custom-fonts.png" alt="ANDRAX-NG Dragon Terminal custom fonts" title="ANDRAX-NG Dragon Terminal custom fonts" /></p>
+
+<h2 style="text-align:left">Color Scheme</h2>
+
+<p>Dragon Terminal’s color scheme is fully customizable, you can use predefined color schemes or create your own from scratch or by using a template.</p>
+
+<p><img style="max-height: 400px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-color-scheme.png" alt="ANDRAX-NG Dragon Terminal color scheme" title="ANDRAX-NG Dragon Terminal color scheme" /></p>
+
+<p>The special keys colors are linked to the foreground color, so if you change the foreground color to “<strong>red</strong>”, the special keys will be red too!</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/andrax-ng-dragon-terminal-color-scheme-edit.png" alt="ANDRAX-NG Dragon Terminal color scheme edit" title="ANDRAX-NG Dragon Terminal color scheme edit" />
+<br /><br /></p>
+
+<h2 style="text-align:left">Font size</h2>
+
+<p>Dragon Terminal’s default font size is 30, which on most devices is ideal, but on devices with small screens or low dpi it may be too big and on some tablets or foldable devices it may be too small.</p>
+
+<p><img style="max-height: 150px;" class="img-fluid d-block mx-auto rounded" src="/images/andrax-documentation/andrax-dragon-terminal/pinch-movement.gif" alt="Pinch movement" title="Pinch movement" /></p>
+
+<p>To change the font size easily, you can use the “<strong>pinch</strong>” movement with your fingers on the terminal, which allows you to increase or decrease the font size.</p>
+
+<p>You can also use the shortcuts: ctrl + alt + “<strong>-</strong>” (minus) to decrease the font size and ctrl + alt + “<strong>+</strong>” (plus) to increase it.</p>
+
+<h2 style="text-align:left">Shortcuts</h2>
+
+<p>Dragon Terminal has some shortcuts that may be useful to you:</p>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th style="text-align: left">Shortcut</th>
+            <th style="text-align: left">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td style="text-align: left">Ctrl Alt v</td>
+            <td style="text-align: left">Paste</td>
+            </tr>
+            <tr>
+            <td style="text-align: left">Ctrl Alt n</td>
+            <td style="text-align: left">Create a new session</td>
+            </tr>
+            <tr>
+            <td style="text-align: left">Ctrl Alt z</td>
+            <td style="text-align: left">Switch to previous tab</td>
+            </tr>
+            <tr>
+            <td style="text-align: left">Ctrl Alt x</td>
+            <td style="text-align: left">Switch to next tab</td>
+            </tr>
+            <tr>
+            <td style="text-align: left">Ctrl Alt f</td>
+            <td style="text-align: left">Toggle Full Screen</td>
+            </tr>
+            <tr>
+            <td style="text-align: left">Ctrl Alt -</td>
+            <td style="text-align: left">Decrease font size</td>
+            </tr>
+            <tr>
+            <td style="text-align: left">Ctrl Alt +</td>
+            <td style="text-align: left">Increase font size</td>
+            </tr>
+            <tr>
+            <td style="text-align: left">Alt NUM</td>
+            <td style="text-align: left">Switching between sessions</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>The volume keys are used as command keys by default, Volume down behaves like the Ctrl key and volume up like the FN function key.</p>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+    <thead>
+        <tr>
+        <th style="text-align: left">Volume UP</th>
+        <th style="text-align: left">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td style="text-align: left">w</td>
+        <td style="text-align: left">DPAD UP</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">a</td>
+        <td style="text-align: left">DAPD LEFT</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">s</td>
+        <td style="text-align: left">DPAD DOWN</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">d</td>
+        <td style="text-align: left">DPAD RIGHT</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">p</td>
+        <td style="text-align: left">PAGE_UP</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">n</td>
+        <td style="text-align: left">PAGE_DOWN</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">t</td>
+        <td style="text-align: left">TAB</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">i</td>
+        <td style="text-align: left">INSERT</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">h</td>
+        <td style="text-align: left"><strong>~</strong></td>
+        </tr>
+        <tr>
+        <td style="text-align: left">u</td>
+        <td style="text-align: left"><strong>_</strong></td>
+        </tr>
+        <tr>
+        <td style="text-align: left">l</td>
+        <td style="text-align: left"><strong>|</strong></td>
+        </tr>
+        <tr>
+        <td style="text-align: left">1-9</td>
+        <td style="text-align: left">F1-F9</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">0</td>
+        <td style="text-align: left">F10</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">e</td>
+        <td style="text-align: left">Escape</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">.</td>
+        <td style="text-align: left"><strong>^.</strong></td>
+        </tr>
+        <tr>
+        <td style="text-align: left">b</td>
+        <td style="text-align: left">Alt + b</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">f</td>
+        <td style="text-align: left">Alt + f</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">x</td>
+        <td style="text-align: left">Alt + x</td>
+        </tr>
+        <tr>
+        <td style="text-align: left">v</td>
+        <td style="text-align: left">Volume control panel</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>
