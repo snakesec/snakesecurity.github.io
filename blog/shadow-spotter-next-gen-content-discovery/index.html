@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>Shadow-Spotter Next Gen Content Discovery - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="A comprehensive Shadow-Spotter guide for beginners that serves as a jump-start including an introduction to Content Discovery." />
+        <meta property="og:title" content="Shadow-Spotter Next Gen Content Discovery" />
+        <meta property="og:description" content="A comprehensive Shadow-Spotter guide for beginners that serves as a jump-start including an introduction to Content Discovery." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/posts/shadow-spotter-post-banner.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Shadow-Spotter Next Gen Content Discovery">
+        <meta name="twitter:description" content="A comprehensive Shadow-Spotter guide for beginners that serves as a jump-start including an introduction to Content Discovery.">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/posts/shadow-spotter-post-banner.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/posts/shadow-spotter-post-banner.png" alt="Shadow-Spotter ANDRAX-NG">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-04-18 00:00">April 18, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">Shadow-Spotter Next Gen Content Discovery</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">A comprehensive Shadow-Spotter guide for beginners that serves as a jump-start including an introduction to Content Discovery.</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+              
+              
+              
+              <a style="text-align: left;" href="/blog">General</a>, 
+              
+            
+              
+              
+              
+              <a style="text-align: left;" href="/blog/category/pentest">Penetration Testing</a>, 
+              
+            
+              
+              
+              
+              <a style="text-align: left;" href="/blog/category/andrax">ANDRAX-NG</a>
+              
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">What is Shadow-Spotter?</h1>
+
+<p style="text-align:center;">Shadow-Spotter is a modern alternative to the old content discovery tools that are no longer effective against the new generations of web applications and/or APIs</p>
+
+<p>Based on the now-abandoned “<em>kiterunner</em>” from AssetNote, Shadow-Spotter is maintained by SNAKE Security with bug fixes and new features…</p>
+
+<p>Shadow-Spotter is a tool that not only performs traditional content discovery at breakneck speeds, but also
+bruteforces routes/endpoints in modern applications.</p>
+
+<p>As of this posting time, Shadow-Spotter is fully backward compatible with the old “<em>kiterunner</em>” and its “<em>.kite</em>” files.</p>
+
+<p>Modern application frameworks such as Flask, Rails, Express, Django, and others follow the paradigm of explicitly defining routes that expect specific HTTP methods, headers, parameters, and values.</p>
+
+<p>With traditional content discovery tools, these routes are often undetected, leading to false negatives!</p>
+
+<h2 style="text-align:left">Installing Shadow-Spotter</h2>
+
+<p>You can install Shadow-Spotter using <a href="/andrax-documentation/andrax-afos/">AFOS-NG</a> as it is part of the <a href="/andrax">ANDRAX-NG</a> Project, or you can install it manually on your preferred platform:</p>
+
+<p>First download the source code from the official github repository <a href="https://github.com/snakesec/shadow-spotter">https://github.com/snakesec/shadow-spotter</a></p>
+
+<p>Next, execute the commands:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Create the "dist" directory</span>
+<span class="nb">mkdir </span>dist
+<span class="c"># Build Shadow-Spotter in the "dist" directory</span>
+go build <span class="nt">-o</span> dist/Shadow-Spotter ./cmd/shadowspotter
+<span class="c"># Strip Shadow-Spotter's binary</span>
+strip dist/Shadow-Spotter</code></pre></figure>
+
+<p>You should now have Shadow-Spotter up and running…</p>
+
+<p>If you also want the “kitebuilder” (which is recommended) run the following commands:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Create a python3 virtual environment for kitebuilder</span>
+python3 <span class="nt">-m</span> venv /opt/kitebuilder
+<span class="c"># Activates the kitebuilder virtual environment in the shell</span>
+<span class="nb">source</span> /opt/kitebuilder/bin/activate
+<span class="c"># Install the wheel package</span>
+/opt/kitebuilder/bin/pip3 <span class="nb">install </span>wheel 
+<span class="c"># Installs the packages required by kitebuilder</span>
+/opt/kitebuilder/bin/pip3 <span class="nb">install</span> <span class="nt">-r</span> UTIL-TOOLS/kitebuilder/requirements.txt
+<span class="c"># Copy the kitebuilder package</span>
+<span class="nb">cp</span> <span class="nt">-Rf</span> UTIL-TOOLS/kitebuilder /opt/kitebuilder/package</code></pre></figure>
+
+<p>The content of the kitebuilder launcher file:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">#!/bin/bash</span>
+<span class="nb">source</span> /opt/kitebuilder/bin/activate
+/opt/kitebuilder/bin/python3 /opt/kitebuilder/package/kitebuilder.py <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span></code></pre></figure>
+
+<p>You’re now ready to continue:</p>
+
+<h1 style="text-align:center">Content Discovery</h1>
+
+<p>In the CyberSecurity field it is very important to be good at discovering secrets, evaluating possibilities and exploiting flaws, none of this is possible if you do not know what you are dealing with. As testers, we need to know the basics of how the target system works, and understanding how it works is the step that determines which path we will take.</p>
+
+<p>If we’re talking about web applications and/or services that operate under the HTTP protocol, our first step
+will be content discovery, which will allow us to find out things like: what technologies the application uses,
+what data protocols it provides, endpoints that are useful for us…</p>
+
+<p>To clarify, a good example of tools that basically work on the content discovery mode are: <strong>gobuster</strong>,
+<strong>monsoon</strong>, <strong>cansina</strong>… but these tools are quickly becoming obsolete due to the new generations of web applications, I am not saying that they are useless!</p>
+
+<p>But for now I can offer you something better!</p>
+
+<p>For so long, the focus of content discovery has been on finding files and folders. While this approach is <strong>still effective</strong> for <strong><em>legacy</em></strong> web applications that host static files or respond with 3xx’s on a partial path, it is <strong>no</strong> longer <strong>useful</strong> for <strong>modern</strong> web applications, especially APIs.</p>
+
+<p>Over the years, we have seen that a lot of effort has been put into making content discovery tools faster as
+possible so that they can handle larger wordlists, but the art of content discovery has not been innovated upon.</p>
+
+<p>This is what the folks at <strong>AssetNote</strong> tried to do with <em>kiterunner</em>, which was an excellent tool, way ahead of its time, but unfortunately they gave up and abandoned development, at least the open source version, to
+continue with a proprietary, paid version ( <strong>Money talks!</strong> )</p>
+
+<p>The truth is that <em>kiterunner</em> had no chance in its time, the testers in question still did not care about the
+future… it was only with the introduction of more complex tools focused on new generations of systems, such as those developed by <a href="https://github.com/projectdiscovery"><strong>Project Discovery</strong></a> and the creation of a platform such as <a href="/andrax">ANDRAX-NG</a>, that the professionals turned their eyes to the systems that were and would be emerging, as some of you may have realized, <strong>99%</strong> of the “<em>professionals</em>” out there are <strong>outdated</strong>!</p>
+
+<p>I couldn’t let such an injustice (although the discontinuation of the <em>kiterunner</em> is more about money than
+giving up…) happen to such a promising class of tools, so I started to develop a tool based on the original
+code, which I will try to keep up to date, a new name is needed in case they decide to maintain the <em>kiterunner</em> again some day.</p>
+
+<h2 style="text-align:left">Legacy Content Discovery</h2>
+
+<p>Typically, the vast majority of content discovery tools use a wordlist with multiple paths, so the tool will test them one by one and return a positive or negative result based on the HTTP code that the application returns or some content in the response body or headers…</p>
+
+<p>This is a basic example of a word list that is used by a common tool:</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">/api/users
+/api/posts
+/api/comments
+/api/products
+/api/orders
+/api/profile
+/api/auth/login
+/api/auth/logout
+/api/admin/users
+/api/admin/settings</code></pre></figure>
+
+<p>As you can see, it’s a very simple thing that was useful for a long time, but not anymore! Most tools allow us
+to specify parameters such as HTTP method, cookies and so on… but is this really useful? Let’s think about it…</p>
+
+<p>Let’s imagine that most entries accept the <strong>GET</strong> method but <em>/api/orders</em> only accepts <strong>POST</strong>, <em>/api/profile</em> and <em>/api/admin/settings</em> only accept <strong>PUT</strong> and things get even worse, each requires a unique parameter, something like: <strong>order id</strong>, <strong>user id</strong>, <strong>admin configuration parameter</strong>… What do you do if using a legacy tool?</p>
+
+<p>Your test will fail because current tools can’t handle dynamic applications…</p>
+
+<p>That’s what I’m trying to explain…</p>
+
+<p>It’s time to evolve and for that you can’t live in the past, especially not with old and outdated platforms which insist on maintaining and propagating the use of tools that are becoming useless today!</p>
+
+<h1 style="text-align:center">Basic usage</h1>
+
+<p>Shadow-Spotter has 3 main commands: <strong>scan</strong>, <strong>brute</strong> and <strong>kb</strong>.</p>
+
+<p><img style="max-height: 400px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-main-screen.png" alt="Shadow-Spotter Main Screen" title="Shadow-Spotter Main Screen" /></p>
+
+<ul>
+  <li>➢ The <strong>brute</strong> command allows Shadow-Spotter to operate as a “<em>legacy</em>” content discovery tool using a simple word list.</li>
+  <li>➢ The <strong>scan</strong> command is where the magic happens, here we specify the “<em>.kite</em>” file containing the data for a dynamic scan.</li>
+  <li>➢ On the other hand, the <strong>kb</strong> command is responsible for manipulating files generated by the kitebuilder tool.</li>
+</ul>
+
+<p>These commands have sub-commands, which can be listed by puting “<strong>--help</strong>” in front of the command.</p>
+
+<h2 style="text-align:left">Brute command</h2>
+
+<p>As mentioned, Shadow-Spotter allows users to scan as if they were using an old tool. A common use of the <em>brute</em> command in Shadow-Spotter would be something like this:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter brute <span class="s2">"http://127.0.0.1:5000"</span> <span class="nt">-w</span> old-list.txt</code></pre></figure>
+
+<p>This command results in something like this:</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-brute-command-output.png" alt="Shadow-Spotter Brute Command Output" title="Shadow-Spotter Brute Command Output" /></p>
+
+<p>We need to pay attention to the settings used:</p>
+
+<ul>
+  <li>➢ <strong>delay</strong> : Delay between each request, the default is 1 second (<em>1s</em>), but you can specify any value using
+the <strong>--delay</strong> flag, something like <em>1s</em>, <em>1m</em>, <em>1h</em>… values can be combined, like <em>1h30m15s</em></li>
+  <li>➢ <strong>full-scan</strong> : Boolean variable that refers to whether Shadow-Spotter will run a full scanner or not (Does not apply to the “<em>brute</em>” command).</li>
+  <li>➢ <strong>full-scan-requests</strong> : Indicates how many requests will be made in a full scan (the brute command always performs a full scan).</li>
+  <li>➢ <strong>headers</strong> : Values that are passed through the <strong>--header</strong> flag (<em>-H</em>); by default, “<strong>x-forwarded-for:127.0.0.1</strong>” is used.</li>
+  <li>➢ <strong>max-conn-per-host</strong> : Maximum number of concurrent connections per host, default is <em>3</em>, can be changed with the <strong>--max-connection-per-host</strong> (<em>-x</em>) flag.</li>
+  <li>➢ <strong>max-parallel-host</strong> : Max number of hosts to scan simultaneously, default is <em>50</em>, can be set with the <strong>--max-parallel-hosts</strong> (<em>-j</em>) flag.</li>
+  <li>➢ <strong>max-redirects</strong> : Maximum number of redirects to follow, <em>3</em> by default, use the <strong>--max-redirects</strong> flag to change it.</li>
+  <li>➢ <strong>max-timeout</strong> : The time to wait for a response to each request, <em>3</em> seconds by default, the <strong>--timeout</strong> flag (<em>-t</em>) should be used to specify a new value, the value follows the same principle as the <strong>--delay</strong> flag.</li>
+  <li>➢ <strong>preflight-routes</strong> : The preflight does some tests before the real scan starts, this is the information
+about how many routes will be used, the preflight can be disabled with the <strong>--disable-precheck</strong> flag.</li>
+  <li>➢ <strong>quarantine-threshold</strong> : If the host returns <em>N</em> consecutive matches, it is quarantined as a wildcard, default is <em>10</em>, can be disabled by setting it to 0 with the <strong>--quarantine-threshold</strong> flag.</li>
+  <li>➢ <strong>read-body</strong> : Shadow-Spotter uses this variable internally only.</li>
+  <li>➢ <strong>read-headers</strong> : Shadow-Spotter uses this variable internally only.</li>
+  <li>➢ <strong>scan-depth</strong> : Variable responsible for how deep preflight should go, can be disabled by setting the <strong>--preflight-depth</strong> flag to <em>0</em>, so that only the docroot (“<em>/</em>”) is checked (if preflight is not disabled).</li>
+  <li>➢ <strong>skip-preflight</strong> : It is only an indication of whether the preflight is active or not.</li>
+  <li>➢ <strong>status-code-whitelist</strong> : It tells you which HTTP status codes are treated as success codes, the defaults are: “<em>200</em>,<em>301</em>,<em>302</em>,<em>403</em>,<em>500</em>,<em>100</em>,<em>300</em>,<em>401</em>,<em>405</em>” New codes can be set with the flag: <strong>--success-status-codes</strong></li>
+  <li>➢ <strong>target</strong> : The target being tested.</li>
+  <li>➢ <strong>total-routes</strong> : How many routes to test in the current configuration.</li>
+  <li>➢ <strong>user-agent</strong> : The user-agent that will be used in the test, the default is to generate a random user-agent, but you can specify your own user-agent with the flag: <strong>--user-agent</strong></li>
+</ul>
+
+<h2 style="text-align:left">Scan command</h2>
+
+<p>To perform the scan we need a <em>.kite</em> file. A <em>.kite</em> file is a file with the kitebuilder schema compiled and optimized for execution.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter scan <span class="s2">"http://127.0.0.1:5000"</span> <span class="nt">-w</span> test.kite</code></pre></figure>
+
+<p><em>test.kite</em> is our compiled file based on the kitebuilder schema. You will notice that many things are different and very specific here, some options, even if not mandatory, will completely affect the results of our test.</p>
+
+<p><img style="max-height: 600px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-scan-command-output.png" alt="Shadow-Spotter Scan Command Output" title="Shadow-Spotter Scan Command Output" /></p>
+
+<p>I won’t go into detail about all the variables because we already talked about them in the “Brute command”,
+but we have 2 new ones here in the scan command…</p>
+
+<ul>
+  <li>➢ <strong>kitebuilder-apis</strong> : This is the file generated by kitebuilder that contains the apis and their routes.</li>
+  <li>➢ <strong>quick-scan-requests</strong> : Information on how many routes are available for Quick Scan testing.</li>
+</ul>
+
+<p>Let’s look at the following line: “<strong>Continue Scanning with full wordlist? [y/n]</strong>”. Here we see that Shadow-Spotter asks the user if they want to proceed with a full scan, because the quick scan only tests one route per API, if this route fails we are 90% sure that the API is not used on the target host… however, performing a full test may be prudent in a custom application…</p>
+
+<p><span class="text-break"><b>1276aa98776040efbb1f8a5a5fc54055524a613a</b></span> is the *ksuid* of the API to which the route belongs.</p>
+
+<h2 style="text-align:left">Kb command</h2>
+
+<p>Here we will manipulate the kitebuilder schema by converting the file formats and compiling them into <em>.kite</em> files. We can also parse the files generated by kitebuilder directly, so we can quickly and easily analyze what is being tested.</p>
+
+<p><img style="max-height: 350px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-kb-command-main-screen.png" alt="Shadow-Spotter KB Command Main Screen" title="Shadow-Spotter KB Command Main Screen" /></p>
+
+<p>The “<strong>compile</strong>” subcommand is what we use to convert a JSON file created by kitebuilder into a <em>.kite</em> file, which is the compiled schema itself…</p>
+
+<p>The “<strong>parse</strong>” subcommand is useful for validating the JSON file generated by kitebuilder, with which we can easily see the available APIs and their respective routes with the HTTP methods to be used…</p>
+
+<p>“<strong>convert</strong>” has some interesting use cases, such as converting an old wordlist into a <em>.kite</em> file that can be used by the “<strong>scan</strong>” command, and also converting a <em>.kite</em> file back into JSON so that the content can be edited or extended…</p>
+
+<p>As you will see, “<strong>replay</strong>” is an important part of Shadow-Spotter!</p>
+
+<h1 style="text-align:center">Kitebuilder</h1>
+
+<p>kitebuilder is a utility that converts <strong>OpenAPI/Swagger</strong> specification files into a specific schema to be used by Shadow-Spotter, it was originally developed by <strong>AssetNote</strong> for <em>Kiterunner</em> but <strong>abandoned</strong> in <em>OpenAPI 2.0</em> as well…</p>
+
+<p>The version of Kitebuilder shipped with Shadow-Spotter is the <strong>updated</strong> version with <em>OpenAPI3</em> support and
+other bug fixes…</p>
+
+<p><img style="max-height: 700px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/kitebuilder-main-screen.png" alt="Kitebuilder Main Screen" title="Kitebuilder Main Screen" /></p>
+
+<p>The main goal of kitebuilder is to take a directory of <strong>OpenAPI/Swagger</strong> specification files, whether they are <strong>2.x</strong>, or <strong>3.x</strong>… in <em>JSON</em> or <em>YAML</em> format, and convert everything into a single JSON file ready to be compiled and used by Shadow-Spotter…</p>
+
+<h2 style="text-align:left">OpenAPI/Swagger</h2>
+
+<p>The OpenAPI Specification is a specification for a machine-readable interface definition language for describing, producing, consuming, and visualizing web services, previously known as the Swagger Specification.</p>
+
+<p>Formerly part of the Swagger framework, it became a separate project in 2015, overseen by the OpenAPI Initiative, an Open Source collaborative project of the Linux Foundation.</p>
+
+<p>Based on OpenAPI we can get the most accurate results on any API/Web Platform even if it is dynamic…</p>
+
+<p>OpenAPI/Swagger supports both JSON and YAML definitions, kitebuilder can parse both formats thanks to the dynamic data structure processing of the Python Programming language.</p>
+
+<h3 style="text-align:left">Swagger 2.0 vs OpenAPI 3.x</h3>
+
+<p>We have a hell of a problem here…</p>
+
+<p>The differences between one version and the other are not that severe, writing a parser for one or the other is not that complicated, but writing a parser that works reasonably well in both specifications at the same time… well, that’s a bit of a pain in the ass.</p>
+
+<p>It took me 3 days (actually my free time during those days) to adapt the original Kitebuilder code to support Swagger and OpenAPI at the same time.</p>
+
+<p>The work isn’t 100% done yet, but I can assure you that the 75% is more than enough to meet Shadow-Spotter’s requirements at the moment.</p>
+
+<p>All right, we’ve talked a lot about Swagger and OpenAPI, but what does a Swagger specification file looks like?</p>
+
+<p>I will compare the main differences between the Swagger and OpenAPI specifications in an easy way, check the examples:</p>
+
+<p>This is a simple Swagger specification for a sample API using JSON:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="nl">"swagger"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Simple API"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Swagger API example"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"basePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/api/v1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"schemes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"http"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"paths"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"/user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"post"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create user"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create new user"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"consumes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"application/json"</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"in"</span><span class="p">:</span><span class="w"> </span><span class="s2">"body"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"body"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User data"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"schema"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int64"</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"responses"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"200"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Successful operation"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>However, since YAML is considered more readable than JSON, we will see YAML used more frequently.</p>
+
+<p>Here’s the same API schema but written in YAML:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">swagger</span><span class="pi">:</span> <span class="s2">"</span><span class="s">2.0"</span>
+<span class="na">info</span><span class="pi">:</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1.0.0"</span>
+  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Simple</span><span class="nv"> </span><span class="s">API"</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Swagger</span><span class="nv"> </span><span class="s">API</span><span class="nv"> </span><span class="s">example"</span>
+<span class="na">basePath</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/api/v1"</span>
+<span class="na">schemes</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">http"</span>
+<span class="na">paths</span><span class="pi">:</span>
+  <span class="na">/user</span><span class="pi">:</span>
+    <span class="na">post</span><span class="pi">:</span>
+      <span class="na">summary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Create</span><span class="nv"> </span><span class="s">user"</span>
+      <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Create</span><span class="nv"> </span><span class="s">new</span><span class="nv"> </span><span class="s">user"</span>
+      <span class="na">consumes</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s2">"</span><span class="s">application/json"</span>
+      <span class="na">parameters</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">in</span><span class="pi">:</span> <span class="s2">"</span><span class="s">body"</span>
+          <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">body"</span>
+          <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">User</span><span class="nv"> </span><span class="s">data"</span>
+          <span class="na">required</span><span class="pi">:</span> <span class="kc">true</span>
+          <span class="na">schema</span><span class="pi">:</span>
+            <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">object"</span>
+            <span class="na">properties</span><span class="pi">:</span>
+              <span class="na">id</span><span class="pi">:</span>
+                <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">integer"</span>
+                <span class="na">format</span><span class="pi">:</span> <span class="s2">"</span><span class="s">int64"</span>
+              <span class="na">username</span><span class="pi">:</span>
+                <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">string"</span>
+      <span class="na">responses</span><span class="pi">:</span>
+        <span class="na">200</span><span class="pi">:</span>
+          <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Successful</span><span class="nv"> </span><span class="s">operation"</span></code></pre></figure>
+
+<p>As we can see, using YAML instead of JSON is actually easier to read, even if there are no changes to the schema, the “smaller” syntax is useful when working with very large specifications.</p>
+
+<p>From now on, we will prefer to use YAML over JSON, except in cases where the targeted file really needs to
+be a JSON file.</p>
+
+<p>Now let’s see how the same API would be specified using OpenAPI 3.1.0:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">openapi</span><span class="pi">:</span> <span class="s">3.1.0</span>
+<span class="na">info</span><span class="pi">:</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1.0.0"</span>
+  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Simple</span><span class="nv"> </span><span class="s">API"</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">OpenAPI</span><span class="nv"> </span><span class="s">example"</span>
+<span class="na">servers</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/api/v1"</span>
+<span class="na">paths</span><span class="pi">:</span>
+  <span class="na">/user</span><span class="pi">:</span>
+    <span class="na">post</span><span class="pi">:</span>
+      <span class="na">summary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Create</span><span class="nv"> </span><span class="s">user"</span>
+      <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Create</span><span class="nv"> </span><span class="s">new</span><span class="nv"> </span><span class="s">user"</span>
+      <span class="na">requestBody</span><span class="pi">:</span>
+        <span class="na">required</span><span class="pi">:</span> <span class="kc">true</span>
+        <span class="na">content</span><span class="pi">:</span>
+          <span class="na">application/json</span><span class="pi">:</span>
+            <span class="na">schema</span><span class="pi">:</span>
+              <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+              <span class="na">properties</span><span class="pi">:</span>
+                <span class="na">id</span><span class="pi">:</span>
+                  <span class="na">type</span><span class="pi">:</span> <span class="s">integer</span>
+                  <span class="na">format</span><span class="pi">:</span> <span class="s">int64</span>
+                <span class="na">username</span><span class="pi">:</span>
+                  <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="na">responses</span><span class="pi">:</span>
+        <span class="s1">'</span><span class="s">200'</span><span class="err">:</span>
+          <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Successful</span><span class="nv"> </span><span class="s">operation"</span></code></pre></figure>
+
+<p>It is clear that we have some differences here, so let’s go through them:</p>
+
+<ul>
+  <li>➢ <strong>swagger: “2.0”</strong> is now <strong>openapi: “3.1.0”</strong>.</li>
+  <li>➢ <strong>basePath</strong> and <strong>schemes</strong> no longer exist, they are now specified within the “<strong>servers</strong>” field which houses a list of objects.</li>
+  <li>➢ In OpenAPI3 to specify a parameter in the “<strong>body</strong>” you must use the “<strong>requestBody</strong>” field where you specify what the api “<strong>consumes</strong>” as an object and then specify the schema with everything that will be used in the body of the request.</li>
+</ul>
+
+<p>There are other differences, but they are not relevant to Shadow-Spotter because the kitebuilder only deals
+with fields that are useful to us!</p>
+
+<p>You should follow the OpenAPI specification to create files compatible with kitebuilder, you can find the
+OpenAPI documentation here: <a href="https://spec.openapis.org/oas/latest.html">https://spec.openapis.org/oas/latest.html</a></p>
+
+<h1 style="text-align:center">Advanced usage</h1>
+
+<p>Here we are, now, let’s get to the part of you’re really interested in…</p>
+
+<p>From now on, I will assume that you are at least somewhat capable as a Bug Hunter or Penetration Tester, as I will be using more specific terms, methodologies, and examples.</p>
+
+<h2 style="text-align:left">Manipulating files</h2>
+
+<p>Let’s take the example of the simple API presented before, we will save it as YAML file format in a directory named “workdir”.</p>
+
+<p>Then we can use kitebuilder to create a valid schema for Shadow-Spotter. The command syntax looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">kitebuilder parse <span class="nt">--scrape-dir</span> workdir <span class="nt">--output-file</span> simple-api-test.json</code></pre></figure>
+
+<p>The <strong>--scrape-dir</strong> flag argument is the directory where our <strong>Swagger/OpenAPI</strong> specification file is located, there can be more than 1 file (each file is treated as a different API), and the files can be in either YAML or JSON.</p>
+
+<p>The argument to the <strong>--output-file</strong> flag is the file that we are going to save with the correct schema so that Shadow-Spotter can process it.</p>
+
+<p>This is the result produced by kitebuilder… it has transformed our OpenAPI 3.1.0 specification into a format recognizable by Shadow-Spotter, we can see that kitebuilder does not integrate unnecessary fields, but expands fields like “parameters”:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"ksuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"128d3f7dcca0101812d8e789374b224802f92f4e"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/api/v1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"securityDefinitions"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+    </span><span class="nl">"paths"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"/user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"post"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create new user"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"operationId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"in"</span><span class="p">:</span><span class="w"> </span><span class="s2">"body"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"schema"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int64"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">},</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"username"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"in"</span><span class="p">:</span><span class="w"> </span><span class="s2">"body"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"schema"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"consumes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"application/json"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nl">"produces"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span></code></pre></figure>
+
+<p>It is also possible to notice the presence of a field called “<strong>ksuid</strong>” which is generated uniquely for each API in the file. ksuid will be useful for identifying the API when using Shadow-Spotter.</p>
+
+<p>If you are not a programmer who wants to contribute to the development of Shadow-Spotter, it is not necessary to understand the structure of the files generated by kitebuilder, because Shadow-Spotter handles all data in the most precise and dynamic form as it can.</p>
+
+<p>Now that we have created a useful schema for Shadow-Spotter, we can use it directly.</p>
+
+<p>The first thing I like to do when I have a new scheme is to parse the file to see what Shadow-Spotter will read and how it will process it…</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter kb parse simple-api-test.json</code></pre></figure>
+
+<p>This command will produce output similar to the following:</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-kb-parse-output.png" alt="Shadow-Spotter kb parse output" title="Shadow-Spotter kb parse output" /></p>
+
+<ul>
+  <li>➢ <strong>/api/v1 [1291b362512af84c4aa8967a92cf4fe37baed6da]</strong> is the “<em>url</em>” defined in “<em>servers</em>” or in “<em>basePath</em>” along the ksuid generated by kitebuilder to identify the API.</li>
+  <li>➢ <strong>post /user</strong> is a route with the <strong>POST</strong> method in the <strong>/user</strong> path.</li>
+  <li>➢ <strong>v={“1”:1}</strong> here you can have a look at the distribution of routes between APIs.</li>
+  <li>➢ <strong>apis=1 routes=1</strong> it tells us how many APIs and how many routes there are in the file.</li>
+</ul>
+
+<p>Now we have to optimize the schema generated by kitebuilder, we’ll do this by compiling it into a <em>.kite</em> file that will be used by Shadow-Spotter during the scan.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter kb compile simple-api-test.json simple-api</code></pre></figure>
+
+<ul>
+  <li>➢ <strong>simple-api-test.json</strong> is the schema file generated by kitebuilder.</li>
+  <li>➢ <strong>simple-api</strong> is the name of the optimized <em>.kite</em> file that we will create.</li>
+</ul>
+
+<p>Note that since we didn’t add the <em>.kite</em> extension to the filename, Shadow-Spotter will display a warning and add the extension itself.</p>
+
+<p>“<strong>convert</strong>” is a very powerful subcommand that we will probably use at some point, since one of the main focuses of file manipulation is conversion between formats…</p>
+
+<p>Let’s imagine that we already have a .kite file, we want to make some changes, but we have lost the source file generated by kitebuilder… in this specific case we can use the “<strong>convert</strong>” subcommand to turn our <strong>.kite</strong> file to <strong>.json</strong>, so we can make the changes and then compile it back to <strong>.kite</strong>.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter kb convert simple-api.kite output.json</code></pre></figure>
+
+<ul>
+  <li>➢ <strong>simple-api.kite</strong> is the source file we want to convert.</li>
+  <li>➢ <strong>output.json</strong> is the converted file we want to save.</li>
+</ul>
+
+<p>The result is something like:</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-convert-kite-file.png" alt="Shadow-Spotter convert kite file" title="Shadow-Spotter convert kite file" /></p>
+
+<p>Note that Shadow-Spotter expects the filename to include the extension that indicates what the file is or will
+be… for example: <strong>.txt</strong>, <strong>.json</strong>, and <strong>.kite</strong>.</p>
+
+<p><strong>Tip</strong>: You can use the txt format to convert a JSON file with kitebuilder schema or an optimized <em>.kite</em> file into a legacy wordlist for use in old tools… you can also use a legacy <em>.txt</em> file by converting it into a pseudo kitebuilder schema, allowing you to optimize it into a <em>.kite</em> file.</p>
+
+<h2 style="text-align:left">Scan precheck</h2>
+
+<p>The precheck functionality can be a little confusing to understand, but I can assure you that it’s not complex and it’s extremely effective!</p>
+
+<p>This function is enabled by default…</p>
+
+<p>Let’s see what happens when we run a basic scan with the following command:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter scan 127.0.0.1:5000 <span class="nt">-w</span> simple-api.kite</code></pre></figure>
+
+<p>On our Flask test server, the result of the requests will look something like this:</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-precheck.png" alt="Shadow-Spotter Precheck" title="Shadow-Spotter Precheck" /></p>
+
+<p>It may looks silly, but precheck performs some interesting checks such as:</p>
+
+<ul>
+  <li>➢ <strong>GET /4d55556f0efa4cf0/7ba339ca70d141c9</strong> is the result of 2 uuids cut to 16 characters each and joined by a “<em>/</em>”.</li>
+  <li>➢ <strong>GET /</strong> and <strong>POST /</strong> just try a simple detection in docroot…</li>
+  <li>➢ <strong>GET /AAAAAAAAAA…</strong> is a test (destructive, mind you!) to see if the server can take a big URL buffer hit.</li>
+  <li>➢ <strong>GET /auth…</strong> it’s an authentication test using HTTP’s “<em>Basic Authentication</em>”, it sends a header like this “<strong>Authorization: Basic Mtox</strong>”.</li>
+</ul>
+
+<p>The other tests are some variations and it is also possible to see that the “<strong>/user</strong>” route is being used with the increment of the basic tests…</p>
+
+<p>It can ( <em>and in most cases should</em> ) be disabled by passing the flag: <strong>--disable-precheck</strong></p>
+
+<h2 style="text-align:left">Full scan</h2>
+
+<p>By default, Shadow-Spotter does not perform a full scan, it performs a “<em>quick scan</em>” to test the active APIs, Shadow-Spotter takes a route from each API defined in the <em>.kite</em> file to check if it is active or not, the final scan is only performed on the APIs that have routes found.</p>
+
+<p>If none of the APIs have returned a valid result, an error similar to the following will be displayed, along with a prompt asking you if you want to perform a full scan:</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-full-scan-ask.png" alt="Shadow-Spotter Full Scan" title="Shadow-Spotter Full Scan" /></p>
+
+<p>However, if you want to do a “<strong>Hail-Mary</strong>” kind of scan, you can pass the flag <strong>--kitebuilder-full-scan</strong>, which forces Shadow-Spotter to test every route in the schema file generated by kitebuilder.</p>
+
+<h2 style="text-align:left">Scan speed</h2>
+
+<p>Shadow-Spotter is designed to scan at extremely high speed, it is possible to run with about <strong>20000 goroutines</strong>, but this is not a good idea, running at this speed can cause bottlenecks and performance degradation if you are not using a powerful machine and network.</p>
+
+<p>And we’re not even taking into account the target’s <strong>IDS/IPS</strong>, which will scream at your requests and give you nothing but false positives or negatives…</p>
+
+<p>But don’t worry, Shadow-Spotter is prepared for this, one of the things I fixed was the “<strong>delay</strong>” that simply didn’t work in <em>kiterunner</em>… (sounds like this was done on purpose…).</p>
+
+<p>You can specify a delay value with the <strong>--delay</strong> flag, something like <strong>1s</strong>, <strong>1m</strong>, <strong>1h</strong>… values can be combined, like <strong>1h30m15s</strong>… default is <em>1s</em> between requests.</p>
+
+<p><strong>Note</strong>: When testing <em>high-security</em> applications, keep in mind that the delay does not affect the precheck…</p>
+
+<p><strong>--max-connection-per-host</strong> (<em>-x</em>) is the maximum number of concurrent connections open on a single host, the default is <em>3</em>. I recommend that you keep this to a maximum of <em>5</em>, as depending on the target, this will represent approximately <em>1</em> to <em>5</em> requests per second for each connection.</p>
+
+<p><strong>--max-parallel-hosts</strong> (<em>-j</em>) maximum number of targets to scan at the same time, the default is <em>50</em>, but we recommend checking that the hosts are on the same network (<em>server</em>), if necessary set a value inferior to this to avoid <strong>WAFs</strong>, <strong>IDS/IPS</strong>…</p>
+
+<p><strong>--timeout</strong> (<em>-t</em>) maximum time to wait for each request to return a result, the default is <em>3</em>s, but if you want a faster scan on a very slow host, decrease this value, but this may result in false negatives…</p>
+
+<h2 style="text-align:left">Headers and queries</h2>
+
+<p>Some tests will require you to specify custom queries and/or headers. Shadow-Spotter has options to deal with that, unlike its predecessor, <em>kiterunner</em>, which was more passive and relied entirely on the wordlists rules.</p>
+
+<p>By default, an “<strong>x-forwarded-for: 127.0.0.1</strong>” header is automatically sent, which is useful for bypassing WAFs on misconfigured systems… it is highly recommended that you keep this header in place for any new additions…</p>
+
+<p>To add new headers to requests, use the <strong>--header</strong> (<em>-H</em>) flag. There are two ways to add multiple headers, one is to use a comma between each header and the other is to use multiple flags, see the examples below:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter scan 127.0.0.1:5000 <span class="nt">-w</span> simple-api.kite <span class="nt">--header</span> <span class="s2">"x-forwarded-for: 127.0.0.1"</span> <span class="nt">--header</span> <span class="s2">"hacker-name: ghost"</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter scan 127.0.0.1:5000 <span class="nt">-w</span> simple-api.kite <span class="nt">--header</span> <span class="s2">"x-forwarded-for: 127.0.0.1,hacker-name: ghost"</span></code></pre></figure>
+
+<p><strong>Note</strong>: if you use the comma method, <strong>don’t leave a space between</strong> it and the next header, otherwise the headers <strong>won’t be processed</strong> correctly…</p>
+
+<p>The user agent is another very important part of the header that was <strong>intentionally dropped</strong> in <em>kiterunner</em>, however, Shadow-Spotter has not only implemented an option to correctly define the user agent, but also created a random selection method to be used if not specified by the user.</p>
+
+<p>You can specify a user agent by using the <strong>--user-agent</strong> flag, as in the following example:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter scan 127.0.0.1:5000 <span class="nt">-w</span> simple-api.kite <span class="nt">--user-agent</span> <span class="s2">"Mozilla/5.0 (X15; Linux ARM128;rv:250.0) Gecko/31211212 Firefox/250.0"</span></code></pre></figure>
+
+<p>Queries, by the way, are also very important parts of the request; the number of APIs that work with parameters in the URL, whether for authentication or routing, is huge.</p>
+
+<p>Obviously “they” knew this, but to favor their “<em>premium</em>” product, they never implemented this functionality in kiterunner and even ignored the “<em>issues</em>” that were opened in the github repository. I, on the other hand, decided to implement the logic to use custom queries.</p>
+
+<p>You can add custom queries with the <strong>--custom-query</strong> flag, as in the example below:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter scan 127.0.0.1:5000 <span class="nt">-w</span> simple-api.kite <span class="nt">--custom-query</span> <span class="s2">"name=l33t"</span></code></pre></figure>
+
+<p>In the example above, a query called “<strong>name</strong>” with parameter “<strong>l33t</strong>” will be inserted into the URL of each request.</p>
+
+<h2 style="text-align:left">Filters</h2>
+
+<p>Even if you think of yourself as a “<em>data hacking Jedi</em>” at some point you are going to need to use some filters to make your job easier.</p>
+
+<p>Perhaps our most important filter is the <strong>Dangerous Request Blocking</strong> filter… I know it sounds like I’m
+bitching about the <em>kiterunner</em> devs too much, but these freaks almost killed me… Let me tell you a story…</p>
+
+<p>My first contact with <em>kiterunner</em> was when I had to do some emergency work on a military base of an alternative army, if you know what I mean… I didn’t have time to set up my usual tools or even write a script
+to test the communication system’s API… I’d heard about <em>kiterunner</em>, quickly downloaded the code, compiled
+it and boom.</p>
+
+<p>The stupid tool didn’t filter anything, it just <strong>sent everything</strong>, even requests that could totally <strong>destroy the application</strong>, like <strong>PUT</strong> and <strong>DELETE</strong>… luckily I noticed it and immediately aborted the execution, after all, a shot in my pretty face wouldn’t be good!</p>
+
+<p>Perhaps that was the most important reason for the creation of Shadow-Spotter.</p>
+
+<p>By default, we block <strong>PUT</strong>, <strong>PATCH</strong> and <strong>DELETE</strong> methods from being sent. If you want to test these methods, use the <strong>--allow-unsafe</strong> flag, which will allow the engine to process and send these requests along with the others.</p>
+
+<p>If you need to test only whether the routes of a single API exist in the target, but your wordlist has multiple APIs, you can use the <strong>--filter-api</strong> flag.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter scan 127.0.0.1:5000 <span class="nt">-w</span> simple-api.kite <span class="nt">--filter-api</span> 12989307a904694ebee43882058861a6311cec2b</code></pre></figure>
+
+<p><span class="text-break"><b>12989307a904694ebee43882058861a6311cec2b</b></span> is the ksuid of the API we want to filter.</p>
+
+<p>When testing large applications or using a huge wordlist, the size of the content is another thing to consider.</p>
+
+<p>You can set content lengths to be ignored using the <strong>--ignore-length</strong> flag, which accepts values such as <strong>100-105</strong> or <strong>1234</strong>. Combinations are also possible, such as “<strong>123,34-53</strong>”.</p>
+
+<p>Wildcard redirects can be a big problem in some very dynamic applications, usually wildcard redirects are a bad idea, so Shadow-Spotter is configured to detect them by default.</p>
+
+<p>You can disable automatic detection by setting the <strong>--wildcard-detection</strong> flag to “<strong>false</strong>”</p>
+
+<p>Probably the most useful filters for the success of our test are the status code filters.</p>
+
+<p>By default Shadow-Spotter sets the following HTTP codes as success codes: <strong>100</strong>, <strong>200</strong>, <strong>300</strong>, <strong>301</strong>, <strong>302</strong>, <strong>401</strong>, <strong>403</strong>, <strong>405</strong>, <strong>500</strong> this means that only requests that return these codes will be shown to the user.</p>
+
+<p>You can specify new codes with the <strong>--success-status-codes</strong> flag.</p>
+
+<p><strong>Note</strong>: <strong>don’t leave a space</strong> between codes, otherwise the status codes <strong>won’t be processed</strong> correctly…</p>
+
+<p>However, the <strong>--fail-status-codes</strong> flag does the opposite, allowing the user to define codes to be treated as failures instead of successes, overriding the <strong>--success-status-codes</strong> flag.</p>
+
+<p><strong>Note</strong>: <strong>don’t leave a space</strong> between codes, otherwise the status codes <strong>won’t be processed</strong> correctly…</p>
+
+<p>Let’s say we have an application that only responds to the <strong>POST</strong> method, but our wordlist is full of <strong>GET</strong>, <strong>PUT</strong>, <strong>DELETE</strong>… what if we wanted to force tests to use only the <strong>POST</strong> method, but without changing or reworking the wordlist? Well, it’s easy: just use the <strong>--force-method</strong> flag that was disabled (<em>intentionally</em>) in <em>kiterunner</em>, we have fixed the flag and we have implemented the new operation logic.</p>
+
+<h2 style="text-align:left">Redirects</h2>
+
+<p>We mentioned wildcard redirects, but there are other parameters we’d like to control at some point…</p>
+
+<p>The <strong>--blacklist-domain</strong> flag allows us to define one or more domains that we don’t want to follow… this can prevent us from wasting time with <strong>WAFs</strong> and redirects to error pages that many commercial APIs use.</p>
+
+<p>If the application you are testing uses a lot of redirects that are essential for your tests, you can use the
+<strong>--max-redirects</strong> flag to control this. By default, Shadow-Spotter only follows 3 redirects at time.</p>
+
+<h2 style="text-align:left">Replaying requests</h2>
+
+<p>The ability to repeat requests is very useful because it enables our users to <strong>align Shadow-Spotter</strong> with tools like <strong>ZAP</strong> and quickly move their test from the scanning phase to the <em>exploitation</em> phase…</p>
+
+<p>It’s also very useful for testing high-security systems, where you have to test practically everything as “<strong>manually</strong>” as possible due to an incredible <em>rate-limit</em>.</p>
+
+<p>Let’s take for example that our scan returned the following route:</p>
+
+<p><img style="max-height: 200px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-route-returned.png" alt="Shadow-Spotter Route returned" title="Shadow-Spotter Route returned" /></p>
+
+<p>We know it’s the <strong>POST</strong> method, so some parameter is supposed to be in the body of the request… how do we
+check for that?</p>
+
+<p>To do this, let’s use the <strong>replay</strong> <em>subcommand</em> of the <strong>kb</strong> command…</p>
+
+<p>We can use the replay subcommand in two ways, the first and most common way is to pass the entire line of the scan result as an argument.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter kb replay <span class="nt">-w</span> simple-api.kite <span class="s2">"POST    200 [     82,    9,   3] http://127.0.0.1:5000/user 129bccb176b440056aac6c42f7a30b3b26530852"</span></code></pre></figure>
+
+<p>As you can see, it is necessary to pass the wordlist used - after all, Shadow-Spotter needs to identify the API and the route with the appropriate parameters…</p>
+
+<p>The second way to execute the replay subcommand is to use the simplified syntax, which is essentially designed to be used by automation scripts.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Shadow-Spotter kb replay <span class="nt">-w</span> simple-api.kite 129bccb176b440056aac6c42f7a30b3b26530852 POST /user
+<span class="s2">"http://127.0.0.1:5000"</span></code></pre></figure>
+
+<p>The correct sequence of the simplified syntax is: <strong>&lt;ksuid&gt;</strong> <strong>&lt;method&gt;</strong> <strong>&lt;path&gt;</strong> <strong>&lt;host&gt;</strong> don’t forget to add flags like <strong>--header</strong>, <em>-w</em>… at the beginning to avoid confusion…</p>
+
+<p>The result of any of the above execution methods will be something like:</p>
+
+<p><img style="max-height: 550px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/shadow-spotter-replay-output.png" alt="Shadow-Spotter Replay output" title="Shadow-Spotter Replay output" /></p>
+
+<p>In order to integrate replay into <strong>ZAP</strong> you just need to set the proxy using the <strong>--proxy</strong> (<em>-p</em>) flag.</p>
+
+<p>At the time of writing, ZAP has a catastrophic BUG in the HUD when used without a browser. The particular BUG will cause a method validation failure, for example, the POST method may be changed to GET, which would cause the request to fail.</p>
+
+<p><strong><em>So remember to disable the HUD when you’re not using ZAP in your browser</em></strong>.</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto rounded" src="/images/posts/disable-zap-hud.png" alt="Disable ZAP HUD" title="Disable ZAP HUD" /></p>
+
+<p>By now, you should have the mindset you need to perform advanced content discovery using Shadow-Spotter…</p>
+
+<p>Shadow-Spotter is constantly evolving and <strong>SNAKE Security</strong> is committed to keeping the system up to date,
+<strong>always Free and Open Source</strong>!</p>
+
+<p style="text-align:center;"><b>Take care! See you soon!</b></p>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>

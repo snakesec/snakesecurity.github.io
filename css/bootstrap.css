@@ -429,6 +429,8 @@ address {
 ol,
 ul {
   padding-left: 2rem;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
 }
 
 ol,

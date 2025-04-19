@@ -4,6 +4,14 @@
 [
   
     {
+      "title"    : "Shadow-Spotter Next Gen Content Discovery",
+      "url"      : "https://snakesecurity.org/blog/shadow-spotter-next-gen-content-discovery/",
+      "img_url"  : "https://snakesecurity.org/images/posts/shadow-spotter-post-banner.png",
+      "date"     : "18 Apr 2025",
+      "description" : "A comprehensive Shadow-Spotter guide for beginners that serves as a jump-start including an introduction to Content Discovery."
+    },
+  
+    {
       "title"    : "ANDRAX-NG v1001 UNSTABLE",
       "url"      : "https://snakesecurity.org/blog/andrax-ng-v1-earthquake/",
       "img_url"  : "https://snakesecurity.org/images/posts/andrax-ng-v1-banner.jpg",

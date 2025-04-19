@@ -3,14 +3,14 @@
   
     <url>
         <loc>https://snakesecurity.org/404.html</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/about/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -59,7 +59,7 @@
     
     <url>
         <loc>https://snakesecurity.org/blog/category/andrax/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -80,77 +80,77 @@
     
     <url>
         <loc>https://snakesecurity.org/contact/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/cybersecurity/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/andrax/download/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/andrax/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/andrax-documentation/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/blog/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/academy/nmap-script-engine/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/academy/computer-networks/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/academy/c-programming/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/academy/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -178,7 +178,7 @@
     
     <url>
         <loc>https://snakesecurity.org/blog/category/news/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -192,14 +192,21 @@
     
     <url>
         <loc>https://snakesecurity.org/blog/category/pentest/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/posts.json</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <url>
+        <loc>https://snakesecurity.org/blog/shadow-spotter-next-gen-content-discovery/</loc>
+        <lastmod>2025-04-18T00:00:00-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -213,14 +220,14 @@
     
     <url>
         <loc>https://snakesecurity.org/blog/category/tutorials/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://snakesecurity.org/weidsom-nascimento/</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -234,7 +241,7 @@
     
     <url>
         <loc>https://snakesecurity.org/feed.xml</loc>
-        <lastmod>2025-04-14T18:00:57-07:00</lastmod>
+        <lastmod>2025-04-18T18:23:25-07:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
