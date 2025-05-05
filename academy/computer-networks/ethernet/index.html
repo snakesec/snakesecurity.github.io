@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>Computer Networks Ethernet - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="How is Ethernet used in modern networks? What are Media Access Control addresses and how are they used in networking? Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="Computer Networks Ethernet" />
+        <meta property="og:description" content="How is Ethernet used in modern networks? What are Media Access Control addresses and how are they used in networking? Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/computer-networks/ethernet/ethernet-over-hdmi.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Computer Networks Ethernet">
+        <meta name="twitter:description" content="How is Ethernet used in modern networks? What are Media Access Control addresses and how are they used in networking? Learn about computer networking from scratch - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/computer-networks/ethernet/ethernet-over-hdmi.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/computer-networks/ethernet/ethernet-over-hdmi.png" alt="Computer Networks Ethernet over HDMI">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-05-05 00:00">May 05, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">Computer Networks Ethernet</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">How is Ethernet used in modern networks? What are Media Access Control addresses and how are they used in networking?</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">Ethernet Basics</h1>
+
+<p>Ethernet is a contention-based access method that allows all hosts on a network to share the same bandwidth. Ethernet is widely used due to its scalability, which means you’ll be able to integrate new technologies like Fast Ethernet into your existing network infrastructure with relative ease. It’s also relatively easy to implement, and relatively easy to troubleshoot.</p>
+
+<h2 id="csmacd">CSMA/CD</h2>
+
+<p>Ethernet networks use <strong>Carrier Sense Multiple Access with Collision Detection</strong> <em>(CSMA/CD)</em>, a media access control contention method that allows devices to share bandwidth equally without two devices transmitting on the network medium at the same time.</p>
+
+<p>To solve the problem of collisions that occur when packets are transmitted simultaneously by different hosts, CSMA/CD was created. And believe me, good collision management is critical. When one host sends a packet on a CSMA/CD network, all other hosts on the network receive and validate that packet.</p>
+
+<p>The only effective way to prevent a transmission from propagating throughout the network is through bridges, switches, and routers!</p>
+
+<p>How does the CSMA/CD protocol work? Take a look at the image below, where a collision has occurred in the network.</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/ethernet-collision.png" alt="Ethernet Collision" title="Ethernet Collision" /></p>
+
+<p>A host first checks for a digital signal on the line when it wants to transmit over the network. The host then proceeds with its transmission if all is clear, meaning no other host is transmitting. But that’s not all. To make sure that no other hosts are starting to transmit, the transmitting host constantly monitors the wire.</p>
+
+<p>When the host detects another signal on the wire, it sends an extended jam signal. This causes all hosts on the segment to stop sending data (think of it as a busy signal). The hosts wait a while before attempting to transmit again in response to this jam signal. Back-off algorithms, represented by the clocks counting down on either side of the jammed devices, determine when the colliding stations will be able to transmit again. The hosts attempting to transmit will time out if collisions continue after 15 attempts.</p>
+
+<h2 id="broadbandbaseband">Broadband/Baseband</h2>
+
+<p>Broadband and baseband are two ways to send analog and digital signals over a wire.</p>
+
+<p>We hear a lot about broadband nowadays, because that’s pretty much what everyone is using at home. We can get both our analog voice and our digital data over the same network cable or physical medium. Broadband allows us to send both analog and digital signals by sending multiple frequencies of different signals over the same wire at the same time (frequency division multiplexing).</p>
+
+<p>All LANs use baseband. This is where one signal uses all the bandwidth of the physical media. Ethernet, for example, uses all the available bandwidth because it only uses one digital signal at a time. If multiple signals from different hosts are sent at the same time, we get collisions. Wireless is the same, except that it uses only analog signaling over radio waves.</p>
+
+<h2 id="bit-rates-vs-baud-rate">Bit Rates vs. Baud Rate</h2>
+
+<p>Bit rate refers to the number of bits of data (0’s and 1’s) transferred per second of digital or analog data. A value of 56,000 <strong>Bits Per Second</strong> <em>(bps)</em> means that 56,000 0s or 1s can be transmitted in one second. We simply refer to this as bps.</p>
+
+<p>In the 1970s and 1980s, the term baud rate was in common use, but it was replaced by bps because it was more accurate. Baud was a metric named after a French engineer, Jean-Maurice-Émile Baudot. He used it to measure the speed of telegraph transmissions.</p>
+
+<p>A baud is one electronic change of state per second, such as from 0.2 volt to 3 volt or from binary 0 to 1. Because a single change of state can involve more than a single bit of data, it’s been superseded by bps as a more precise definition of how much data you send or receive.</p>
+
+<h2 id="wavelength">Wavelength</h2>
+
+<p>Electromagnetic radiation-radio wave, light wave, or even infrared (heat) wave creates characteristic patterns when it travels across space. Some of the patterns may be the same, and some of the patterns may be different.</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/wavelength.png" alt="Ethernet WaveLength" title="Ethernet WaveLength" /></p>
+
+<p>Each wave is shaped and lengthened in a certain way. The wavelength is the distance between the peaks. If two wave patterns are different, we say they’re not on the same wavelength, and that’s how we distinguish different types of electromagnetic energy. In electronics, you could send traffic on different wavelengths simultaneously.</p>
+
+<h2 id="half-vs-full-duplex">Half vs Full-Duplex</h2>
+
+<p>The original 802.3 Ethernet specification defines half-duplex Ethernet. Basically, when you’re running half-duplex, you’re using only one pair of wires. A digital signal is either being sent or received.</p>
+
+<p>This is really not that different from full-duplex because you can both send and receive, you just can’t do it at the same time with half-duplex.</p>
+
+<p>Here’s how it works: When a host receives a digital signal, it uses the CSMA/CD protocol to prevent collisions and to allow retransmission if a collision occurs.</p>
+
+<p>Typical 10BaseT half-duplex Ethernet is only about 30 to 40% efficient because a large 10BaseT network will usually only provide 3 Mbps to 4 Mbps at most. It’s true that 100 Mbps Ethernet can and sometimes does run half-duplex. However, it’s not very common anymore.</p>
+
+<p>Instead of using one measly pair of wires like half-duplex, full-duplex Ethernet uses two pairs of wires simultaneously. Full-duplex also uses a point-to-point connection between the sending device’s transmitter and the receiving device’s receiver (usually the switch). This means that you not only have faster data transfer, but also collision avoidance.</p>
+
+<p>Now it’s like a multilane highway instead of the single lane of half-duplex, so you don’t have to worry about collisions. Full-duplex Ethernet is supposed to provide 100% efficiency in both directions; for example, you can get 20Mbps with full-duplex 10Mbps Ethernet, 200Mbps with Fast Ethernet, or even 2000Mbps with Gigabit Ethernet. But this rate is what is known as an aggregate rate. It means “you should get” 100% efficiency.</p>
+
+<h2 style="text-align:center">Ethernet at the Data Link Layer</h2>
+
+<p>Ethernet at the data link layer is responsible for Ethernet addressing. This is commonly referred to as hardware addressing or MAC addressing. Ethernet also frames packets received from the network layer and prepares them to be transmitted on the local network.</p>
+
+<p>Hexadecimal addresses are used for Ethernet MAC addresses. So let’s talk about binary, decimal, and hexadecimal addresses and how to convert one to the other before we talk about MAC addresses.</p>
+
+<h3 id="binary-to-decimal-and-hexadecimal-conversion">Binary to Decimal and Hexadecimal Conversion</h3>
+
+<p>Before we discuss the TCP/IP protocol stack and IP addressing, it is important to understand the differences between binary, decimal, and hexadecimal numbers and how to convert one format to another.</p>
+
+<p>Let’s begin with binary numbers. It’s really quite simple. Each digit is called a bit (short for binary digit), and each digit is limited to being either a 1 (one) or a 0 (zero). Usually we count either 4 or 8 bits together, which are called nibbles and bytes, respectively.</p>
+
+<p>The interesting thing about binary numbering is that the value is represented in a decimal format. The typical decimal format is the base-10 numbering scheme that we’ve all used since kindergarten. The binary numbers are placed in a range of values, starting on the right and moving to the left. Each position has twice the value of the previous position.</p>
+
+<p><strong>Just to remind you:</strong></p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="text-align: center"><b>Nibble Values</b></th>
+        <th style="text-align: center"><b>Byte Values</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center"><b>8 4 2 1</b></td>
+        <td style="text-align: center"><b>128 64 32 16 8 4 2 1</b></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">Bit:   1   1   1   1
+       |   |   |   |
+Val:   8   4   2   1
+
+Bit:   1   1   1   1   1   1   1   1
+       |   |   |   |   |   |   |   |
+Val: 128  64  32  16   8   4   2   1</code></pre></figure>
+
+<p>So if you put a one (1) in a value location, the nibble or byte will take the decimal value and add it to any other value locations with a 1. And if you put a zero (0) in a bit location, you won’t count the value.</p>
+
+<p>Let me explain, if we have a 1 in each place of our nibble, then we add 8 + 4 + 2 + 1 to get a maximum value of 15. Another example of nibbled values is 1010, which means that the 8-bit and 2-bit have been switched on and the decimal value is 10. If the binary nibble value is 0110, the decimal value is 6 because the 4 and 2 bits were enabled.</p>
+
+<p>But bytevalues can be added together, which is well above 15. For example, the byte binary value looks like this (remember, 8 bits equal one byte) if we count each bit as one (1):</p>
+
+<ul>
+  <li><strong>11111111</strong></li>
+</ul>
+
+<p>Since each bit spot is turned on, we then count each one up:</p>
+
+<ul>
+  <li><strong><em>128 + 64 + 32 + 16 + 8 + 4 + 2 + 1</em></strong> = <strong>255</strong></li>
+</ul>
+
+<p>Many other decimal values can be equal to a binary number:</p>
+
+<ul>
+  <li><strong>10010110</strong></li>
+</ul>
+
+<p>What are the bits that are on? The 128, 16, 4, and 2 bits are on, let’s sum those:</p>
+
+<ul>
+  <li><strong><em>128 + 16 + 4 + 2</em></strong> = <strong>150</strong></li>
+</ul>
+
+<p>It is very important that you memorize the following table:</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="text-align: left">Binary Value</th>
+        <th style="text-align: left">Decimal Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">10000000</td>
+        <td style="text-align: left">128</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">11000000</td>
+        <td style="text-align: left">192</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">11100000</td>
+        <td style="text-align: left">224</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">11110000</td>
+        <td style="text-align: left">240</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">11111000</td>
+        <td style="text-align: left">248</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">11111100</td>
+        <td style="text-align: left">252</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">11111110</td>
+        <td style="text-align: left">254</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">11111111</td>
+        <td style="text-align: left">255</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Unlike binary or decimal, hexadecimal addressing is converted by reading nibbles, not bytes. By using a nibble, we can easily convert these bits to hex. The first thing to understand is that the hexadecimal address scheme only uses the numbers 0 through 9. The letters A, B, C, D, E, and F are used to represent 10, 11, 12, 13, 14, and 15, respectively, because the numbers 10, 11, 12, and so on cannot be used (because they are two-digit numbers).</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>Hexadecimal Value</td>
+        <td>Binary Value</td>
+        <td>Decimal Value</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0000</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0001</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0010</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>0011</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>0100</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>0101</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>0110</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>0111</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>1000</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>1001</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>1010</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>1011</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>1100</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td>1101</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>E</td>
+        <td>1110</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>1111</td>
+        <td>15</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Notice how the first 10 hex numbers (0-9) are identical to the decimals…</p>
+
+<p>Let us assume that you have something like this: <strong>0x6A</strong>. (Some vendors put <strong>0x</strong> in front of characters so you know it’s hex, others give you an <strong><em>h</em></strong>. It has no other special meaning). What are the binary value and the decimal value?</p>
+
+<p>In order to answer this question correctly, all you have to remember is that each hexadecimal character is a nibble, and that two hexadecimal characters together make up a byte.</p>
+
+<p>In order to find out the binary value, you first have to put the hex characters into two nibbles and then put them together to form a byte. <strong>6</strong> = <strong>0110</strong> and <strong>A</strong> (decimal 10) = <strong>1010</strong>, so the complete byte is <strong>01101010</strong>.</p>
+
+<p>Just break the byte into nibbles to convert from binary to hex.</p>
+
+<p>For example, suppose you have the binary number <strong>01010101</strong>. First, decompose it into nibbles <strong>0101</strong> and <strong>0101</strong>. The value of each nibble is <em>5</em> because the <em>1</em> and <em>4</em> bits are on. Hex response becomes <strong>0x55</strong>. And speaking in decimal format, the resulting binary number is <strong>01010101</strong>, which translates to <strong><em>64 + 16 + 4 + 1</em></strong> = <strong>85</strong>.</p>
+
+<h3 id="ethernet-addressing">Ethernet Addressing</h3>
+
+<p>Now that you’ve mastered how to convert binary-to-decimal and hexadecimal addresses, we can get started on how Ethernet addressing works. It makes use of the Media Access Control (MAC) address that is burned into each and every Ethernet <strong>Network Interface Card</strong> <em>(NIC)</em>. The MAC, or hardware, address is a 48-bit (6-byte) address that’s written in hexadecimal format.</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/mac-address.png" alt="Mac Adress Bits" title="Mac Adress Bits" /></p>
+
+<p>The <strong>Organizationally Unique Identifier</strong> <em>(OUI)</em> is assigned to an organization by the <strong>Institute of Electrical and Electronics Engineers</strong> <em>(IEEE)</em>. It consists of 24 bits or 3 bytes.</p>
+
+<p>In turn, the organization assigns a globally managed address (24 bits or 3 bytes). This address is unique to each adapter it manufactures.</p>
+
+<p>Take a good look at the image above.</p>
+
+<p>To indicate whether the destination MAC address is a unicast or multicast/broadcast Layer 2 address, the <strong>Individual/Group</strong> <strong>(I/G)</strong> address bit is used. It is an individual MAC address and is unicast if the bit is set to <strong>0</strong>. It is a group address and a multicast/broadcast address if the bit is set to <strong>1</strong>.</p>
+
+<p>The <strong>Local/Global</strong> <em>(L/G)</em> bit is the next bit. This bit is used to determine if the MAC address is the <strong>Burned-In-Address</strong> <em>(BIA)</em> or a locally changed MAC address.</p>
+
+<p>A locally managed or vendor-assigned code represents the lowest-order 24 bits of an Ethernet address. This part typically starts with 24 <strong>0s</strong> for the first card made. It continues in sequence until it has 24 <strong>1s</strong> for the last <em>(16,777,216th)</em> card made.</p>
+
+<p>You’ll find that many manufacturers use the same 6 hexadecimal numbers for the last 6 characters of their serial numbers on the same card.</p>
+
+<h3 id="ethernet-frames">Ethernet Frames</h3>
+
+<p>Combining bits into bytes and bytes into frames is the responsibility of the data link layer. Framing is used at the data link layer to encapsulate packets passed from the network layer for transmission over some form of physical media access.</p>
+
+<p>Ethernet stations pass data frames to one another using a set of bits called a MAC frame format. A <strong>Cyclic Redundancy Check</strong> <em>(CRC)</em> provides error detection. But keep in mind that this is error detection, not error correction!</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/ethernet-frames.png" alt="Ethernet Frames" title="Ethernet Frames" /></p>
+
+<ul>
+  <li>
+    <p><strong>Preamble</strong>: <em>An alternating 1,0 pattern provides a clock at the beginning of each packet. This allows receiving devices to lock the incoming bit stream.</em></p>
+  </li>
+  <li>
+    <p><strong>Start of Frame Delimiter (SOF)/Synch</strong>: <em>The preamble is seven octets and the start of frame (SOF) is just one octet (synch). The SOF is 10101011, with the last pair of 1s allowing the receiver to get into the alternating 1,0 patterns anywhere in between and yet sync and detect the start of the data.</em></p>
+  </li>
+  <li>
+    <p><strong>Destination Address (DA)</strong>: <em>The least significant bit (LSB) of a 48-bit value is transmitted first. The DA, which can be a single address or a broadcast or multicast MAC address, is used by receiving stations to determine whether an incoming packet is addressed to a specific host. Note that a multicast is sent only to a similar subset of hosts on a network, whereas a broadcast is all 1s (or Fs in hex) and is sent to all devices.</em></p>
+  </li>
+  <li>
+    <p><strong>Source Address (SA)</strong>: <em>Using the LSB first, the SA is a 48-bit MAC address used to identify the transmitting device. Within the SA field, broadcast and multicast address formats are illegal.</em></p>
+  </li>
+  <li>
+    <p><strong>Length or Type</strong>: <em>802.3 uses a length field, but the Ethernet frame uses a type field to identify the protocol at the network layer. By itself, 802.3 is not able to identify the upper layer protocol that is routed and must be used with a LAN protocol.</em></p>
+  </li>
+  <li>
+    <p><strong>Data</strong>: <em>These are packets transmitted from the Network Layer, down to the Data Link Layer. Size can vary between 64 and 1500 bytes.</em></p>
+  </li>
+  <li>
+    <p><strong>Frame Check Sequence (FCS)</strong>: <em>The FCS is a field that is placed at the end of the frame and is used to store the CRC of the frame.</em></p>
+  </li>
+</ul>
+
+<p>Let’s examine some frames. As you can see, there are only three fields in the following frame: Destination, Source, and Type, which shows up as Protocol Type:</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">Destination:  00:60:f5:00:1f:27
+Source:    00:60:f5:00:1f:2c
+Protocol Type: 08-00 IP</code></pre></figure>
+
+<p>This is an Ethernet_II frame. Note that the Type field is IP, or 08-00 (usually simply called 0x800) in hex.</p>
+
+<p>The next frame must also be an Ethernet_II frame because it has the same fields:</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">Destination:  ff:ff:ff:ff:ff:ff Ethernet Broadcast
+Source:    02:07:01:22:de:a4
+Protocol Type: 08-00 IP</code></pre></figure>
+
+<p>Do you have any idea that this frame is a broadcast frame? You can tell because the destination hardware address is all binary <strong>1s</strong> or hexadecimal <strong>Fs</strong>.</p>
+
+<p>Let’s see another Ethernet_II frame. As you can see, this Ethernet frame is the same Ethernet_II frame that we are using with the IPv4 routed protocol. The difference is that the Type field is 0x86dd when we are carrying IPv6 data. When we are carrying IPv4 data, we use 0x0800 in the Protocol field:</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">Destination: IPv6-Neighbor-Discovery_00:01:00:03 (33:33:00:01:00:03)
+Source: Aopen_3e:7f:dd (00:01:80:3e:7f:dd)
+Type: IPv6 (0x86dd)</code></pre></figure>
+
+<p>This is what is nice about Ethernet_II frames. Because of the Protocol field, we can run any protocol that is routed at the network layer, and it will carry the data because it can identify that particular network layer protocol!</p>
+
+<h2 style="text-align:center">Ethernet at the Physical Layer</h2>
+
+<p>The first implementation of Ethernet was done by a group called <strong>DIX</strong> <em>(Digital, Intel, and Xerox)</em>. DIX created and implemented the first Ethernet LAN specification. The IEEE used this specification to create the IEEE 802.3 Committee. This was a 10 Mbps network. It ran on coax, then twisted pair, and finally fiber optic physical media.</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/ethernet-physical-specification.png" alt="Ethernet Physical Specification" title="Ethernet Physical Specification" /></p>
+
+<p>The standards body that creates the physical layer specifications for Ethernet is the <strong>Electronic Industries Association</strong> and the newer <strong>Telecommunications Industry Alliance</strong> <em>(EIA/TIA)</em>. The EIA/TIA specifies that Ethernet uses a <strong>Registered Jack</strong>, or <em>RJ</em>, connector over <strong>Unshielded Twisted Pair</strong>, or <em>UTP</em>, cable <em>(RJ-45)</em>. However, in the industry, this is referred to simply as an 8-pin modular connector.</p>
+
+<p>Each type of Ethernet cable specified by <strong>EIA/TIA</strong> has what is known as inherent attenuation. This is defined as the loss of signal strength as it travels along the length of the cable and is measured in decibels <em>(dB)</em>. Categories are used to measure the cables used in business and residential markets. A higher quality cable will have a higher rated category and a lower level of attenuation. Category 5 is superior to Category 3 because Category 5 has more windings per foot, reducing cross-talk. Crosstalk is the unwanted interference of signals from adjacent pairs of wires in the cable.</p>
+
+<p>Here are the original standards for IEEE 802.3:</p>
+
+<ul>
+  <li>
+    <p><strong>10Base2</strong>: <em>Also known as ThinNet. Can support up to 30 workstations on a single segment. The system uses 10Mbit/s baseband technology, coaxial cable up to 185m, and a physical and logical bus with Attachment Unit Interface (AUI) ports. The 10 stands for 10 Mbps, the base stands for baseband technology - a signaling method for communicating on the network - and the 2 stands for nearly 200 meters. To connect to a network, 10Base2 Ethernet cards use BNC (British Naval Connector, Bayonet Neill-Concelman, or Bayonet Nut Connector) and T connectors.</em></p>
+  </li>
+  <li>
+    <p><strong>10Base5</strong>: <em>Aka Thicket, 10Base 5 uses a physical and logical bus with AUI connectors, 10Mbps baseband technology, and coaxial cable up to 500m long. With repeaters and 1,024 users for all segments, you can go up to 2,500 meters.</em></p>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong><em>In your career, you will never have to deal with 10Base2 or 10Base5. These technologies have been out of use for the last 20 years, but they are a reference point.</em></strong></p>
+</blockquote>
+
+<ul>
+  <li><strong>10BaseT</strong>: <em>This is 10Mbps over Category 3 UTP cabling. Each device must connect to a hub or switch, and you can have only one host per segment or wire, unlike 10Base2 and 10Base5 networks. It uses an RJ-45 connector (an eight-pin modular connector) with a star topology on the physical side and a bus on the logical side.</em></li>
+</ul>
+
+<p>Each of the 802.3 standards defines an AUI that allows a one-bit-at-a-time transition from the data link media access method to the physical layer. This allows the physical layer to support both existing and new technologies while keeping the MAC address constant. The original AUI interface was a 15-pin connector that allowed a transceiver to provide a 15-pin to twisted pair conversion.</p>
+
+<p>There is one problem, though the AUI interface can’t support 100 Mbps Ethernet because of the high frequencies that are involved. So 100BaseT essentially needed a new port, and the 802.3u specifications provided one called <strong>Media Independent Interface</strong> <em>(MII)</em>, which offers 100Mbps throughput. The MII uses a nibble. You remember that nibble is defined as 4 bits. Gigabit Ethernet transmits 8 bits at a time using a <strong>Gigabit Media Independent Interface</strong> <em>(GMII)</em>.</p>
+
+<p>802.3u (Fast Ethernet) is compatible with 802.3 Ethernet. This is because they share the exact same physical characteristics. Fast Ethernet and Ethernet preserve the frame format used by 10BaseT Ethernet, and they use the same <strong>Maximum Transmission Unit</strong> <em>(MTU)</em> and MAC mechanisms. In fact, Fast Ethernet is simply an extension of the IEEE 802.3 specification, and therefore offers us a 10 times speed increase over 10BaseT.</p>
+
+<ul>
+  <li>
+    <p><strong>100BaseTX (IEEE 802.3u)</strong>: <em>Commonly known as Fast Ethernet, 100BaseTX uses EIA/TIA Category 5/5e or 6 and UTP two-pair cabling. It uses an RJ-45 connector with a physical star topology and a logical bus, allowing one user per segment up to 100 meters (328 feet) long.</em></p>
+  </li>
+  <li>
+    <p><strong>100BaseFX (IEEE 802.3u)</strong>: <em>This is a point-to-point topology that uses 62.5/125-micron multimode fiber cabling up to 412 meters. It uses ST and SC connectors. These are media interface connectors.</em></p>
+  </li>
+  <li>
+    <p><strong>1000BaseCX (IEEE 802.3z)</strong>: <em>This is a copper twisted pair called Twinax (a balanced coaxial pair) that can only run up to 25 meters (82 feet). It uses a special nine-pin connector called the High-Speed Serial Data Connector (HSSDC).</em></p>
+  </li>
+  <li>
+    <p><strong>1000BaseT (IEEE 802.3ab)</strong>: <em>1000BaseT is up to 100 meters (328 feet) long and uses Category 5, four-pair UTP cabling.</em></p>
+  </li>
+  <li>
+    <p><strong>1000BaseTX</strong>: <em>1000BaseTX uses Category 5 and two-wire UTP cabling up to 100m in length. Category 6 cabling has replaced 1000BaseTX.</em></p>
+  </li>
+  <li>
+    <p><strong>1000BaseSX (IEEE 802.3z)</strong>: <em>This implementation of Gigabit Ethernet runs over multimode fiber rather than twisted-pair copper cable. It uses a short-wavelength laser. Multimode fiber (MMF), which uses a 62.5- and 50-micron core, uses an 850 nanometer (nm) laser. The 62.5-micron fiber can extend up to 220 meters; the 50-micron fiber up to 550 meters.</em></p>
+  </li>
+  <li>
+    <p><strong>1000BaseLX (IEEE 802.3z)</strong>: <em>This is a single mode fiber which uses a 9 micron core, 1,300nm laser and can go from 3km to 10km.</em></p>
+  </li>
+  <li>
+    <p><strong>10GBaseT</strong>: <em>Created by the IEEE 802.3an committee, 10GBaseT enables 10Gbps connections over traditional UTP (Category 5e, 6, 6A, or 7) cable. The conventional RJ-45 used for Ethernet LANs can be used for 10GBaseT. It is capable of supporting signal transmission over the full 100-meter (300 ft) distance specified for LAN cabling. This is the most economical way to implement a 10 Gbps link!</em></p>
+  </li>
+  <li>
+    <p><strong>10GBaseSR</strong>: <em>Uses short wavelength 850 nm lasers over multimode fiber for this implementation of 10 Gigabit Ethernet. Depending on the size and quality of the fiber, the maximum distance is between 2 and 300 meters (990 feet).</em></p>
+  </li>
+  <li>
+    <p><strong>10GBaseLR</strong>: <em>Uses 1,310 nm long-wavelength lasers over single-mode fiber for this implementation of 10 Gigabit Ethernet. Depending on the size and quality of the fiber, the maximum transmission distance ranges from 2 meters to 10 km or 6 miles.</em></p>
+  </li>
+  <li>
+    <p><strong>10GBaseER</strong>: <em>Uses extra-long wavelength lasers at 1,550 nm for this implementation of 10 Gigabit Ethernet over single-mode fiber. It has the largest possible transmission distances of all 10 Gigabit technologies: anything from 2 meters to 40 km, which again depends on the size and the quality of the used fiber.</em></p>
+  </li>
+  <li>
+    <p><strong>10GBaseSW</strong>: <em>10GBaseSW, as described in IEEE 802.3ae, is a variant of 10GBaseS for MMF with an 850 nm laser transceiver and a bandwidth of 10 Gbps. Cable lengths of up to 300 meters can be supported. This type of media is designed to be connected to a SONET device.</em></p>
+  </li>
+  <li>
+    <p><strong>10GBaseLW</strong>: <em>10GBaseLW is a mode of 10GBaseL that supports a link length of 10 km on standard singlemode fibers (SMF) (G.652). This type of media is also intended for connection to SONET equipment.</em></p>
+  </li>
+  <li>
+    <p><strong>10GBaseEW</strong>: <em>10GBaseEW is a mode of 10GBase E supporting up to 40km link length on SMF based on G.652 using 1550nm optical wavelength. This is another media type designed to connect to SONET equipment.</em></p>
+  </li>
+  <li>
+    <p><strong>40GBaseT</strong>: <em>An IEEE 802.3bq committee standard, 40GBaseT supports Ethernet speeds up to 40Gbps and is also used for 25Gbps Ethernet connections commonly found in server NICs. 40GBaseT is limited to 30 meters, a shorter distance than slower Ethernet types. For data center cabling, this is typically sufficient. To support the high data rates of 25GBaseT and 40GBaseT, Category 8 cabling is required.</em></p>
+  </li>
+</ul>
+
+<p>The following table provides a good summary:</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="text-align: left">Ethernet Name</th>
+        <th style="text-align: left">Cable Type</th>
+        <th style="text-align: left">Maximum Speed</th>
+        <th style="text-align: left">Maximum Transmission Distance</th>
+        <th style="text-align: left">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">10BaseT</td>
+        <td style="text-align: left">UTP</td>
+        <td style="text-align: left">10 Mbps</td>
+        <td style="text-align: left">100 meters per segment</td>
+        <td style="text-align: left">One of the most popular network cabling schemes.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">100BaseTX</td>
+        <td style="text-align: left">UTP, STP</td>
+        <td style="text-align: left">100 Mbps</td>
+        <td style="text-align: left">100 meters per segment</td>
+        <td style="text-align: left">Two pairs of Category 5 UTP.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10BaseFL</td>
+        <td style="text-align: left">Fiber</td>
+        <td style="text-align: left">10 Mbps</td>
+        <td style="text-align: left">Varies (ranges from 500 meters to 2,000 meters)</td>
+        <td style="text-align: left">Ethernet over fiber optics to the desktop.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">100BaseFX</td>
+        <td style="text-align: left">MMF</td>
+        <td style="text-align: left">100 Mbps</td>
+        <td style="text-align: left">2,000 meters</td>
+        <td style="text-align: left">100 Mbps Ethernet over fiber optics.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">1000BaseT</td>
+        <td style="text-align: left">UTP</td>
+        <td style="text-align: left">1000 Mbps</td>
+        <td style="text-align: left">100 meters</td>
+        <td style="text-align: left">Four pairs of Category 5 or higher.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">1000BaseTX</td>
+        <td style="text-align: left">UTP</td>
+        <td style="text-align: left">1000 Mbps</td>
+        <td style="text-align: left">100 meters</td>
+        <td style="text-align: left">Two pairs of Category 6 or higher.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">1000BaseSX</td>
+        <td style="text-align: left">MMF</td>
+        <td style="text-align: left">1000 Mbps</td>
+        <td style="text-align: left">550 meters</td>
+        <td style="text-align: left">Uses SC fiber connectors. Max length depends on fiber size.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">1000BaseCX</td>
+        <td style="text-align: left">Balanced, shielded copper</td>
+        <td style="text-align: left">1000 Mbps</td>
+        <td style="text-align: left">25 meters</td>
+        <td style="text-align: left">Uses a special connector, the HSSDC.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">1000BaseLX</td>
+        <td style="text-align: left">MMF and SMF</td>
+        <td style="text-align: left">1000 Mbps</td>
+        <td style="text-align: left">550 meters</td>
+        <td style="text-align: left">multimode/2,000 meters single mode	Uses longer wavelength laser than 1000BaseSX. Uses SC and LC connectors.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10GBaseT</td>
+        <td style="text-align: left">UTP</td>
+        <td style="text-align: left">10 Gbps</td>
+        <td style="text-align: left">100 meters</td>
+        <td style="text-align: left">Connects to the network like a Fast Ethernet link using UTP.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10GBaseSR</td>
+        <td style="text-align: left">MMF</td>
+        <td style="text-align: left">10 Gbps</td>
+        <td style="text-align: left">300 meters</td>
+        <td style="text-align: left">850 nm laser. Max length depends on fiber size and quality.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10GBaseLR</td>
+        <td style="text-align: left">SMF</td>
+        <td style="text-align: left">10 Gbps</td>
+        <td style="text-align: left">10 kilometers</td>
+        <td style="text-align: left">1,310 nm laser. Max length depends on fiber size and quality.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10GBaseER</td>
+        <td style="text-align: left">SMF</td>
+        <td style="text-align: left">10 Gbps</td>
+        <td style="text-align: left">40 kilometers</td>
+        <td style="text-align: left">1,550 nm laser. Max length depends on fiber size and quality.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10GBaseSW</td>
+        <td style="text-align: left">MMF</td>
+        <td style="text-align: left">10 Gbps</td>
+        <td style="text-align: left">400 meters</td>
+        <td style="text-align: left">850 nm laser transceiver.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10GBaseLW</td>
+        <td style="text-align: left">SMF</td>
+        <td style="text-align: left">10 Gbps</td>
+        <td style="text-align: left">10 kilometers</td>
+        <td style="text-align: left">Typically used with SONET.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">10GBaseEW</td>
+        <td style="text-align: left">SMF</td>
+        <td style="text-align: left">10 Gbps</td>
+        <td style="text-align: left">40 kilometers</td>
+        <td style="text-align: left">1,550 nm optical wavelength.</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">40GBaseT</td>
+        <td style="text-align: left">UTP Category 8</td>
+        <td style="text-align: left">40 Gbps</td>
+        <td style="text-align: left">30 Meters</td>
+        <td style="text-align: left">Connects to the network like a Fast Ethernet link using UTP.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 style="text-align:center">Ethernet over Other Standards</h2>
+
+<p><strong>IEEE 1905.1-2013</strong> is an IEEE standard defining a converged wireless and wired digital home network.</p>
+
+<p>Technologies covered will include <strong>IEEE 802.11</strong> <em>(Wi-Fi)</em>, <strong>IEEE 1901</strong> <em>(HomePlug, HD-PLC)</em> powerline networking, <strong>IEEE 802.3</strong> Ethernet, and Multimedia over Coax <em>(MoCA)</em>. <strong>1905.1-2013</strong> was released in <em>April 2013</em>.</p>
+
+<p>The IEEE <strong>Power Line Communication Standards Committee</strong> <em>(PLCSC)</em> sponsors the IEEE 1905.1 Standard Working Group.</p>
+
+<h3 id="ethernet-over-power-line">Ethernet over Power Line</h3>
+
+<p>IEEE 1901, also known as <strong>Power Line Communication</strong> <em>(PLC)</em> or <strong>Power Line Digital Subscriber Line</strong> <em>(PDSL)</em>, was published in February 2011 as a standard for <strong>Broadband over Power Line</strong> <em>(BPL)</em>.</p>
+
+<p><img style="max-height: 300px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/ethernet-over-power-line.png" alt="Ethernet over Power Line" title="Ethernet over Power Line" /></p>
+
+<p>This technology has been theoretically available for decades, but the lack of IEEE standards has prevented its adoption.</p>
+
+<p>Recently, this technology has been gaining traction, especially with utility companies. It collects data from the electricity meter installed in your home. This information is then passed on to the power company, and there is a specific report on how much electricity is being used in your home.</p>
+
+<p>Home Internet access can also be provided using this technology. For a computer (or other appliance), just plug a BPL modem into any electrical outlet in a home and get high-speed Internet access.</p>
+
+<p><img style="max-height: 500px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/ethernet-over-power-line-diagram.png" alt="Ethernet over Power Line Diagram" title="Ethernet over Power Line Diagram" /></p>
+
+<p>Any electrical outlet can be used with the BPL modem to receive the ISP connection to the Internet after the gateway is connected through the coupler to the meter bank for the building.</p>
+
+<p>There are still the following challenges to overcome:</p>
+
+<ul>
+  <li>
+    <p>The fact that power lines tend to be noisy.</p>
+  </li>
+  <li>
+    <p>The frequency at which the information is transmitted is used by the short wave, and the unshielded power lines can act as antennas and thus interfere with the short wave communications.</p>
+  </li>
+</ul>
+
+<h3 id="ethernet-over-hdmi">Ethernet over HDMI</h3>
+
+<p>Combining the signal quality of HDMI connectivity with the power and flexibility of home entertainment networking, HDMI Ethernet Channel technology combines video, audio and data streams in a single HDMI cable.</p>
+
+<p><img style="max-height: 350px;" class="img-fluid d-block mx-auto" src="/images/academy/computer-networks/ethernet/ethernet-over-hdmi.png" alt="Ethernet over HDMI" title="Ethernet over HDMI" /></p>
+
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>
