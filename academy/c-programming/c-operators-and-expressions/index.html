@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en-us" data-bs-theme="dark">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5674YL28W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5674YL28W1');
+</script>
+        <title>C Operators and Expressions - SNAKE Security</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="C Operators and Expressions, Arithmetic, Ternary, Increment, Decrement... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:title" content="C Operators and Expressions" />
+        <meta property="og:description" content="C Operators and Expressions, Arithmetic, Ternary, Increment, Decrement... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more..." />
+        <meta property="og:site_name" content="SNAKE Security" />
+        <meta property="og:image" content="https://snakesecurity.org/images/academy/c-programming/c-exponential-example.png" /> 
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="C Operators and Expressions">
+        <meta name="twitter:description" content="C Operators and Expressions, Arithmetic, Ternary, Increment, Decrement... Learn how to program using the C programming language - SNAKE Security Academy The right place to learn CyberSecurity, Ethical Hacking, Penetration Testing Coding and more...">
+        <meta name="twitter:image" content="https://snakesecurity.org/images/academy/c-programming/c-exponential-example.png">
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+        <link href="/css/high/colorful.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+        <img src="/images/logos/snakesec-logo.svg" alt="SNAKE Security Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">SNAKE Security</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/cybersecurity"><b>CyberSecurity</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/andrax"><b>ANDRAX-NG</b></a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/blog"><b>Blog</b></a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link hover-underline-animation" href="/about"><b>About</b></a>
+                </li>
+              </ul>
+              <div class="col-md text-end">
+                <a class="nav-link hover-underline-animation me-3 py-2" href="/contact"><b>Contact</b></a>
+                <a type="button" class="btn btn-danger" href="/andrax"><b>Become a HERO</b></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
+
+<main id="content" class="container-fluid" style="padding-right: calc(2.3em * 0.1) !important;padding-left: calc(2.3em * 0.1) !important;">
+	
+
+<div class="px-3" style="padding-top: 100px;padding-bottom: 100px;background-image: url('/images/background/snake-world-blur-wide.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+    <div class="row flex-lg-row-reverse justify-content-center align-items-center">
+      <div class="col-xl-5">
+        <img class="mx-lg-auto img-fluid rounded" style="max-height: 400px;" src="/images/academy/c-programming/c-exponential-example.png" alt="C Operators and Expressions">
+      </div>
+      <div class="col-xl-7 my-5">
+        <p style="text-align: left !important;" class="lead mb-4">
+            <span class="text_green_now"><time datetime="2025-05-09 00:00">May 09, 2025</time></span>
+        </p>
+        <h3 class="fw-bold text-body-emphasis" style="text-align: center;">C Operators and Expressions</h3>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="lead my-4">C Operators and Expressions, Arithmetic, Ternary, Increment, Decrement...</p>
+        </div>
+        <div class="col-sm-12 col-md-12 mx-auto">
+          <p style="text-align: left;" class="mb-4">
+            
+          </p>
+          <img style="max-height: 50px;padding: 1px;" src="/images/team/weidsom-nascimento-sm.jpg" class="rounded-circle rounded-border-green" alt="Weidsom Nascimento">
+				  <span class="badge text-bg-success mx-2"><a style="color: #000000 !important;" href="/weidsom-nascimento"><b>Weidsom Nascimento</b></a></span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container-lg">
+    <div class="row align-items-start justify-content-center">
+        <div class="col-sm-12 col-md-10">
+            <h1 style="text-align:center">Operators and Expressions</h1>
+
+<p>Operators and expressions are crucial parts of any programming language, but in C they play an even more important role due to the low level of C when compared to other languages.</p>
+
+<h2 id="arithmetic">Arithmetic</h2>
+
+<blockquote>
+  <p>I hope you know the basics of arithmetic, otherwise go back a few years to school.</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// Addition (+) and assignment (=) operators, add 3 to i</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">8</span><span class="p">;</span> <span class="c1">// Subtraction, subtract 8 from i</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">9</span><span class="p">;</span> <span class="c1">// Multiplication</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// Division</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// Modulo (division remainder)</span></code></pre></figure>
+
+<p>C has abbreviations for each of the above. Every one of these lines could be written more concisely as</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">i</span> <span class="o">+=</span> <span class="mi">3</span><span class="p">;</span> <span class="c1">// Same as "i = i + 3"</span>
+<span class="n">i</span> <span class="o">-=</span> <span class="mi">8</span><span class="p">;</span> <span class="c1">// Same as "i = i - 8"</span>
+<span class="n">i</span> <span class="o">*=</span> <span class="mi">9</span><span class="p">;</span> <span class="c1">// Same as "i = i * 9"</span>
+<span class="n">i</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// Same as "i = i / 2"</span>
+<span class="n">i</span> <span class="o">%=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// Same as "i = i % 5"</span></code></pre></figure>
+
+<p>You must use the <strong>pow</strong> function from the <em>&lt;math.h&gt;</em> library to perform exponential operations in C:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;math.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">double</span> <span class="n">base</span> <span class="o">=</span> <span class="mi">2</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">exponent</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">result</span><span class="p">;</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">exponent</span><span class="p">);</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">"%.2f raised to the power of %.2f is %.2f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">exponent</span><span class="p">,</span> <span class="n">result</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>To compile the code:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">clang <span class="nt">-o</span> expo expo.c <span class="nt">-lm</span></code></pre></figure>
+
+<p>Note the addition of the <strong>-lm</strong> statement to include the math library…</p>
+
+<h2 id="ternary-operator">Ternary Operator</h2>
+
+<p>The ternary operator is also included in C. That is, an expression whose value depends on the result of an embedded conditional:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="c1">// If x &gt; 10, add 17 to y. Otherwise add 37 to y.</span>
+<span class="n">y</span> <span class="o">+=</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">?</span> <span class="mi">17</span><span class="o">:</span> <span class="mi">37</span><span class="p">;</span></code></pre></figure>
+
+<p>That probably sounds a little confusing, so let’s write a simpler equivalent expression:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">y</span> <span class="o">+=</span> <span class="mi">17</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="n">y</span> <span class="o">+=</span> <span class="mi">37</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Compare these two until you see each of the components of the ternary operator.</p>
+
+<p>Or, another example that prints out whether a number stored in x is odd or even:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">printf</span><span class="p">(</span><span class="s">"The number %d is %s.</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">?</span> <span class="s">"even"</span><span class="o">:</span> <span class="s">"odd"</span><span class="p">);</span></code></pre></figure>
+
+<p>Using <strong>%s</strong> with printf() means to print a string.</p>
+
+<p>The value of the entire ternary expression evaluates to the string “<em>even</em>” if the expression <strong>x % 2</strong> evaluates to 0. Otherwise, it will evaluate to the string “<strong>odd</strong>”.</p>
+
+<p>Notice that ternaries are not flow control like if statements. It is simply an expression that will be evaluated to a value!</p>
+
+<h2 id="increment-and-decrement">Increment and Decrement</h2>
+
+<p>The increment and decrement operators will be used a lot in your C programs!</p>
+
+<h3 id="post-increment-and-post-decrement">Post increment and Post decrement</h3>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">i</span><span class="o">++</span><span class="p">;</span> <span class="c1">// Add one to i</span>
+<span class="n">i</span><span class="o">--</span><span class="p">;</span> <span class="c1">// Subtract one from i</span></code></pre></figure>
+
+<p>Post-increment and post-decrement first calculate the value of the expression with the as-is value, and then increment or decrement the value after determining the value of the expression.</p>
+
+<h3 id="pre-increment-and-pre-decrement">Pre increment and Pre decrement</h3>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="o">++</span><span class="n">i</span><span class="p">;</span> <span class="c1">// Add one to i</span>
+<span class="o">--</span><span class="n">i</span><span class="p">;</span> <span class="c1">// Subtract one from i</span></code></pre></figure>
+
+<p>Pre-increment and pre-decrement increment or decrement the variable’s value before evaluating the expression. Then it evaluates the expression with the new value.</p>
+
+<p>They are often written in simplified form:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Add one to i</span>
+<span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Subtract one from i</span></code></pre></figure>
+
+<p>Here’s how the post increment can be used:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">j</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="n">i</span><span class="o">++</span><span class="p">;</span> <span class="c1">// Compute 5 + i, _then_ increment i</span>
+
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span> <span class="c1">// Prints 11, 15</span></code></pre></figure>
+
+<p>Now compare what it would be like with pre-increment:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">j</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="o">++</span><span class="n">i</span><span class="p">;</span> <span class="c1">// Increment i, _then_ compute 5 + i</span>
+
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span> <span class="c1">// Prints 11, 16</span></code></pre></figure>
+
+<p>Array and pointer access and manipulation often use this technique. It gives you a way to use the value in a variable, incrementing or decrementing it before or after use.</p>
+
+<p>But by far the place where you’ll see this is in a Forloop:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"i is %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="the-comma-operator">The Comma Operator</h2>
+
+<p>This is a rarely used method to delimit expressions that run from left to right:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> <span class="c1">// First assign 10 to x, then 20 to y</span></code></pre></figure>
+
+<p>Seemed kind of dumb, because you could just replace the comma with a semicolon, right?</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> <span class="c1">// First assign 10 to x, then 20 to y</span></code></pre></figure>
+
+<p>But this is something else. It’s… In the second case, we have two separate expressions, whereas in the first case we have a single expression.</p>
+
+<p>With the comma operator, the value of the comma expression is the value of the expression to the right:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+
+<span class="n">printf</span><span class="p">(</span><span class="s">"x is %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span> <span class="c1">// Prints 3, because 3 is rightmost in the comma list</span></code></pre></figure>
+
+<p>But that’s also quite artificial. A common place to use the comma operator is in for loops to do different things in each part of the statement:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"%d, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="conditional-operators">Conditional Operators</h2>
+
+<p>We have a number of standard operators for Boolean values:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">;</span>  <span class="c1">// True if a is equivalent to b</span>
+<span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">;</span>  <span class="c1">// True if a is not equivalent to b</span>
+<span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">;</span>   <span class="c1">// True if a is less than b</span>
+<span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">;</span>   <span class="c1">// True if a is greater than b</span>
+<span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">;</span>  <span class="c1">// True if a is less than or equal to b</span>
+<span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span><span class="p">;</span>  <span class="c1">// True if a is greater than or equal to b</span></code></pre></figure>
+
+<p>Don’t confuse assigning (=) with comparing (==)! Use two equal signs for comparison and one for assignment.</p>
+
+<p>With if statements, we can use the comparison expressions:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Success!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="boolean-operators">Boolean Operators</h2>
+
+<p>We can use Boolean operators for <em>and</em>, <em>or</em>, and <em>not</em> to chain or modify conditional expressions.</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th style="text-align: left">Operator</th>
+        <th style="text-align: left">Meaning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">&amp;&amp;</td>
+        <td style="text-align: left">and</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">||</td>
+        <td style="text-align: left">or</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">!</td>
+        <td style="text-align: left">not</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>An example of Boolean “<em>and</em>”:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="c1">// Do something if x less than 10 and y greater than 20:</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="o">&amp;&amp;</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Doing something!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>An example of Boolean “<em>not</em>”:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">))</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"x is not less than 12</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>In this case, we have to use parentheses because “<strong>!</strong>” has a higher priority than the other Boolean operators.</p>
+
+<h2 id="the-sizeof-operator">The sizeof Operator</h2>
+
+<p>This operator returns the size (in bytes) that a particular variable or datatype occupies in memory.</p>
+
+<p>In particular, it will tell you the size (in bytes) that a particular expression’s type (which can be just a single variable) uses in memory.</p>
+
+<p>Except for char and its variants (which are always 1 byte), this can be different on different systems.</p>
+
+<p>You might think it would return an int, since it calculates the number of bytes needed to store a type. Or… since it can’t be negative, maybe a unsigned?</p>
+
+<p>But C has a special type for representing the return value of the sizeof function.</p>
+
+<p>It’s called <strong>size_t</strong>. Pronounced “size tee” . All we know is that it’s an unsigned integer type. It can hold the size in bytes of anything you can pass to sizeof.</p>
+
+<p>size_t appears in many different places where counts of things are passed or returned. You can think of it as a value that represents a count of something.</p>
+
+<p>You can take the size of a variable or an expression:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">999</span><span class="p">;</span>
+
+<span class="c1">// %zu is the format specifier for type size_t</span>
+<span class="c1">// If your compiler balks at the "z" part, leave it off</span>
+
+<span class="n">printf</span><span class="p">(</span><span class="s">"%zu</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="k">sizeof</span> <span class="n">a</span><span class="p">);</span> <span class="c1">// Prints 4 on my system</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%zu</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">7</span><span class="p">));</span> <span class="c1">// Prints 4 on my system</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%zu</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="k">sizeof</span> <span class="mi">3</span><span class="p">.</span><span class="mi">14</span><span class="p">);</span> <span class="c1">// Prints 8 on my system</span>
+
+<span class="c1">// If you need to print out negative size_t values, use %zd</span></code></pre></figure>
+
+<p>Remember, it’s the size in bytes of the expression’s type, not the expression’s size.</p>
+
+<p>That’s why the size of <strong>2+7</strong> is the same as the size of <strong>a</strong>; they’re both of type int!</p>
+
+<p>You can take the size of a type (note that the parentheses are required around the name of a type, as opposed to an expression):</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">printf</span><span class="p">(</span><span class="s">"%zu</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>  <span class="c1">// Prints 4 on my system</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%zu</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span> <span class="c1">// Prints 1 on all systems</span></code></pre></figure>
+
+<p>It’s important to note that sizeof is compile-time. The expression’s result is determined entirely at compile-time, not runtime.</p>
+
+        </div>
+    </div>
+</div>
+
+</main>
+<div class="container-fluid footer pt-4 my-4 pt-md-5">
+    <footer class="">
+        <div class="row px-3">
+        <div class="col-12 col-md">
+            <img class="img-justify" style="max-height: 200px;max-width: 100%;" src="/images/logos/snake-security-about.png" alt="SNAKE Security About">
+            <small style="text-align:center;" class="m-1 d-block mb-3 text-body-secondary">&copy; SNAKE Security 2023-2025.</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Blog</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/news">News</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog">General</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/pentest">Pentest</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/tutorials">Tutorials</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/blog/category/andrax">ANDRAX-NG</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/academy">Academy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/andrax">ANDRAX-NG</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/snakesec/shadow-spotter">Shadow-Spotter</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="/weidsom-nascimento">Weidsom Nascimento</a></li>
+            </ul>
+            <a href="https://x.com/snakesecurityOF"><img class="img-justify" style="max-height: 40px;" src="/images/icons/x.svg" alt="SNAKE Security X"></a>
+            <a href="https://t.me/snakesecurityofficial"><img class="img-justify" style="max-height: 40px;" src="/images/icons/telegram.svg" alt="SNAKE Security Telegram"></a>
+            <a href="https://github.com/snakesec"><img class="img-justify" style="max-height: 40px;" src="/images/icons/github.svg" alt="SNAKE Security GitHub"></a>
+        </div>
+        </div>      
+    </footer>
+</div>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $('.tools-slider').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1300,
+            responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '10px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '125px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '80px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        </script>
+    </body>
+</html>
