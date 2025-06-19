@@ -4,6 +4,14 @@
 [
   
     {
+      "title"    : "ANDRAX-NG v1002 PRE-STABLE",
+      "url"      : "https://snakesecurity.org/blog/andrax-ng-v1002-pre-stable/",
+      "img_url"  : "https://snakesecurity.org/images/posts/andrax-ng-v1002-pre-stable.png",
+      "date"     : "19 Jun 2025",
+      "description" : "This is the PRE-STABLE version of ANDRAX-NG, this will be the last version before v1 STABLE, this version has significant improvements in performance, functionality and tools!"
+    },
+  
+    {
       "title"    : "Shadow-Spotter Next Gen Content Discovery",
       "url"      : "https://snakesecurity.org/blog/shadow-spotter-next-gen-content-discovery/",
       "img_url"  : "https://snakesecurity.org/images/posts/shadow-spotter-post-banner.png",
